@@ -6,21 +6,22 @@ import logonav from '@/public/logonav.png'
 import { MacbookScrollDemo } from "@/components/Contact";
 import { TracingBeam } from "@/components/ui/tracing-beam";
 import { AuroraBackground } from "@/components/ui/Aurora";
+import { FeaturesSectionDemo } from "@/components/ui/Features";
 export default function Home() {
   const navItems = [
     {
-      name: "Home",
-      link: "/",
+      name: "Services",
+      id: "services",
       icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
       name: "About",
-      link: "/#about",
+      id: "/about",
       icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
       name: "Contact",
-      link: "/#contact",
+      id: "/contact",
       icon: (
         <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
       ),
@@ -33,8 +34,10 @@ export default function Home() {
       <div className="max-w-7xl w-full">
      
           <FloatingNav navItems={navItems} />
+          <div id="home">
         <Hero/>
-        <MacbookScrollDemo/>
+        </div>
+       
       
       </div>
   

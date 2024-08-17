@@ -24,6 +24,8 @@ import {
 } from "@/components/ui/dialog"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
+import { MacbookScrollDemo } from "./Contact";
+import { FeaturesSectionDemo } from "./ui/Features";
 
 
 const Hero = () => {
@@ -189,6 +191,10 @@ const Hero = () => {
       
         
         </motion.div>
+ </div>
+ <MacbookScrollDemo/>
+ <div id="services">
+ <FeaturesSectionDemo/>
  </div>
     </section>
   );

@@ -20,7 +20,7 @@ export const FloatingNav = ({
 }: {
   navItems: {
     name: string;
-    link: string;
+    id: string;
     icon?: JSX.Element;
   }[];
   className?: string;
@@ -45,6 +45,10 @@ export const FloatingNav = ({
       }
     }
   });
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id)
+    element?.scrollIntoView({ behavior: "smooth"});
+  };
 
   return (
     
@@ -69,14 +73,20 @@ export const FloatingNav = ({
       >
         
        
-         <button className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-2 py-2 rounded-full">
+         <button  onClick={() => {
+             scrollToSection('home')
+            }}
+            className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-2 py-2 rounded-full">
           <span><Image src={logo} alt="logo" width={50} height={50}/></span>
           
         </button>
         {navItems.map((navItem: any, idx: number) => (
           <Link
             key={`link=${idx}`}
-            href={navItem.link}
+            href={''}
+            onClick={() => {
+             scrollToSection(navItem.id)
+            }}
             className={cn(
               "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
             )}
