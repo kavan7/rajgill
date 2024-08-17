@@ -27,6 +27,11 @@ import { Label } from "@/components/ui/label"
 
 
 const Hero = () => {
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id)
+    element?.scrollIntoView({ behavior: "smooth"});
+  };
+  
   const [active, setActive] = useState('');
   return (
     <section className="flex flex-col">
@@ -76,13 +81,13 @@ const Hero = () => {
          
           <Dialog >
       <DialogTrigger asChild>
-        
+        <button>
          <MagicButton
               title="Schedule"
               icon={<FaCalendar />}
               position="right" 
               otherClasses="rounded-lg"
-            />
+            /></button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px] rounded-3xl">
         <DialogHeader>
@@ -159,11 +164,11 @@ const Hero = () => {
           repeatType: LoopPingPong
         }} >
           <Link
-            href="/"
+      
             className="flex items-center gap-2 shadow-card"
             onClick={() => {
               setActive("");
-              window.scrollTo(0,800);
+              scrollToSection("services")
             }}>          
                  
             <svg data-accordion-icon className="  w-16 rotate-180 shrink-0 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
@@ -171,11 +176,11 @@ const Hero = () => {
       </svg>
       </Link>
       <Link
-            href="/"
+            
             className="flex items-center gap-2"
             onClick={() => {
               setActive("");
-              window.scrollTo(0,800);
+              scrollToSection("services")
             }}>    
         <svg data-accordion-icon className="  w-16  rotate-180 shrink-53" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
         <path stroke="#4d7499" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
