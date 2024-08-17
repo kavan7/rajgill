@@ -164,7 +164,7 @@ const Hero = () => {
           repeatType: LoopPingPong
         }} >
           <Link
-      
+          href={''}
             className="flex items-center gap-2 shadow-card"
             onClick={() => {
               setActive("");
@@ -176,7 +176,7 @@ const Hero = () => {
       </svg>
       </Link>
       <Link
-            
+           href={''} 
             className="flex items-center gap-2"
             onClick={() => {
               setActive("");
