@@ -51,6 +51,7 @@ const Hero = () => {
   });
 
   const [isDialogOpen, setIsDialogOpen] = useState(false); // State to control dialog visibility
+  const [alertStatus, setAlertStatus] = useState<"success" | "error" | "empty" | null>(null); // State to control alert status
 
   const form = useRef<HTMLFormElement>(null);
 
@@ -61,6 +62,12 @@ const Hero = () => {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
+    // Validation check: Ensure all fields are filled
+    if (!formData.name || !formData.email || !formData.phone || !formData.service) {
+      setAlertStatus("empty");
+      return;
+    }
+
     if (form.current) {
       emailjs.sendForm(
         'service_rmxji3d',
@@ -70,11 +77,14 @@ const Hero = () => {
       ).then(
         (result) => {
           console.log(result.text);
-          // Close the dialog after submission
+          // Set success alert and close dialog
+          setAlertStatus("success");
           setIsDialogOpen(false);
         },
         (error) => {
           console.log(error.text);
+          // Set error alert
+          setAlertStatus("error");
         }
       );
     }
@@ -101,6 +111,36 @@ const Hero = () => {
             <p className="text-center md:tracking-wider font-normal mb-4 text-sm md:text-lg lg:text-2xl">
               Schedule a free consultation.
             </p>
+
+            {alertStatus === "success" && (
+              <Alert>
+                <IconMail className="h-4 w-4" />
+                <AlertTitle>Appointment Scheduled.</AlertTitle>
+                <AlertDescription>
+                  We will be in touch shortly.
+                </AlertDescription>
+              </Alert>
+            )}
+
+            {alertStatus === "error" && (
+              <Alert>
+                <IconX className="h-4 w-4" />
+                <AlertTitle>Uh Oh!</AlertTitle>
+                <AlertDescription>
+                  Your message did not go through. Please try again.
+                </AlertDescription>
+              </Alert>
+            )}
+
+            {alertStatus === "empty" && (
+              <Alert>
+                <IconX className="h-4 w-4" />
+                <AlertTitle>Empty Fields</AlertTitle>
+                <AlertDescription>
+                  Please fill out all the fields before submitting.
+                </AlertDescription>
+              </Alert>
+            )}
 
             <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
               <DialogTrigger asChild>
