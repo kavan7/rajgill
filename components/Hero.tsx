@@ -4,13 +4,12 @@ import { motion } from 'framer-motion';
 import MagicButton from "./ui/MagicButton";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import Link from "next/link";
- 
+
 import {
   Alert,
   AlertDescription,
   AlertTitle,
 } from "@/components/ui/alert"
- 
 
 import emailjs from '@emailjs/browser';
 //@ts-ignore
@@ -51,6 +50,8 @@ const Hero = () => {
     service: ""
   });
 
+  const [isDialogOpen, setIsDialogOpen] = useState(false); // State to control dialog visibility
+
   const form = useRef<HTMLFormElement>(null);
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
@@ -69,22 +70,11 @@ const Hero = () => {
       ).then(
         (result) => {
           console.log(result.text);
-          <Alert>
-          <IconMail className="h-4 w-4" />
-          <AlertTitle>Appointment Scheduled.</AlertTitle>
-          <AlertDescription>
-            We will be in touch shortly.
-          </AlertDescription>
-        </Alert>
+          // Close the dialog after submission
+          setIsDialogOpen(false);
         },
         (error) => {
-          <Alert>
-          <IconX className="h-4 w-4" />
-          <AlertTitle>Uh Oh!</AlertTitle>
-          <AlertDescription>
-            Your message did not go through. Please Try again.
-          </AlertDescription>
-        </Alert>
+          console.log(error.text);
         }
       );
     }
@@ -112,9 +102,9 @@ const Hero = () => {
               Schedule a free consultation.
             </p>
 
-            <Dialog>
+            <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
               <DialogTrigger asChild>
-                <button>
+                <button onClick={() => setIsDialogOpen(true)}>
                   <MagicButton
                     title="Schedule"
                     icon={<FaCalendar />}
