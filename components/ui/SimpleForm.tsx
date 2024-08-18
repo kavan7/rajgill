@@ -106,7 +106,7 @@ export function SimpleForm() {
         <PlaceholdersAndVanishInput
           placeholders={placeholders}
           onChange={onChange}
-          onSubmit={handleSubmit}  // This triggers the fetch request
+         // This triggers the fetch request
         />
    </div>
   );

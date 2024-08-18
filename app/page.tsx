@@ -45,8 +45,11 @@ export default function Home() {
         </div>
        <About/>
        <hr/>
+       <div id="">
        <MacbookScrollDemo/>
-       <hr/>
+       </div>
+       <div id=""/>
+       <hr id=""/>
        <Touch/>
        <hr/>
       <div className="relative  flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">

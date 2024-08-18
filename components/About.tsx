@@ -124,7 +124,7 @@ export function About() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    className="text-neutral-300 text-xs md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto dark:text-neutral-400 [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
+                    className="text-neutral-300 px-5  tracking-wider text-xs md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto dark:text-neutral-400 [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
                   >
                     {typeof active.content === "function"
                       ? active.content()
@@ -215,51 +215,36 @@ const cards = [
     description: "Founder & Lawyer",
     title: "Rajdeep S. Gill",
     src: "/rajpic.jpg",
-    ctaText: "Visit",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaText: "Connect",
+    ctaLink: "https://www.linkedin.com/in/raj-gill-a83b22a7/",
     content: () => {
       return (
         <p>
-          Lana Del Rey, an iconic American singer-songwriter, is celebrated for
-          her melancholic and cinematic music style. Born Elizabeth Woolridge
-          Grant in New York City, she has captivated audiences worldwide with
-          her haunting voice and introspective lyrics. <br /> <br /> Her songs
-          often explore themes of tragic romance, glamour, and melancholia,
-          drawing inspiration from both contemporary and vintage pop culture.
-          With a career that has seen numerous critically acclaimed albums, Lana
-          Del Rey has established herself as a unique and influential figure in
-          the music industry, earning a dedicated fan base and numerous
-          accolades.
+     The owner and founder of Raj Gill Law Corp, Rajdeep S. Gill, has been helping clients with a variety of claims since 2014. His specialties are family law, civil law and Real Estate.
+
+Raj is a life-long learner and enjoys the challenge of solving problems. Raj is an expert with the legal process and familiar with the system. He is a strategic thinker and enjoys analysis of various paths, and finds the best possible solution. His passion to help clients in difficult situations and strong negotiation and persuasion skills made him a strong and winning lawyer. Raj graduated in Commerce from the University of British Columbia and his Doctor of Law (J.D.) from the Seattle University.
         </p>
       );
     },
   },
   {
-    description: "Babbu Maan",
-    title: "Mitran Di Chhatri",
-    src: "https://assets.aceternity.com/demos/babbu-maan.jpeg",
-    ctaText: "Visit",
-    ctaLink: "https://ui.aceternity.com/templates",
+    description: "Lawyer",
+    title: "Madhur Goyal",
+    src: "/madhurpic.png",
+    ctaText: "Connect",
+    ctaLink: "https://www.linkedin.com/in/madhur-goyal-584010168/",
     content: () => {
       return (
         <p>
-          Babu Maan, a legendary Punjabi singer, is renowned for his soulful
-          voice and profound lyrics that resonate deeply with his audience. Born
-          in the village of Khant Maanpur in Punjab, India, he has become a
-          cultural icon in the Punjabi music industry. <br /> <br /> His songs
-          often reflect the struggles and triumphs of everyday life, capturing
-          the essence of Punjabi culture and traditions. With a career spanning
-          over two decades, Babu Maan has released numerous hit albums and
-          singles that have garnered him a massive fan following both in India
-          and abroad.
+         Madhur Goyal is an Internationally Trained Lawyer, who gained considerable experience in Immigration Law, Family Law and Litigation after completing his B.A.LL. B and Madhur was called to the Bar Council of Punjab and Haryana (India) in September 2016. Madhur was called to the Law Society of British Columbia in March 2022 and since, has successfully navigated through numerous highly complex cases at the firm. Madhur is constantly up to date on the latest developments in Family Law, Immigration Law and other areas of Civil Litigation to craft perfect legal solutions for each client.  Madhur is goal-oriented and provides quality work even under pressure. Madhur is adept in handling clients while managing the firm and his workload. With the high volume of trials that the firm deals with, Madhur is able to navigate through the demands of the trial along with the administrative management of the firm.
         </p>
       );
     },
   },
 
   {
-    description: "Metallica",
-    title: "For Whom The Bell Tolls",
+    description: "Lawyer",
+    title: "Prateek XXXX",
     src: "https://assets.aceternity.com/demos/metallica.jpeg",
     ctaText: "Visit",
     ctaLink: "https://ui.aceternity.com/templates",
@@ -280,7 +265,43 @@ const cards = [
     },
   },
   {
-    description: "Lord Himesh",
+    description: "Articling Student",
+    title: "Shrea Grover",
+    src: "/shreyapic.png",
+    ctaText: "Visit",
+    ctaLink: "https://ui.aceternity.com/templates",
+    content: () => {
+      return (
+        <p>
+      Shrea Grover is an Internationally Trained Lawyer, possessing a Master of Laws in Constitutional and Environmental Law from India. Shrea is in the legal profession since 2017. Shrea specializes in Legal Research as she has gained considerable experience over 4 years while working as a Legal Researcher at the High Court of Punjab and Haryana, Chandigarh, India. Shrea is a hard-working, driven individual capable of rising to any challenge. Shrea’s passion for legal research, and her enthusiasm to get the job done, make her a dedicated and esteemed member of the Legal Team at Raj Gill Law Corporation. <br/> Shrea is an open and honest person who strives to be the best in all that she does.
+        </p>
+      );
+    },
+  },
+  {
+    description: "Paralegal",
+    title: "XXXXXX",
+    src: "https://assets.aceternity.com/demos/aap-ka-suroor.jpeg",
+    ctaText: "Visit",
+    ctaLink: "https://ui.aceternity.com/templates",
+    content: () => {
+      return (
+        <p>
+          Himesh Reshammiya, a renowned Indian music composer, singer, and
+          actor, is celebrated for his distinctive voice and innovative
+          compositions. Born in Mumbai, India, he has become a prominent figure
+          in the Bollywood music industry. <br /> <br /> His songs often feature
+          a blend of contemporary and traditional Indian music, capturing the
+          essence of modern Bollywood soundtracks. With a career spanning over
+          two decades, Himesh Reshammiya has released numerous hit albums and
+          singles that have garnered him a massive fan following both in India
+          and abroad.
+        </p>
+      );
+    },
+  },
+  {
+    description: "Paralegal",
     title: "Aap Ka Suroor",
     src: "https://assets.aceternity.com/demos/aap-ka-suroor.jpeg",
     ctaText: "Visit",
@@ -302,45 +323,15 @@ const cards = [
     },
   },
   {
-    description: "Lord Himesh",
-    title: "Aap Ka Suroor",
-    src: "https://assets.aceternity.com/demos/aap-ka-suroor.jpeg",
+    description: "Legal Assistant",
+    title: "Sahib Dhaliwal",
+    src: "/sahibpic.png",
     ctaText: "Visit",
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
       return (
         <p>
-          Himesh Reshammiya, a renowned Indian music composer, singer, and
-          actor, is celebrated for his distinctive voice and innovative
-          compositions. Born in Mumbai, India, he has become a prominent figure
-          in the Bollywood music industry. <br /> <br /> His songs often feature
-          a blend of contemporary and traditional Indian music, capturing the
-          essence of modern Bollywood soundtracks. With a career spanning over
-          two decades, Himesh Reshammiya has released numerous hit albums and
-          singles that have garnered him a massive fan following both in India
-          and abroad.
-        </p>
-      );
-    },
-  },
-  {
-    description: "Lord Himesh",
-    title: "Aap Ka Suroor",
-    src: "https://assets.aceternity.com/demos/aap-ka-suroor.jpeg",
-    ctaText: "Visit",
-    ctaLink: "https://ui.aceternity.com/templates",
-    content: () => {
-      return (
-        <p>
-          Himesh Reshammiya, a renowned Indian music composer, singer, and
-          actor, is celebrated for his distinctive voice and innovative
-          compositions. Born in Mumbai, India, he has become a prominent figure
-          in the Bollywood music industry. <br /> <br /> His songs often feature
-          a blend of contemporary and traditional Indian music, capturing the
-          essence of modern Bollywood soundtracks. With a career spanning over
-          two decades, Himesh Reshammiya has released numerous hit albums and
-          singles that have garnered him a massive fan following both in India
-          and abroad.
+        Sahib is a student studying at Simon Fraser University where he is in the final year of his Bachelor of Arts in Criminology. He started at Raj Gill Law Corporation in 2021 after he realized his passion for law. Sahib is a self-driven and ambitious individual who is looking forward to attending law school, so he too can pursue his interests in Family law and other areas of litigation. He brings great enthusiasm to the workplace and creates an encouraging environment for his own learning and for the satisfaction of his co-workers and clients.
         </p>
       );
     },

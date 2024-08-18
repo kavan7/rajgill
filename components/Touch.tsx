@@ -1,7 +1,7 @@
 import React from 'react'
 import { SparklesCore } from './ui/sparkles'
 import { PinContainer } from './ui/3d-pin'
-import { IconMapPin2, IconPhone } from '@tabler/icons-react'
+import { IconLocationBolt, IconMail, IconMapPin2, IconPhone } from '@tabler/icons-react'
 
 const Touch = () => {
   return (
@@ -36,10 +36,13 @@ const Touch = () => {
 
   </div>
   <div className=" md:w-full lg:w-full w-7/8  align-middle flex md:flex-row lg:flex-row flex-col  ">
-  <PinContainer title='(604) 593-6470' className='text-white '><div className="flex basis-full flex-col p-4  tracking-tight h-[10rem] w-[15rem]  "><IconPhone/>Phone. </div></PinContainer>
+  <PinContainer title='(604) 593-6470' className='text-neutral-300 '><div className="flex basis-full flex-col p-4  tracking-tight h-[10rem] w-[15rem]  "><IconPhone/>Phone<br className='mt-5'/>(604) 593-6470</div></PinContainer>
   <div className='mt-5 mb-5'/>
-  <PinContainer title='12885 80 Ave #205, Surrey, BC V3W 0E6' className='text-white '><div className="flex basis-full flex-col p-4 tracking-tight h-[10rem] w-[15rem] sm:basis-1/2 "><IconMapPin2/>Offices.</div></PinContainer>
+  <PinContainer title='12885 80 Ave #205, Surrey, BC V3W 0E6' className='text-neutral-300 '><div className="flex basis-full flex-col p-4 tracking-tight h-[10rem] w-[15rem] sm:basis-1/2 "><IconMapPin2/>Offices<br className='mt-5'/>12885 80 Ave #205, Surrey, BC V3W 0E6</div></PinContainer>
+  <div className='mt-5 mb-5'/>
+ <PinContainer title='Info@rajgilllaw.com' className='text-neutral-300 '><div className="flex basis-full flex-col p-4 tracking-tight h-[10rem] w-[15rem] sm:basis-1/2 "><IconMail/>Email<br className='mt-5'/>Info@rajgilllaw.com</div></PinContainer>
   </div>
+  
   </main>
   )
 }

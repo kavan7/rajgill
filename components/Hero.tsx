@@ -1,6 +1,6 @@
 
 "use client";
-import { FaCalendar} from "react-icons/fa6";
+import { FaCalendar, FaGavel} from "react-icons/fa6";
 import {motion} from 'framer-motion'
 import MagicButton from "./ui/MagicButton";
 import { Spotlight } from "./ui/Spotlight";
@@ -155,7 +155,7 @@ const Hero = () => {
         
       </div>
       
- <div className="flex justify-center items-center md:mt-[70px] mt-[20px] lg:mt-[70px]">
+ <div id="services" className="flex justify-center items-center md:mt-[70px] mt-[20px] lg:mt-[70px]">
  <motion.div
         animate={{
           y: [-40,-90, -40]
@@ -193,8 +193,21 @@ const Hero = () => {
         </motion.div>
  </div>
  
- <div id="services" className="py-5 mb-36">
+ <div id="" className="mt-48 mb-36">
+ <hr/>
  <FeaturesSectionDemo/>
+ <div className="flex flex-col items-center">
+ <button className="items-center"  onClick={() => {
+           
+              scrollToSection("faq")
+            }}>
+         <MagicButton
+              title="Learn More"
+              icon={<FaGavel />}
+              position="right" 
+              otherClasses="rounded-lg"
+              
+            /></button></div>
  </div>
     </section>
   );

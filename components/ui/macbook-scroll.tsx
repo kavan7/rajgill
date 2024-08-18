@@ -26,6 +26,7 @@ import { IconCaretLeftFilled } from "@tabler/icons-react";
 import { IconCaretDownFilled } from "@tabler/icons-react";
 import Image from "next/image";
 import {SimpleForm} from "./SimpleForm";
+import FAQ from "./faq";
 
 export const MacbookScroll = ({
   src,
@@ -62,7 +63,7 @@ export const MacbookScroll = ({
     [0,1],
     [0.6, isMobile ? 1 : 1.5]
   );
-  const translate = useTransform(scrollYProgress, [0, 1], [0, 1000]);
+  const translate = useTransform(scrollYProgress, [0, 1], [0, 1500]);
   const rotate = useTransform(scrollYProgress, [0.1, 0.12, 0.3], [-28, -28, 0]);
   const textTransform = useTransform(scrollYProgress, [0, 0.3], [0, 100]);
   const textOpacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
@@ -167,10 +168,13 @@ export const Lid = ({
         className="  xs:mt-[900px] absolute inset-0 rounded-2xl p-2"
       >
        
-       <SimpleForm/>
+       
+       <div id=""></div>
+       <FAQ/>
        
       </motion.div>
-      <hr/>
+     
+      <hr className="mt-56"id="faq"/>
     </div>
     
   );

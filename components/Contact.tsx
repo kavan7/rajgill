@@ -19,6 +19,7 @@ export function MacbookScrollDemo() {
         src={`/linear.webp`}
         showGradient={false}
       />
+    
     </div>
   );
 }
