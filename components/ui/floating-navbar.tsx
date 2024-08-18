@@ -13,6 +13,7 @@ import Link from "next/link";
 import { IconMapPin, IconPin } from "@tabler/icons-react";
 import Image from "next/image";
 import { Button } from "./moving-border";
+import { Popover, PopoverContent, PopoverTrigger } from "./popover";
 
 export const FloatingNav = ({
   navItems,
@@ -96,9 +97,18 @@ export const FloatingNav = ({
           </Link>
         ))}
         
-        <button className="rounded-full py-4 px-4 border">
-          <span><IconMapPin className="rounded-full"/></span>
-              </button>
+         
+        <button className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full">
+        <Popover>
+  <PopoverTrigger asChild>
+          <span><IconMapPin/></span>
+          </PopoverTrigger>
+  <PopoverContent>
+    12885 80 Ave #205, Surrey, BC V3W 0E6
+  </PopoverContent>
+</Popover>
+          <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-[#6f1818] to-transparent  h-px" />
+        </button>
       </motion.div>
     </AnimatePresence>
   );

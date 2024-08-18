@@ -11,6 +11,7 @@ import { FeaturesSectionDemo } from "@/components/ui/Features";
 import { About } from "@/components/About";
 import { FloatingDock } from "@/components/ui/floating-dock";
 import { Footer } from "@/components/Footer";
+import Touch from "@/components/Touch";
 export default function Home() {
   const navItems = [
     {
@@ -44,7 +45,11 @@ export default function Home() {
         <Hero/>
         </div>
        <About/>
+       <hr/>
        <MacbookScrollDemo/>
+       <hr/>
+       <Touch/>
+       <hr/>
        <Footer/>
        </TracingBeam>
        
