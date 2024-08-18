@@ -19,7 +19,7 @@ interface FAQItem {
 export default function FAQPage() {
   const [faqs, setFaqs] = useState<FAQItem[]>([]);
   const [filteredFaqs, setFilteredFaqs] = useState<FAQItem[]>([]);
-  const [visibleCount, setVisibleCount] = useState<number>(3); // Initially show 5 FAQs
+  const [visibleCount, setVisibleCount] = useState<number>(1); // Initially show 5 FAQs
   const [searchTerm, setSearchTerm] = useState<string>("");
 
   useEffect(() => {
@@ -54,12 +54,12 @@ export default function FAQPage() {
       setFilteredFaqs(filtered);
     }
     // Reset visible count when search term changes
-    setVisibleCount(3);
+    setVisibleCount(1);
   }, [searchTerm, faqs]);
 
   // Function to load more FAQs
   const loadMoreFaqs = () => {
-    setVisibleCount((prevCount) => prevCount + 3); // Show 5 more FAQs each time
+    setVisibleCount((prevCount) => prevCount + 1); // Show 5 more FAQs each time
   };
 
   return (
@@ -81,8 +81,8 @@ export default function FAQPage() {
       <div>
         {filteredFaqs.slice(0, visibleCount).map((faq) => (
           <div key={faq.id} className=" flex flex-col items-center">
-            <h2 className="ml-5 mb-5">{faq.question}</h2>
-            <div className="absolute dark:bg-black bg-white h-40 w-60 md:h-40 md:w-96 rounded-3xl p-4 shadow-xl border border-neutral-200 dark:border-white/[0.1]  shadow-black/[0.1] dark:shadow-white/[0.05] flex flex-col justify-between">
+           
+            <div className="absolute dark:bg-black bg-white h-60 w-60 lg:h-40  md:h-40 md:w-96 rounded-3xl p-4 shadow-xl border border-neutral-200 dark:border-white/[0.1]  shadow-black/[0.1] dark:shadow-white/[0.05] flex flex-col justify-between">
             <p>{faq.answer}</p>
             </div>
           </div>

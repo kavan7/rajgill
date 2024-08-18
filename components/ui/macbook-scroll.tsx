@@ -56,7 +56,7 @@ export const MacbookScroll = ({
   const scaleX = useTransform(
     scrollYProgress,
     [0,10],
-    [1.2, isMobile ? 1 : 1.5]
+    [1.2, isMobile ? 1 : 0.4]
   );
   const scaleY = useTransform(
     scrollYProgress,
@@ -94,7 +94,7 @@ export const MacbookScroll = ({
         rotate={rotate}
         translate={translate}
       />
-      {/* Base area */}
+     
       <div className="h-[22rem] w-[32rem] bg-gray-200 dark:bg-[#272729] rounded-2xl overflow-hidden relative -z-10">
         {/* above keyboard bar */}
         <div className="h-10 w-full relative">
