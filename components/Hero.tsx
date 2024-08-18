@@ -81,7 +81,7 @@ const Hero = () => {
           </p>
             
          
-          <Dialog >
+          <Dialog  >
       <DialogTrigger asChild>
         <button>
          <MagicButton
@@ -91,7 +91,7 @@ const Hero = () => {
               otherClasses="rounded-lg"
             /></button>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[425px] rounded-3xl">
+      <DialogContent className="sm:max-w-[425px] rounded-2xl">
         <DialogHeader>
           <DialogTitle>Schedule a consultation</DialogTitle>
           <DialogDescription>
@@ -192,8 +192,8 @@ const Hero = () => {
         
         </motion.div>
  </div>
- <MacbookScrollDemo/>
- <div id="services">
+ 
+ <div id="services" className="py-5 mb-36">
  <FeaturesSectionDemo/>
  </div>
     </section>
