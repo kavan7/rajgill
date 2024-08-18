@@ -1,7 +1,7 @@
 "use client";
 import Hero from "@/components/Hero";
 import Image from "next/image";
-import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
+import { IconBriefcase, IconHome, IconMan, IconMessage, IconPhone, IconUser } from "@tabler/icons-react";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import logonav from '@/public/logonav.png'
 import { MacbookScrollDemo } from "@/components/Contact";
@@ -17,25 +17,25 @@ export default function Home() {
     {
       name: "Services",
       id: "services",
-      icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
+      icon: <IconBriefcase className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
       name: "Our Team",
       id: "about",
-      icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
+      icon: <IconMan className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
       name: "Contact",
       id: "touch",
       icon: (
-        <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
+        <IconPhone className="h-4 w-4 text-neutral-500 dark:text-white" />
       ),
     },
   ];
   return (
- <>    <main className="relative  flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+ <>    <main className="relative  flex justify-center items-center flex-col overflow-hidden  mx-auto sm:px-10 px-5">
  
-      <div className="max-w-7xl w-full">
+      <div className="max-w-7xl w-full ">
      
           <FloatingNav navItems={navItems} />
           <TracingBeam>

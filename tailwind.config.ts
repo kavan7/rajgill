@@ -27,6 +27,7 @@ const config = {
       
     },
     extend: {
+     
       colors: {
         black: {
           DEFAULT: "#000",
