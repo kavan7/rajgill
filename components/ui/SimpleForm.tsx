@@ -92,7 +92,7 @@ export function SimpleForm() {
             <div
               key={index}
               className={`mb-2 p-2 rounded ${
-                msg.type === "user" ? "bg-black-100 text-right text-white rounded-full" : "bg-white rounded-full text-black-100 text-left"
+                msg.type === "user" ? "bg-black-100 p-5 text-right text-white rounded-lg" : "bg-white rounded-lg py-5 text-black-100 text-left"
               }`}
             >
               {msg.text}
