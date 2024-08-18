@@ -168,9 +168,11 @@ export const Lid = ({
       >
        
        <SimpleForm/>
-       <h1>Contact us.</h1>
+       
       </motion.div>
+      <hr/>
     </div>
+    
   );
 };
 

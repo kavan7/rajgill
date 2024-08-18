@@ -29,6 +29,7 @@ export const PinContainer = ({
   };
 
   return (
+
     <Link
       className={cn(
         "relative group/pin z-50  bg-white cursor-pointer",
@@ -43,19 +44,20 @@ export const PinContainer = ({
           perspective: "800px",
           transform: "rotateX(70deg) translateZ(20deg)",
         }}
-        className="absolute left-1/2 top-1/2  -translate-x-1/2 -translate-y-1/2"
+        className="absolute left-1/2 top-1/2  -translate-x-1/2 "
       >
         <div
           style={{
             transform: transform,
           }}
-          className="absolute left-1/2 p-4 top-1/2  flex justify-start items-start  rounded-2xl  shadow-[0_8px_16px_rgb(0_0_0/0.4)] bg-black-100 border border-white/[0.1] group-hover/pin:border-white/[0.2] transition duration-700 overflow-hidden"
+          className="absolute left-1/2 p-4  flex justify-start items-start  rounded-2xl  shadow-[0_8px_16px_rgb(0_0_0/0.4)] bg-black-100 border border-white/[0.1] group-hover/pin:border-white/[0.2] transition duration-700 overflow-hidden"
         >
-          <div className={cn(" relative z-50 ", className)}>{children}</div>
+          <div className={cn("  align-middle items-center z-50 ", className)}>{children}</div>
         </div>
       </div>
       <PinPerspective title={title} href={href} />
     </Link>
+    
   );
 };
 
@@ -67,15 +69,15 @@ export const PinPerspective = ({
   href?: string;
 }) => {
   return (
-    <motion.div className="pointer-events-none  w-96 h-80 flex items-center justify-center opacity-0 group-hover/pin:opacity-100 z-[60] transition duration-500">
-      <div className=" w-full h-full -mt-7 flex-none  inset-0">
-        <div className="absolute top-0 inset-x-0  flex justify-center">
+    <motion.div className="pointer-events-none  w-96 h-48 flex items-center justify-center opacity-0 group-hover/pin:opacity-100 z-[60] transition duration-500">
+      <div className="  ">
+        <div className="absolute top-48 inset-x-0  flex justify-center">
           <a
             href={href}
             target={"_blank"}
             className="relative flex space-x-2 items-center z-10 rounded-full bg-zinc-950 py-0.5 px-4 ring-1 ring-white/10 "
           >
-            <span className="relative z-20 text-white text-lg font-normal inline-block py-0.5">
+            <span className="relative  text-white text-lg font-normal  py-0.5">
               {title}
             </span>
 
@@ -85,7 +87,7 @@ export const PinPerspective = ({
 
         <div
           style={{
-            perspective: "1000px",
+            perspective: "800px",
             transform: "rotateX(70deg) translateZ(0)",
           }}
           className="absolute left-1/2 top-1/2 ml-[0.09375rem] mt-4 -translate-x-1/2 -translate-y-1/2"
@@ -157,6 +159,8 @@ export const PinPerspective = ({
         <>
           <motion.div className="absolute right-1/2 bottom-1/2 bg-gradient-to-b from-transparent to-purple translate-y-[14px] w-px h-20 group-hover/pin:h-40 blur-[2px]" />
           <motion.div className="absolute right-1/2 bottom-1/2 bg-gradient-to-b from-transparent to-purple translate-y-[14px] w-px h-20 group-hover/pin:h-40  " />
+          <motion.div className="absolute right-1/2 translate-x-[1.5px] bottom-1/2 bg-cyan-600 translate-y-[14px] w-[4px] h-[4px] rounded-full z-40 blur-[3px]" />
+          <motion.div className="absolute right-1/2 translate-x-[0.5px] bottom-1/2 bg-cyan-300 translate-y-[14px] w-[2px] h-[2px] rounded-full z-40 " />
           <motion.div className="absolute right-1/2 translate-x-[1.5px] bottom-1/2 bg-cyan-600 translate-y-[14px] w-[4px] h-[4px] rounded-full z-40 blur-[3px]" />
           <motion.div className="absolute right-1/2 translate-x-[0.5px] bottom-1/2 bg-cyan-300 translate-y-[14px] w-[2px] h-[2px] rounded-full z-40 " />
         </>

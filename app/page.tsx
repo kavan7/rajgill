@@ -26,15 +26,14 @@ export default function Home() {
     },
     {
       name: "Contact",
-      id: "/contact",
+      id: "touch",
       icon: (
         <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
       ),
     },
   ];
   return (
- 
-    <main className="relative  flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+ <>    <main className="relative  flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
  
       <div className="max-w-7xl w-full">
      
@@ -50,13 +49,16 @@ export default function Home() {
        <hr/>
        <Touch/>
        <hr/>
+      <div className="relative  flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
        <Footer/>
+       </div>
        </TracingBeam>
        
       </div>
-  
- 
+     
     </main>
-  
+      
+      </>
+
   );
 }

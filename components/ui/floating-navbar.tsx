@@ -98,17 +98,16 @@ export const FloatingNav = ({
         ))}
         
          
-        <button className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full">
+        <button className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-5 py-5 rounded-full">
         <Popover>
   <PopoverTrigger asChild>
           <span><IconMapPin/></span>
           </PopoverTrigger>
-  <PopoverContent>
+  <PopoverContent className="mt-10">
     12885 80 Ave #205, Surrey, BC V3W 0E6
   </PopoverContent>
 </Popover>
-          <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-[#6f1818] to-transparent  h-px" />
-        </button>
+           </button>
       </motion.div>
     </AnimatePresence>
   );

@@ -71,19 +71,19 @@ export function Footer() {
     },
   ];
   return (
-    <>
-    <div className="flex flex-col">
+ 
+    <div className="flex-col">
        <TextGenerateEffect
-            words="Find everything you need \n Down below"
+            words=""
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
-    <div className="items-center">
+    <div className="">
         
       <FloatingDock
        items={links}
       />
     </div>
     </div>
-    </>
+   
   );
 }
