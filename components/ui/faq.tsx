@@ -82,7 +82,7 @@ export default function FAQPage() {
         {filteredFaqs.slice(0, visibleCount).map((faq) => (
           <div key={faq.id} className=" flex flex-col items-center">
            
-            <div className="absolute dark:bg-black bg-white h-60 w-60 lg:h-40  md:h-40 md:w-96 rounded-3xl p-4 shadow-xl border border-neutral-200 dark:border-white/[0.1]  shadow-black/[0.1] dark:shadow-white/[0.05] flex flex-col justify-between">
+            <div className="absolute dark:bg-black bg-white h-60 w-60 lg:h-40  md:h-40 md:w-96 rounded-none p-4 shadow-xl border border-neutral-200 dark:border-white/[0.1]  shadow-black/[0.1] dark:shadow-white/[0.05] flex flex-col justify-between">
             <p>{faq.answer}</p>
             </div>
           </div>
