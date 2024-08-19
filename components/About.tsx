@@ -245,9 +245,9 @@ Raj is a life-long learner and enjoys the challenge of solving problems. Raj is 
   {
     description: "Lawyer",
     title: "Prateeq Ghai",
-    src: "/logonav.png",
+    src: "/download.png",
     ctaText: "Connect",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink: "https://www.linkedin.com/in/prateeq-ghai-45620b160",
     content: () => {
       return (
         <p>
