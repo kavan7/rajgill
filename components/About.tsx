@@ -142,7 +142,7 @@ export function About() {
             layoutId={`card-${card.title}-${id}`}
             key={card.title}
             onClick={() => setActive(card)}
-            className="p-4 flex flex-col  hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
+            className="p-4 flex flex-col  hover:bg-black-200 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
           >
             <div className="flex gap-4 flex-col  w-full">
               <motion.div layoutId={`image-${card.title}-${id}`}>
@@ -157,13 +157,13 @@ export function About() {
               <div className="flex justify-center items-center flex-col">
                 <motion.h3
                   layoutId={`title-${card.title}-${id}`}
-                  className="font-bold text-black-200 dark:text-neutral-200 text-center text-lg md:text-left "
+                  className="font-bold text-white dark:text-neutral-200 text-center text-lg md:text-left "
                 >
                   {card.title}
                 </motion.h3>
                 <motion.p
                   layoutId={`description-${card.description}-${id}`}
-                  className="text-neutral-500 dark:text-neutral-400 text-center md:text-left text-base"
+                  className="text-neutral-400 dark:text-neutral-400 text-center md:text-left text-base"
                 >
                   {card.description}
                 </motion.p>
@@ -244,9 +244,9 @@ Raj is a life-long learner and enjoys the challenge of solving problems. Raj is 
 
   {
     description: "Lawyer",
-    title: "Prateek XXXX",
-    src: "https://assets.aceternity.com/demos/metallica.jpeg",
-    ctaText: "Visit",
+    title: "Prateeq Ghai",
+    src: "/logonav.png",
+    ctaText: "Connect",
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
       return (
@@ -266,7 +266,7 @@ Raj is a life-long learner and enjoys the challenge of solving problems. Raj is 
   },
   {
     description: "Articling Student",
-    title: "Shrea Grover",
+    title: "Shrea Grove",
     src: "/shreyapic.png",
     ctaText: "Visit",
     ctaLink: "https://ui.aceternity.com/templates",
@@ -280,8 +280,8 @@ Raj is a life-long learner and enjoys the challenge of solving problems. Raj is 
   },
   {
     description: "Paralegal",
-    title: "XXXXXX",
-    src: "https://assets.aceternity.com/demos/aap-ka-suroor.jpeg",
+    title: "Simran Gill",
+    src: "/logonav.png",
     ctaText: "Visit",
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {
@@ -302,8 +302,30 @@ Raj is a life-long learner and enjoys the challenge of solving problems. Raj is 
   },
   {
     description: "Paralegal",
-    title: "Aap Ka Suroor",
-    src: "https://assets.aceternity.com/demos/aap-ka-suroor.jpeg",
+    title: "Ashley Deucth",
+    src: "/logonav.png",
+    ctaText: "Visit",
+    ctaLink: "https://ui.aceternity.com/templates",
+    content: () => {
+      return (
+        <p>
+          Himesh Reshammiya, a renowned Indian music composer, singer, and
+          actor, is celebrated for his distinctive voice and innovative
+          compositions. Born in Mumbai, India, he has become a prominent figure
+          in the Bollywood music industry. <br /> <br /> His songs often feature
+          a blend of contemporary and traditional Indian music, capturing the
+          essence of modern Bollywood soundtracks. With a career spanning over
+          two decades, Himesh Reshammiya has released numerous hit albums and
+          singles that have garnered him a massive fan following both in India
+          and abroad.
+        </p>
+      );
+    },
+  },
+  {
+    description: "Paralegal",
+    title: "Shahin Hardy",
+    src: "/logonav.png",
     ctaText: "Visit",
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {

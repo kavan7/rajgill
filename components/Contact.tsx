@@ -4,17 +4,17 @@ import Link from "next/link";
 
 export function MacbookScrollDemo() {
   return (
-    <div id="" className="overflow-hidden dark:bg-[#0B0B0F]  bg-white w-full">
+    <div id="" className="overflow-hidden dark:bg-[#0B0B0F] text-neutral-800 bg-transparent w-full">
       <MacbookScroll
         title={
-          <span>
+          <span className="text-neutral-400">
             Frequently asked<br />Questions.
           </span>
         }
         badge={
-          <Link href="https://peerlist.io/manuarora">
+        
             <Badge className="h-10 w-10 transform -rotate-12" />
-          </Link>
+         
         }
         src={`/linear.webp`}
         showGradient={false}

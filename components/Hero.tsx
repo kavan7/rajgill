@@ -1,16 +1,13 @@
-"use client";
 import { FaCalendar, FaGavel } from "react-icons/fa6";
 import { motion } from 'framer-motion';
 import MagicButton from "./ui/MagicButton";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import Link from "next/link";
-
 import {
   Alert,
   AlertDescription,
   AlertTitle,
 } from "@/components/ui/alert"
-
 import emailjs from '@emailjs/browser';
 //@ts-ignore
 import { LoopPingPong } from "three";
@@ -91,15 +88,18 @@ const Hero = () => {
   };
 
   return (
-    <section className="flex flex-col">
-      <div className="pb-[-30px] pt-36">
-        <div className="h-screen w-full dark:bg-black-100 bg-white absolute top-0 left-0 flex items-center justify-center">
-          <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
+    <section 
+      className="flex flex-col bg-no-repeat"
+      // Update the image path if necessary
+    >
+      <div className="pb-[-30px] pt-36" >
+        <div className="h-screen w-full dark:bg-black-100 bg-transparent absolute top-0 left-0 flex items-center justify-center">
+          <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-transparent [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
         </div>
 
         <div className="flex justify-center relative my-20 z-10">
           <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-            <p className="uppercase tracking-widest text-lg text-center text-black-100 font-medium max-w-80">
+            <p className="uppercase tracking-widest text-lg text-center text-slate-200 font-medium max-w-80">
               RAJ GILL LAW CORPORATION
             </p>
 
@@ -108,7 +108,7 @@ const Hero = () => {
               className="text-center text-[40px] md:text-5xl lg:text-6xl"
             />
 
-            <p className="text-center md:tracking-wider font-normal mb-4 text-sm md:text-lg lg:text-2xl">
+            <p className="text-center md:tracking-wider text-slate-400 font-normal mb-4 text-sm md:text-lg lg:text-2xl">
               Schedule a free consultation.
             </p>
 
@@ -222,7 +222,7 @@ const Hero = () => {
       <div id="services" className="flex justify-center items-center md:mt-[70px] mt-[20px] lg:mt-[70px]">
         <motion.div
           animate={{
-            y: [-40, -90, -40]
+            y: [-10, -30, -10]
           }}
           transition={{
             duration: 1.5,
@@ -236,7 +236,7 @@ const Hero = () => {
               scrollToSection("services");
             }}>
             <svg data-accordion-icon className="w-16 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-              <path stroke="#4d7499" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+              <path stroke="#fff" stroke-linecap="" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
             </svg>
           </Link>
           <Link
@@ -246,14 +246,14 @@ const Hero = () => {
               scrollToSection("services");
             }}>
             <svg data-accordion-icon className="w-16 rotate-180 shrink-53" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-              <path stroke="#4d7499" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+              <path stroke="#fff" stroke-linecap="" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
             </svg>
           </Link>
         </motion.div>
       </div>
 
       <div id="" className="mt-48 mb-36">
-        <hr/>
+        
         <FeaturesSectionDemo/>
         <div className="flex flex-col items-center">
           <button className="items-center" onClick={() => {

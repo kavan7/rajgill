@@ -64,7 +64,7 @@ export default function FAQPage() {
 
   return (
     <div style={containerStyle}>
-      <h1 className="text-center tracking-widest mb-10 underline underline-offset-4">FREQUENTLY ASKED QUESTIONS</h1>
+      <h1 className="text-center text-neutral-300 tracking-widest mb-10 underline underline-offset-4">FREQUENTLY ASKED QUESTIONS</h1>
       
       <div className="mb-5">
       <PlaceholdersAndVanishInput

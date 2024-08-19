@@ -95,7 +95,7 @@ export const MacbookScroll = ({
         translate={translate}
       />
      
-      <div className="h-[22rem] w-[32rem] bg-gray-200 dark:bg-[#272729] rounded-2xl overflow-hidden relative -z-10">
+      <div className="h-[22rem] w-[32rem] bg-neutral-900 dark:bg-[#272729] rounded-2xl overflow-hidden relative -z-10">
         {/* above keyboard bar */}
         <div className="h-10 w-full relative">
           <div className="absolute inset-x-0 mx-auto w-[80%] h-4 bg-[#050505]" />
@@ -174,7 +174,7 @@ export const Lid = ({
        
       </motion.div>
      
-      <hr className="mt-56"id="faq"/>
+      <hr className="mt-1"id="faq"/>
     </div>
     
   );
@@ -567,7 +567,7 @@ export const KBtn = ({
     <div
       className={cn(
         "p-[0.5px] rounded-[4px]",
-        backlit && "bg-white/[0.2] shadow-xl shadow-white"
+        backlit && "bg-black/[0.2] shadow-xl shadow-white"
       )}
     >
       <div
