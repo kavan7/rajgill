@@ -1,7 +1,8 @@
 import React from 'react'
 import { SparklesCore } from './ui/sparkles'
 import { PinContainer } from './ui/3d-pin'
-import { IconLocationBolt, IconMail, IconMapPin2, IconPhone } from '@tabler/icons-react'
+import { IconBrandOffice, IconLocationBolt, IconMail, IconMapPin2, IconPhone } from '@tabler/icons-react'
+import { Footer } from './Footer'
 
 const Touch = () => {
   return (
@@ -32,12 +33,22 @@ const Touch = () => {
 
       {/* Radial Gradient to prevent sharp edges */}
       <div className="absolute inset-0 w-full h-full bg-transparent"></div>
+      
     </div>
-
+    <div className='flex flex-col'>
+    <h1 className='text-center flex flex-row text-neutral-400 font-light text-2xl'><IconMail className='mt-2 mr-2'/> info@rajgilllaw.com</h1>
+    
+    <h1 className='text-center  flex flex-row text-neutral-400 font-light  text-3xl'><IconPhone className='mt-2 mr-2'/>604-593-6470</h1>
+    </div>
+    <div className='flex flex-col'>
+      <hr className='opacity-0.2 mt-5 mb-5'/>
+    <h1 className='text-center flex flex-row text-neutral-400 font-light mt- 5 text-3xl'><IconBrandOffice className='mt-2 mr-2'/> 12885 80 Ave #205, Surrey, BC</h1>
+        </div>
   </div>
-  <div className=" md:w-full lg:w-full w-7/8  bg-transparent align-middle flex md:flex-row lg:flex-row flex-col  ">
+  <div className=" md:w-full lg:w-full   bg-transparent align-middle flex md:flex-row lg:flex-row flex-col  ">
+
    </div>
-  
+ 
   </main>
   )
 }

@@ -18,6 +18,7 @@ import Link from "next/link";
 import { useRef, useState } from "react";
 
 export const FloatingDock = ({
+  
   items,
   desktopClassName,
   mobileClassName,
@@ -43,7 +44,7 @@ const FloatingDockMobile = ({
 }) => {
   const [open, setOpen] = useState(false);
   return (
-    <div className={cn("relative block md:hidden", className)}>
+    <div className={cn("relative block md:hidden lg:hidden", className)}>
       <AnimatePresence>
         {open && (
           <motion.div
@@ -67,8 +68,11 @@ const FloatingDockMobile = ({
                 }}
                 transition={{ delay: (items.length - 1 - idx) * 0.05 }}
               >
+
                 <Link
-                  href={item.href}
+                target="_blank"
+                  href={''}
+                  ref={item.href}
                   key={item.title}
                   className="h-10 w-10 rounded-full bg-gray-50 dark:bg-neutral-900 flex items-center justify-center"
                 >
@@ -81,7 +85,7 @@ const FloatingDockMobile = ({
       </AnimatePresence>
       <button
         onClick={() => setOpen(!open)}
-        className="h-10 w-10 rounded-full bg-gray-50 dark:bg-neutral-800 flex items-center justify-center"
+        className="h-5 w-5 rounded-full bg-gray-50 dark:bg-neutral-800 flex items-center justify-center"
       >
         <IconLayoutNavbarCollapse className="h-5 w-5 text-neutral-500 dark:text-neutral-400" />
       </button>
@@ -102,7 +106,7 @@ const FloatingDockDesktop = ({
       onMouseMove={(e) => mouseX.set(e.pageX)}
       onMouseLeave={() => mouseX.set(Infinity)}
       className={cn(
-        "mx-auto hidden md:flex h-16 gap-4 items-end  rounded-2xl bg-gray-50 dark:bg-neutral-900 px-4 pb-3",
+        "mx-auto hidden md:flex h-32 gap-4 items-end  rounded-2xl bg-transparent dark:bg-neutral-900 px-4 pb-3",
         className
       )}
     >
@@ -160,7 +164,7 @@ function IconContainer({
   });
   let heightIcon = useSpring(heightTransformIcon, {
     mass: 0.1,
-    stiffness: 150,
+    stiffness: 150, 
     damping: 12,
   });
 

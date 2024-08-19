@@ -2,6 +2,8 @@ import React from "react";
 import { FloatingDock } from "@/components/ui/floating-dock";
 import {
   IconBrandGithub,
+  IconBrandInstagram,
+  IconBrandLinkedin,
   IconBrandX,
   IconExchange,
   IconHome,
@@ -13,54 +15,36 @@ import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 export function Footer() {
   const links = [
-    {
-      title: "Home",
-      icon: (
-        <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
+  
 
+   
+   
     {
-      title: "Products",
-      icon: (
-        <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
-    {
-      title: "Components",
-      icon: (
-        <IconNewSection className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
-    {
-      title: "Aceternity UI",
+      title: "Raj GIll",
       icon: (
         <Image
-          src="https://assets.aceternity.com/logo-dark.png"
-          width={20}
-          height={20}
-          alt="Aceternity Logo"
+          src="/favicon.ico"
+          width={100}
+          height={100}
+          alt="Raj Gill Law Logo"
         />
       ),
-      href: "#",
+      href: "https://rajgilllaw.com",
     },
     {
-      title: "Changelog",
+      title: "LinkedIn",
       icon: (
-        <IconExchange className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "https://www.linkedin.com/company/rajgilllaw",
     },
 
     {
-      title: "Twitter",
+      title: "Instagram ",
       icon: (
-        <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBrandInstagram className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "https://www.instagram.com/rajgilllaw/",
     },
     {
       title: "GitHub",

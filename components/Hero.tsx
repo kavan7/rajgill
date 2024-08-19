@@ -229,6 +229,7 @@ const Hero = () => {
             repeat: Infinity,
             repeatType: LoopPingPong
           }}>
+             
           <Link
             href={''}
             className="flex items-center gap-2 shadow-card"
