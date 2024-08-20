@@ -266,7 +266,7 @@ Raj is a life-long learner and enjoys the challenge of solving problems. Raj is 
   },
   {
     description: "Articling Student",
-    title: "Shrea Grove",
+    title: "Shrea Grover",
     src: "/shreyapic.png",
     ctaText: "Visit",
     ctaLink: "https://ui.aceternity.com/templates",
