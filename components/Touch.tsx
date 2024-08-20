@@ -38,7 +38,7 @@ const Touch = () => {
       <hr className='opacity-0.2 mt-5 mb-5'/>
       <a href="https://maps.app.goo.gl/8VfGNuFm88xrwuPX8" target='_blank'>
       <a target="_blank">
-    <h1 className='text-center flex flex-row text-white font-light mt- 5 text-3xl'><IconBrandOffice className='mt-2 mr-2'/> 12885 80 Ave #205, Surrey, BC</h1>
+    <h1 className='text-center flex flex-row text-white font-light mt- 5 text-3xl'><IconMapPin2 className='mt-2 mr-2'/> 12885 80 Ave #205, Surrey, BC</h1>
     </a> </a>   </div>
   </div>
   <div className=" md:w-full lg:w-full   bg-transparent align-middle flex md:flex-row lg:flex-row flex-col  ">
