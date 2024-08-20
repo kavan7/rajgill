@@ -12,6 +12,22 @@ import { About } from "@/components/About";
 import { FloatingDock } from "@/components/ui/floating-dock";
 import { Footer } from "@/components/Footer";
 import Touch from "@/components/Touch";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Raj Gill Law",
+  description:
+    "Raj Gill Law",
+  keywords: [
+    "law",
+    "family law",
+    "immigration law",
+    "family law surrey",
+    "raj gill law",
+    "lawyers in surrey"
+  ],
+};
+
 export default function Home() {
   const navItems = [
     {
