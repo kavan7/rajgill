@@ -70,12 +70,12 @@ export function About() {
                 className="flex absolute top-2 right-2 lg:hidden items-center justify-center bg-neutral-900 rounded-full h-6 w-6"
                 onClick={() => setActive(null)}
               >
-                <CloseIcon />
+              
               </motion.button>
               <motion.div
                 layoutId={`card-${active.title}-${id}`}
                 ref={ref}
-                className="w-full max-w-[500px] h-full md:h-fit md:max-h-[90%] flex flex-col bg-neutral-900 dark:bg-neutral-900 sm:rounded-3xl"
+                className="w-full max-w-[500px] h-fit md:h-fit md:max-h-[90%] flex flex-col bg-neutral-900 dark:bg-neutral-900 sm:rounded-3xl"
               >
                 <motion.div layoutId={`image-${active.title}-${id}`}>
                   <Image
@@ -113,10 +113,15 @@ export function About() {
                       exit={{ opacity: 0 }}
                       href={active.ctaLink}
                       target="_blank"
-                      className="px-4 py-3 text-sm rounded-full font-bold bg-purple text-white"
+                      className="px-4 py-3 mr-0 text-sm rounded-full font-bold bg-purple text-white"
                     >
+                       
                       {active.ctaText}
+                      
                     </motion.a>
+                    <a onClick={() => setActive(null)}>
+                    <CloseIcon />
+                    </a>
                   </div>
                   <div className="pt-4 relative px-4">
                     <motion.div
@@ -197,12 +202,12 @@ export const CloseIcon = () => {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="none"
+      fill="black"
       stroke="currentColor"
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="h-4 w-4 text-black"
+      className="h-4 w-4 text-white"
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M18 6l-12 12" />
