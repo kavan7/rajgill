@@ -76,7 +76,7 @@ export function About() {
             <motion.div
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
-              className="w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-neutral-900 dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
+              className="w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-neutral-900 dark:bg-neutral-900 sm:rounded-3xl "
             >
               <motion.div layoutId={`image-${active.title}-${id}`}>
                 <Image
@@ -124,7 +124,7 @@ export function About() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    className="text-neutral-300 px-5  tracking-wider text-xs md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto dark:text-neutral-400 [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
+                    className="text-neutral-300 px-5  tracking-wider text-xs md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow dark:text-neutral-400 [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
                   >
                     {typeof active.content === "function"
                       ? active.content()
@@ -144,7 +144,7 @@ export function About() {
             onClick={() => setActive(card)}
             className="p-4 flex flex-col  hover:bg-[#141819] dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
           >
-            <div className="flex gap-4 flex-col  w-full">
+            <div className="flex gap-4 flex-col h-full  w-full">
               <motion.div layoutId={`image-${card.title}-${id}`}>
                 <Image
                   width={1000}
@@ -228,7 +228,7 @@ Raj is a life-long learner and enjoys the challenge of solving problems. Raj is 
     },
   },
   {
-    description: "Lawyer",
+    description: "Associate Lawyer",
     title: "Madhur Goyal",
     src: "/madhurpic.png",
     ctaText: "Connect",
@@ -236,7 +236,7 @@ Raj is a life-long learner and enjoys the challenge of solving problems. Raj is 
     content: () => {
       return (
         <p>
-         Madhur Goyal is an Internationally Trained Lawyer, who gained considerable experience in Immigration Law, Family Law and Litigation after completing his B.A.LL. B and Madhur was called to the Bar Council of Punjab and Haryana (India) in September 2016. Madhur was called to the Law Society of British Columbia in March 2022 and since, has successfully navigated through numerous highly complex cases at the firm. Madhur is constantly up to date on the latest developments in Family Law, Immigration Law and other areas of Civil Litigation to craft perfect legal solutions for each client.  Madhur is goal-oriented and provides quality work even under pressure. Madhur is adept in handling clients while managing the firm and his workload. With the high volume of trials that the firm deals with, Madhur is able to navigate through the demands of the trial along with the administrative management of the firm.
+         Madhur Goyal is an Internationally Trained Lawyer, who gained considerable experience in Immigration Law, Family Law and Litigation after completing his B.A.LL. B and Madhur was called to the Bar Council of Punjab and Haryana (India) in September 2016. Madhur was called to the Law Society of British Columbia in March 2022 and since, has successfully navigated through numerous highly complex cases at the firm. Madhur is constantly up to date on the latest developments in Family Law, Immigration Law and other areas of Civil Litigation to craft perfect legal solutions for each client. 
         </p>
       );
     },
@@ -286,7 +286,7 @@ Raj is a life-long learner and enjoys the challenge of solving problems. Raj is 
   },
   {
     description: "Paralegal",
-    title: "Ashley Deucth",
+    title: "Ashley Deutt",
     src: "/logonav.png",
     ctaText: "Visit",
     ctaLink: "",
@@ -294,13 +294,13 @@ Raj is a life-long learner and enjoys the challenge of solving problems. Raj is 
       return (
         <p>
          
-          and abroad.
+         
         </p>
       );
     },
   },
   {
-    description: "Paralegal",
+    description: "Legal Assistant",
     title: "Shahin Hardy",
     src: "/logonav.png",
     ctaText: "Visit",
@@ -322,7 +322,7 @@ Raj is a life-long learner and enjoys the challenge of solving problems. Raj is 
     content: () => {
       return (
         <p>
-        Sahib is a student studying at Simon Fraser University where he is in the final year of his Bachelor of Arts in Criminology. He started at Raj Gill Law Corporation in 2021 after he realized his passion for law. Sahib is a self-driven and ambitious individual who is looking forward to attending law school, so he too can pursue his interests in Family law and other areas of litigation. He brings great enthusiasm to the workplace and creates an encouraging environment for his own learning and for the satisfaction of his co-workers and clients.
+        Sahib is a student studying at University of Leicester where he is in his final year of Law School. He started at Raj Gill Law Corporation in 2021 after he realized his passion for law. Sahib is a self-driven and ambitious individual looking forward to graduating law school to pursue his interests in Family law and other areas of litigation. He brings great enthusiasm to the workplace and creates an encouraging environment for his own learning and for the satisfaction of his co-workers and clients.
         </p>
       );
     },

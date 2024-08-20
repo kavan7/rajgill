@@ -102,6 +102,7 @@ const Hero = () => {
             <p className="uppercase tracking-widest text-lg text-center text-slate-200 font-medium max-w-80">
               RAJ GILL LAW CORPORATION
             </p>
+        
 
             <TextGenerateEffect
               words="Surrey, British Columbia’s Most Trusted Attorneys"
@@ -109,7 +110,7 @@ const Hero = () => {
             />
 
             <p className="text-center md:tracking-wider text-neutral-200 font-normal mb-4 text-sm md:text-lg lg:text-2xl">
-              Schedule a free consultation.
+              Schedule a Free Consultation.
             </p>
 
             {alertStatus === "success" && (
