@@ -311,7 +311,7 @@ Madhur is passionate about complex family and civil litigation that involves the
   },
   {
     description: "Paralegal",
-    title: "Ashley Deutt",
+    title: "Ashley Dewett",
     src: "/logonav.png",
     email: 'ashley@rajgilllaw.com',
     ctaText: "Connect",
@@ -328,7 +328,11 @@ Madhur is passionate about complex family and civil litigation that involves the
     ctaText: "Connect",
     ctaLink: "",
     content: () => {
-      return <p></p>;
+      return <p>Shahin is a lawyer, holding a Bachelor of Laws (LL.B.) from Panjab University, Chandigarh, India. Since entering the legal profession in 2022, she has handled a variety of civil and criminal cases at the District and Sessions Courts in Chandigarh, as well as at the Punjab and Haryana High Court.
+
+      Currently pursuing a Post-Baccalaureate Diploma in Disaster Management from the Justice Institute of British Columbia, New Westminster, BC, Shahin’s academic journey reflects her keen interest in diverse subjects within the ambit of Law and Public Administration. Her passion for Human Rights led her to specialize in Public International Law, International and Humanitarian Laws, Environmental Law, and International Labour Organisation and Labour Laws during her LL.B. studies.
+      
+        Her education and experiences have equipped her with a strong foundation in coordinated planning, law and management fundamentals, critical thinking, research, and communication skills. Shahin’s commitment to legal excellence and her passion for Human Rights makes her a dedicated and esteemed professional in her field. </p>;
     },
   },
   {
