@@ -163,7 +163,7 @@ export function About() {
                 </motion.h3>
                 <motion.p
                   layoutId={`description-${card.description}-${id}`}
-                  className="text-neutral-100 dark:text-neutral-400 text-center md:text-left font-bold uppercase"
+                  className="text-neutral-100 dark:text-neutral-400 text-center md:text-left font-light"
                 >
                   {card.description}
                 </motion.p>
@@ -251,15 +251,7 @@ Raj is a life-long learner and enjoys the challenge of solving problems. Raj is 
     content: () => {
       return (
         <p>
-          Metallica, an iconic American heavy metal band, is renowned for their
-          powerful sound and intense performances that resonate deeply with
-          their audience. Formed in Los Angeles, California, they have become a
-          cultural icon in the heavy metal music industry. <br /> <br /> Their
-          songs often reflect themes of aggression, social issues, and personal
-          struggles, capturing the essence of the heavy metal genre. With a
-          career spanning over four decades, Metallica has released numerous hit
-          albums and singles that have garnered them a massive fan following
-          both in the United States and abroad.
+    Prateeq Ghai is an experienced legal professional with a solid academic foundation and a diverse career background. He earned his Bachelor of Laws (LLB) from Panjab University, India, in 2012, and later pursued a Master of Business Administration (MBA) in Business Administration and Management from the University of Wales. Prateeq has accumulated significant legal experience, notably serving as an Articled Student at CGM Lawyers for nearly two years, where he gained hands-on experience in various aspects of legal practice. His expertise spans across multiple domains, including administrative assistance and compensation law, making him a valuable member of any legal team. Prateeq's commitment to excellence and his comprehensive understanding of legal processes allow him to provide high-quality legal services to his clients.
         </p>
       );
     },
@@ -283,19 +275,11 @@ Raj is a life-long learner and enjoys the challenge of solving problems. Raj is 
     title: "Simran Gill",
     src: "/logonav.png",
     ctaText: "Visit",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink: "",
     content: () => {
       return (
         <p>
-          Himesh Reshammiya, a renowned Indian music composer, singer, and
-          actor, is celebrated for his distinctive voice and innovative
-          compositions. Born in Mumbai, India, he has become a prominent figure
-          in the Bollywood music industry. <br /> <br /> His songs often feature
-          a blend of contemporary and traditional Indian music, capturing the
-          essence of modern Bollywood soundtracks. With a career spanning over
-          two decades, Himesh Reshammiya has released numerous hit albums and
-          singles that have garnered him a massive fan following both in India
-          and abroad.
+        
         </p>
       );
     },
@@ -305,18 +289,11 @@ Raj is a life-long learner and enjoys the challenge of solving problems. Raj is 
     title: "Ashley Deucth",
     src: "/logonav.png",
     ctaText: "Visit",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink: "",
     content: () => {
       return (
         <p>
-          Himesh Reshammiya, a renowned Indian music composer, singer, and
-          actor, is celebrated for his distinctive voice and innovative
-          compositions. Born in Mumbai, India, he has become a prominent figure
-          in the Bollywood music industry. <br /> <br /> His songs often feature
-          a blend of contemporary and traditional Indian music, capturing the
-          essence of modern Bollywood soundtracks. With a career spanning over
-          two decades, Himesh Reshammiya has released numerous hit albums and
-          singles that have garnered him a massive fan following both in India
+         
           and abroad.
         </p>
       );
@@ -331,15 +308,7 @@ Raj is a life-long learner and enjoys the challenge of solving problems. Raj is 
     content: () => {
       return (
         <p>
-          Himesh Reshammiya, a renowned Indian music composer, singer, and
-          actor, is celebrated for his distinctive voice and innovative
-          compositions. Born in Mumbai, India, he has become a prominent figure
-          in the Bollywood music industry. <br /> <br /> His songs often feature
-          a blend of contemporary and traditional Indian music, capturing the
-          essence of modern Bollywood soundtracks. With a career spanning over
-          two decades, Himesh Reshammiya has released numerous hit albums and
-          singles that have garnered him a massive fan following both in India
-          and abroad.
+        
         </p>
       );
     },

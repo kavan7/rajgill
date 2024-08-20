@@ -1,10 +1,61 @@
 import React from "react";
 import { MacbookScroll } from "./ui/macbook-scroll";
 import Link from "next/link";
+import { InfiniteMovingCards } from "./Testimonials";
+import { Icon123, IconBrandGoogle, IconBrandGoogleAnalytics, IconBrandGoogleBigQuery } from "@tabler/icons-react";
+
+const testimonials = [
+  {
+    quote:
+      "I had a wonderful experience working with Raj Gill Law firm during my divorce process. Mr. Raj Gill & Mr. Madhur Goyal were not only professional, knowledgeable, but also compassionate throughout the entire process. Their work ethics and genuine care for their clients truly sets them apart. Their legal fees are also quite reasonable. I highly highly recommend Raj Gill Law firm to anyone in need of legal assistance. Thank you for your exceptional service!",
+    name: "Roveena Robinson",
+    title: "3 months ago",
+  },
+  {
+    quote:
+      "I recently used their services for my divorce. Highly impressed with their quality or service and support . My divorce went so smoothly and is done within less than 6 months only. Big thanks to Madhur and Raj and Shrea for the great help. Highly recommended!!!",
+    name: "Gurpreet Kaur",
+    title: "5 months ago",
+  },
+  {
+    quote: "My name is sukhjinder singh and i just want to share my experience Raj gill and law corporation, all staff members treated very good, especially shreag mam. She give advise and guide me very well at evey step and i did same, and i got positive result. So, I am very glad with this service. Thank you mam and other staff members",
+    name: "Kamaljit Singh",
+    title: "2 months ago",
+  },
+  {
+    quote:
+      "Raj & his team has been really understanding & especially have a good hand holding on cases. I definitely recommend them for most who find it tough to get into such conversations, they can really be helpful.Thanks",
+    name: "Pri D",
+    title: "2 months ago",
+  },
+  {
+    quote:
+      "Raj gill is a fabulous family law attorney to work with. He explained everything to me about the case (from the procedure to what to expect) right from the start of our very first meeting. He did so in a way that I could understand and was very prompt and clear with communication the entire time. Only downside was that it took  longer thn the given timeframe. Big thanks to shrea grover who was always available to answer all the queries.",
+       name: "Kaur Inder",
+    title: "4 months ago",
+  },
+  {
+    quote:
+      "Recently I found myself in urgent need of a lawyer when my workplace and my union both refused me legal help. With a court date only a week away I was in a panic so I googled 'a lawyer near me'. Since I live in the middle of Surrey the firm named Raj Gill Law came up so I left a message not knowing what to expect. I was immediately called back, referred to a lawyer named Ransiri Fernando and given a free 30 minute appointment with him 2 days later...",
+        name: "Marlene ter Kuile",
+    title: "3 years ago",
+  },
+];
 
 export function MacbookScrollDemo() {
   return (
     <div id="" className="overflow-hidden dark:bg-[#0B0B0F] text-neutral-800 bg-transparent w-full">
+            <h1 className="text-5xl text-center text-neutral-300 mt-10 ">Testimonials</h1>
+      <h1 className="text-1xl text-center text-neutral-300 mt-10 mb-10 uppercase tracking-wider">Hear what our clients have to say about us.</h1>
+      <div className="">
+      <h1 className="text-sm flex flex-row text-center text-neutral-300 mt-10 ml-10 "><span className="mr-1 mt-[0.1]"></span> <IconBrandGoogle className=""/><span className="mt-1">&nbsp;Reviews</span></h1>
+      </div>  <InfiniteMovingCards
+        items={testimonials}
+        direction="right"
+        speed="slow"
+      />
+      
+      <hr className="opacity-[0.1] mt-36"/>
       <MacbookScroll
         title={
           <span className="text-neutral-400">

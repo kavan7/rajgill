@@ -32,7 +32,7 @@ const config = {
         black: {
           DEFAULT: "#000",
           100: "#000319",
-          200: "rgba(17, 25, 40, 0.75)",
+          200: "#141819",
           300: "rgba(255, 255, 255, 0.125)",
         },
         white: {
@@ -90,6 +90,11 @@ const config = {
           },
           to: {
             backgroundPosition: "350% 50%, 350% 50%",
+          },
+        },
+         scroll: {
+          to: {
+            transform: "translate(calc(-50% - 0.5rem))",
           },
         },
         
@@ -152,11 +157,7 @@ const config = {
             transform: "translateY(-50%)",
           },
         },
-        scroll: {
-          to: {
-            transform: "translate(calc(-50% - 0.5rem))",
-          },
-        },
+     
       },
       animation: {
         aurora: "aurora 60s linear infinite",
