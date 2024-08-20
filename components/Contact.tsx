@@ -59,7 +59,7 @@ export function MacbookScrollDemo() {
       <MacbookScroll
         title={
           <span className="text-neutral-400">
-            Frequently asked<br />Questions.
+            Frequently asked<br />Questions
           </span>
         }
         badge={

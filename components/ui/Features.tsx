@@ -19,7 +19,7 @@ export function FeaturesSectionDemo() {
   const featureList = [
     {
       title: "Family Law",
-      description: "",
+      description: "We are experienced family lawyers who strive to provide our clients with the best possible outcome. We have experience at the Provincial Court level, Supreme Court level, and the Court of Appeal. We use several different approaches in achieving the best result for our clients including collaborative divorce, mediation, arbitration, and litigation when necessary.We work closely with our clients to identify all issues and ensure our clients are informed throughout the process. It is our goal to ensure our clients know their options, are provided sound legal advice, and achieve results which best suit them. Our clients can expect a legal strategy that is customized to their unique financial, emotional and legal needs.",
       icon: <IconUsersGroup />,
     },
     {
@@ -97,7 +97,7 @@ const Feature = ({
   return (
     <div
       className={cn(
-        "flex flex-col lg:border-r border-white/[0.6] py-10 relative group/feature hover:bg-black-200/[0.3]  dark:border-neutral-800",
+        "flex flex-col lg:border-r border-white/[0.6] py-10 relative group/feature hover:bg-black-200/[0.3] rounded-sm  dark:border-neutral-800",
         (index === 0 || index === 3) && "lg:border-l dark:border-neutral-800",
         index < 3 && "lg:border-b dark:border-neutral-800"
       )}
@@ -128,26 +128,142 @@ const Feature = ({
             <motion.div
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
-              className="w-full max-w-[500px] h-full md:h-fit md:max-h-[90%] flex flex-col bg-neutral-900 dark:bg-neutral-900 sm:rounded-3xl"
+              className="w-full max-w-[500px] h-full md:h-fit overflow-y-auto md:max-h-[50%] flex flex-col bg-black-200/[1] p-5 rounded-none text-3xl "
             >
-              <motion.div layoutId={`image-${active.title}-${id}`}>
+              <motion.div layoutId={`image-${active.title}-${id}`} >
               
               </motion.div>
 
               <div>
-                <div className="flex justify-between items-start p-4">
-                  <div>
+                <div className="flex justify-between overflow-y-auto items-start p-4">
+                  <div className="overflow-y-auto">
                     <motion.h3
                       layoutId={`title-${active.title}-${id}`}
-                      className="font-medium text-white dark:text-neutral-200 text-base"
+                      className="font-medium  flex flex-row text-white dark:text-neutral-200 text-3xl "
                     >
-                      {active.title}
+                       {active.title}
+                     
+                     
                     </motion.h3>
                     <motion.p
                       layoutId={`description-${active.description}-${id}`}
-                      className="text-white dark:text-white text-base"
+                      className="text-white dark:text-white font-light text-base mt-3"
                     >
+                      <hr className="mb-3"/>
+
                       {active.description}
+                      
+                    <br/>
+                    <hr className="my-3"/>
+                 
+                    <div
+      style={{
+        display: 'grid',
+        gridTemplateColumns: 'repeat(auto-fill, minmax(150px, 1fr))',
+        gap: '10px',
+        padding: '10px',
+      }}
+    >
+      <h3
+        style={{
+          backgroundColor: '',
+          padding: '8px',
+          borderRadius: '4px',
+          textAlign: 'center',
+          margin: '0',
+        }}
+      >
+        - Divorce
+      </h3>
+      <h3
+        style={{
+          backgroundColor: '',
+          padding: '8px',
+          borderRadius: '4px',
+          textAlign: 'center',
+          margin: '0',
+        }}
+      >
+       - Sole Custody
+      </h3>
+      <h3
+        style={{
+          backgroundColor: '',
+          padding: '8px',
+          borderRadius: '4px',
+          textAlign: 'center',
+          margin: '0',
+        }}
+      >
+       - Child Support
+      </h3>
+      <h3
+        style={{
+          backgroundColor: '',
+          padding: '8px',
+          borderRadius: '4px',
+          textAlign: 'center',
+          margin: '0',
+        }}
+      >
+        - Asset Division
+      </h3>
+      <h3
+        style={{
+          backgroundColor: '',
+          padding: '8px',
+          borderRadius: '4px',
+          textAlign: 'center',
+          margin: '0',
+        }}
+      >
+        - Spousal Support
+      </h3>
+      <h3
+        style={{
+          backgroundColor: '',
+          padding: '8px',
+          borderRadius: '4px',
+          textAlign: 'center',
+          margin: '0',
+        }}
+      >
+       - Marriage Agreements
+      </h3>
+      <h3
+        style={{
+          backgroundColor: '',
+          padding: '8px',
+          borderRadius: '4px',
+          textAlign: 'center',
+          margin: '0',
+        }}
+      >
+        - Separation Agreements
+      </h3>
+      <h3
+        style={{
+          backgroundColor: '',
+          padding: '8px',
+          borderRadius: '4px',
+          textAlign: 'center',
+          margin: '0',
+        }}
+      >
+        - Access and Parenting Plans
+      </h3>
+      <h3
+        style={{
+          backgroundColor: '',
+          padding: '8px',
+          borderRadius: '4px',
+          textAlign: 'center',
+          margin: '0',
+        }}
+      >
+        - Parenting Time/Guardianship & Custody
+      </h3>
+    </div>
                     </motion.p>
                   </div>
 
@@ -190,7 +306,7 @@ const Feature = ({
               layoutId={`description-${description}-${id}`}
               className="text-neutral-100 dark:text-neutral-400 text-center md:text-left font-light"
             >
-              {description}
+              
             </motion.p>
           </div>
         </div>

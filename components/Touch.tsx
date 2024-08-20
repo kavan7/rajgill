@@ -3,13 +3,14 @@ import { SparklesCore } from './ui/sparkles'
 import { PinContainer } from './ui/3d-pin'
 import { IconBrandOffice, IconLocationBolt, IconMail, IconMapPin2, IconPhone } from '@tabler/icons-react'
 import { Footer } from './Footer'
+import Link from 'next/link'
 
 const Touch = () => {
   return (
     <main className='flex flex-col md:flex-row lg:flex-col'>
     <div  id='touch' className="h-[40rem] w-full bg-transparent flex xs:flex-col flex-col items-center justify-center overflow-hidden rounded-md">
     <h1 className="md:text-2xl text-7xl lg:text-8xl font-bold  ml-5 text-center text-neutral-300 relative z-20">
-      Our Contacts.
+      Our Contacts
     </h1>
     
     <div className="w-[60rem]  bg-transparent relative">
@@ -21,14 +22,7 @@ const Touch = () => {
       <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-neutral-500 to-transparent h-px " />
 
       {/* Core component */}
-      <SparklesCore
-        background="transparent"
-        minSize={0.4}
-        maxSize={1}
-        particleDensity={1200}
-        className="w-full h-full rounded-full"
-        particleColor="#4b4f57"
-      />
+    
       
 
       {/* Radial Gradient to prevent sharp edges */}
@@ -42,8 +36,10 @@ const Touch = () => {
     </div>
     <div className='flex flex-col'>
       <hr className='opacity-0.2 mt-5 mb-5'/>
+      <a href="https://maps.app.goo.gl/8VfGNuFm88xrwuPX8" target='_blank'>
+      <a target="_blank">
     <h1 className='text-center flex flex-row text-white font-light mt- 5 text-3xl'><IconBrandOffice className='mt-2 mr-2'/> 12885 80 Ave #205, Surrey, BC</h1>
-        </div>
+    </a> </a>   </div>
   </div>
   <div className=" md:w-full lg:w-full   bg-transparent align-middle flex md:flex-row lg:flex-row flex-col  ">
 
