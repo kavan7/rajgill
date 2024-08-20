@@ -47,11 +47,11 @@ export function Footer() {
       href: "https://www.instagram.com/rajgilllaw/",
     },
     {
-      title: "GitHub",
+      title: "Twitter",
       icon: (
-        <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "https://www.x.com/rajgilllaw",
     },
   ];
   return (
