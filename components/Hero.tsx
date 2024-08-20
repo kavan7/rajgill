@@ -104,11 +104,11 @@ const Hero = () => {
             </p>
 
             <TextGenerateEffect
-              words="Surrey, British Columbia’s most trusted Attorneys"
+              words="Surrey, British Columbia’s Most Trusted Attorneys"
               className="text-center text-[40px] md:text-5xl lg:text-6xl"
             />
 
-            <p className="text-center md:tracking-wider text-slate-400 font-normal mb-4 text-sm md:text-lg lg:text-2xl">
+            <p className="text-center md:tracking-wider text-neutral-200 font-normal mb-4 text-sm md:text-lg lg:text-2xl">
               Schedule a free consultation.
             </p>
 
@@ -146,10 +146,10 @@ const Hero = () => {
               <DialogTrigger asChild>
                 <button onClick={() => setIsDialogOpen(true)}>
                   <MagicButton
-                    title="Schedule"
+                    title="SCHEDULE"
                     icon={<FaCalendar />}
                     position="right"
-                    otherClasses="rounded-lg"
+                    otherClasses="rounded-lg text-neutral-300"
                   />
                 </button>
               </DialogTrigger>

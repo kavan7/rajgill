@@ -142,7 +142,7 @@ export function About() {
             layoutId={`card-${card.title}-${id}`}
             key={card.title}
             onClick={() => setActive(card)}
-            className="p-4 flex flex-col  hover:bg-black-200 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
+            className="p-4 flex flex-col  hover:bg-[#141819] dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
           >
             <div className="flex gap-4 flex-col  w-full">
               <motion.div layoutId={`image-${card.title}-${id}`}>
@@ -163,7 +163,7 @@ export function About() {
                 </motion.h3>
                 <motion.p
                   layoutId={`description-${card.description}-${id}`}
-                  className="text-neutral-400 dark:text-neutral-400 text-center md:text-left text-base"
+                  className="text-neutral-100 dark:text-neutral-400 text-center md:text-left font-bold uppercase"
                 >
                   {card.description}
                 </motion.p>
