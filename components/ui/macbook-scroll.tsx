@@ -63,7 +63,7 @@ export const MacbookScroll = ({
     [0,1],
     [0.5, isMobile ? 1 : 1.5]
   );
-  const translate = useTransform(scrollYProgress, [0, 1], [0, 2000]);
+  const translate = useTransform(scrollYProgress, [0, 1], [0, 1500]);
   const rotate = useTransform(scrollYProgress, [0.1, 0.12, 0.3], [-28, -28, 0]);
   const textTransform = useTransform(scrollYProgress, [0, 0.3], [0, 100]);
   const textOpacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
@@ -101,13 +101,13 @@ export const MacbookScroll = ({
           <div className="absolute inset-x-0 mx-auto w-[80%] h-4 bg-[#050505]" />
         </div>
         <div className="flex relative">
-          <div className="mx-auto w-[10%] overflow-hidden  h-full">
+          <div className="mx-auto w-[10%] overflow-hidden  h-fit">
             <SpeakerGrid />
           </div>
-          <div className="mx-auto w-[80%] h-full">
+          <div className="mx-auto w-[80%] h-fit">
             <Keypad />
           </div>
-          <div className="mx-auto w-[10%] overflow-hidden  h-full">
+          <div className="mx-auto w-[10%] overflow-hidden  h-fit">
             <SpeakerGrid />
           </div>
         </div>
@@ -193,7 +193,7 @@ export const Trackpad = () => {
 
 export const Keypad = () => {
   return (
-    <div className="h-full rounded-md bg-[#050505] mx-1 p-1">
+    <div className="h-full rounded-md bg-black-100 mx-1 p-1">
       {/* First Row */}
       <Row>
         <KBtn
