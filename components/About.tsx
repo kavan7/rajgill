@@ -331,7 +331,7 @@ Madhur is passionate about complex family and civil litigation that involves the
     src: "/logonav.png",
     email: 'shahin@rajgilllaw.com',
     ctaText: "Connect",
-    ctaLink: "",
+    ctaLink: "https://www.linkedin.com/in/shahin-hardy-717941221/",
     content: () => {
       return <p>Shahin is a lawyer, holding a Bachelor of Laws (LL.B.) from Panjab University, Chandigarh, India. Since entering the legal profession in 2022, she has handled a variety of civil and criminal cases at the District and Sessions Courts in Chandigarh, as well as at the Punjab and Haryana High Court.
 
