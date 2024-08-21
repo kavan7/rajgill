@@ -168,7 +168,7 @@ export function About() {
                    
                   </motion.h3>
                   <motion.p
-                    layoutId={`description-${card.description}-${id}`}
+                    layoutId={``}
                     className="text-neutral-100 dark:text-neutral-400 text-center md:text-left font-light"
                   >
                     {card.description}
