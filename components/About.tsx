@@ -357,12 +357,11 @@ provide exceptional legal services.
     ctaText: "Connect",
     ctaLink: "https://www.linkedin.com/in/shahin-hardy-717941221/",
     content: () => {
-      return <p>Shahin is a lawyer, holding a Bachelor of Laws (LL.B.) from Panjab University, Chandigarh, India. Since entering the legal profession in 2022, she has handled a variety of civil and criminal cases at the District and Sessions Courts in Chandigarh, as well as at the Punjab and Haryana High Court.
-
-      Currently pursuing a Post-Baccalaureate Diploma in Disaster Management from the Justice Institute of British Columbia, New Westminster, BC, Shahin’s academic journey reflects her keen interest in diverse subjects within the ambit of Law and Public Administration. Her passion for Human Rights led her to specialize in Public International Law, International and Humanitarian Laws, Environmental Law, and International Labour Organisation and Labour Laws during her LL.B. studies.
-      
-        Her education and experiences have equipped her with a strong foundation in coordinated planning, law and management fundamentals, critical thinking, research, and communication skills. Shahin’s commitment to legal excellence and her passion for Human Rights makes her a dedicated and esteemed professional in her field. </p>;
-    },
+      return <p>
+        Shahin Hardy is a dedicated legal assistant with a strong background in legal support and disaster management. A graduate with a Bachelor of Laws (LL.B.) from Panjab University, Chandigarh, India, Shahin brings a solid understanding of legal principles and practices to her role at Raj Gill Law Corporation. She has honed her skills in supporting lawyers through meticulous case management, legal research, and document preparation.
+<br/>
+Currently, Shahin is further enhancing her expertise by pursuing a Post-Baccalaureate Diploma in Disaster Management from the Justice Institute of British Columbia. Her unique combination of legal acumen and disaster management knowledge equips her to address complex challenges in legal and emergency contexts with confidence and precision.
+      </p>   },
   },
   {
     description: "Legal Assistant",
@@ -382,6 +381,36 @@ provide exceptional legal services.
           brings great enthusiasm to the workplace and creates an encouraging
           environment for his own learning and for the satisfaction of his
           co-workers and clients.
+        </p>
+      );
+    },
+  },
+  {
+    description: "Legal Assistant",
+    title: "Keshav Goyal",
+    email: 'keshav@rajgilllaw.com',
+    src: "/logonav.png",
+    ctaText: "Connect",
+    ctaLink: "https://www.linkedin.com/in/kavanabeyratne/",
+    content: () => {
+      return (
+        <p>
+         
+        </p>
+      );
+    },
+  },
+  {
+    description: "Intern",
+    title: "Kavan Abeyratne",
+    email: 'kavanabeyratne@gmail.com',
+    src: "/kavanpic.jpg",
+    ctaText: "Connect",
+    ctaLink: "",
+    content: () => {
+      return (
+        <p>
+       
         </p>
       );
     },
