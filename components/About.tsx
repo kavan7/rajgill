@@ -75,7 +75,7 @@ export function About() {
               <motion.div
                 layoutId={`card-${active.title}-${id}`}
                 ref={ref}
-                className="w-full sm:max-h-[50%] max-w-[500px] max-h-[50%]  md:h-fit md:max-h-[60%] flex flex-col bg-neutral-900 dark:bg-neutral-900 sm:rounded-3xl"
+                className="w-full sm:max-h-[80%] max-w-[500px] max-h-[80%]  md:h-fit md:max-h-[80%] flex flex-col bg-neutral-900 dark:bg-neutral-900 sm:rounded-3xl"
               >
                 <motion.div layoutId={`image-${active.title}-${id}`}>
                   <Image
