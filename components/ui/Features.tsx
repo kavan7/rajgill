@@ -172,30 +172,11 @@ const Feature = ({
       <AnimatePresence>
         {active ? (
           <div className="fixed inset-0 grid place-items-center z-[100]">
-            <motion.button
-              key={`button-${active.title}-${id}`}
-              layout
-              initial={{
-                opacity: 0,
-              }}
-              animate={{
-                opacity: 1,
-              }}
-              exit={{
-                opacity: 0,
-                transition: {
-                  duration: 0.05,
-                },
-              }}
-              className="flex absolute top-2 right-2 lg:hidden items-center justify-center bg-neutral-900 rounded-full h-6 w-6"
-              onClick={() => setActive(null)}
-            >
-              <CloseIcon />
-            </motion.button>
+          
             <motion.div
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
-              className="w-full max-w-[500px] h-full md:h-fit overflow-y-auto md:max-h-[50%] flex flex-col bg-black-200/[1] p-5 rounded-none text-3xl "
+              className="w-full max-w-[500px] h-[50%] md:h-fit overflow-y-auto md:max-h-[50%] flex flex-col bg-black-200/[1] p-5 rounded-none text-3xl "
             >
               <motion.div layoutId={`image-${active.title}-${id}`} ></motion.div>
 

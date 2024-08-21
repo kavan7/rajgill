@@ -56,14 +56,14 @@ export const MacbookScroll = ({
   const scaleX = useTransform(
     scrollYProgress,
     [0,10],
-    [1, isMobile ? 1 : 1]
+    [1, isMobile ? 2 : 1]
   );
   const scaleY = useTransform(
     scrollYProgress,
     [0,1],
-    [1, isMobile ? 1.5 : 1.5]
+    [0.3, isMobile ? 2 : 1.5]
   );
-  const translate = useTransform(scrollYProgress, [0, 1], [0, 1600]);
+  const translate = useTransform(scrollYProgress, [0, 1], [0, 1200]);
   const rotate = useTransform(scrollYProgress, [0.1, 0.12, 0.3], [-28, -28, 0]);
   const textTransform = useTransform(scrollYProgress, [0, 0.3], [0, 100]);
   const textOpacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
@@ -71,7 +71,7 @@ export const MacbookScroll = ({
   return (
     <div
       ref={ref}
-      className="min-h-[200vh]  flex flex-col items-center py-0 md:pt-[430px]   justify-start flex-shrink-0 [perspective:800px] transform md:scale-1 lg:scale-100  scale-[0.6] "
+      className="min-h-[200vh]  flex flex-col items-center py-0 md:pt-[430px]   justify-start flex-shrink-0 [perspective:760px] transform md:scale-1 lg:scale-100  scale-[0.8] "
     >
       <motion.h2
         style={{
@@ -169,7 +169,7 @@ export const Lid = ({
       >
        
        
-       <div id=""></div>
+       <div id="" className="mt-[400px] md:mt-0"></div>
        <FAQ/>
        
       </motion.div>
