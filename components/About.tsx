@@ -252,7 +252,7 @@ Madhur is passionate about complex family and civil litigation that involves the
     },
   },
   {
-    description: "Lawyer",
+    description: "Associate Lawyer",
     title: "Prateeq Ghai",
     email: 'prateeq@rajgilllaw.com',
     src: "/download.png",
