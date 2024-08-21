@@ -404,7 +404,7 @@ Currently, Shahin is further enhancing her expertise by pursuing a Post-Baccalau
     description: "Intern",
     title: "Kavan Abeyratne",
     email: 'kavanabeyratne@gmail.com',
-    src: "/kavanpic.jpg",
+    src: "/kavan.png",
     ctaText: "Connect",
     ctaLink: "",
     content: () => {
