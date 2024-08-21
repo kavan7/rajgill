@@ -48,7 +48,7 @@ export function MacbookScrollDemo() {
             <h1 className="text-5xl text-center text-neutral-300 mt-10 ">Testimonials</h1>
       <h1 className="text-1xl text-center text-neutral-300 mt-10 mb-10 uppercase tracking-wider">Hear what our clients have to say about us.</h1>
       <div className="">
-      <h1 className="text-sm flex flex-row text-center text-neutral-300 mt-10 ml-10 "><span className="mr-1 mt-[0.1]"></span><a href="https://www.google.com/search?client=firefox-b-d&q=raj+gill+law+corporation#lrd=0x5485d91def814d43:0x33bc4e5ad6736eef,1,,,," target="_blank"> <IconBrandGoogle className=""/></a><span className="mt-1">&nbsp;Reviews</span></h1>
+      <h1 className="text-sm flex flex-row text-center text-neutral-300 mt-10 ml-10 "><span className="mr-1 mt-[0.1]"></span><a href="https://www.google.com/search?client=firefox-b-d&q=Raj+Gill+Law+Corporation#lrd=0x5485d91def814d43:0x33bc4e5ad6736eef,1,,,," target="_blank"> <IconBrandGoogle className=""/><span className="mt-1">&nbsp;Reviews</span></a></h1>
       </div>  <InfiniteMovingCards
         items={testimonials}
         direction="right"
