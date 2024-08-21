@@ -14,6 +14,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "@/hooks/use-outside-click";
 import Image from "next/image";
 import { CloseIcon } from "../About";
+import { Close } from "@radix-ui/react-dialog";
 
 export function FeaturesSectionDemo() {
   const featureList = [
@@ -206,7 +207,10 @@ const Feature = ({
                       className="font-medium  flex flex-row text-white dark:text-neutral-200 text-3xl "
                     >
                       {active.title}
+
+                      <button  className=" ml-64  bg-neutral-900 rounded-full h-6 w-6" onClick={() => setActive(null)}><CloseIcon/></button>
                     </motion.h3>
+                    
                     <motion.p
                       layoutId={`description-${active.description}-${id}`}
                       className="text-white dark:text-white font-light text-base mt-3"
