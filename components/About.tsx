@@ -410,7 +410,7 @@ Currently, Shahin is further enhancing her expertise by pursuing a Post-Baccalau
     content: () => {
       return (
         <p>
-       
+       Summer intern.
         </p>
       );
     },
