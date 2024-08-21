@@ -227,10 +227,16 @@ const cards = [
     content: () => {
       return (
         <p>
-         The owner and founder of Raj Gill Law Corp., Rajdeep S. Gill, has been helping clients with a variety of claims since 2014. His specialties are family law, civil law and Real Estate.
-
-Raj is a life-long learner and enjoys the challenge of solving problems. Raj is an expert with the legal process and familiar with the system. He is a strategic thinker and enjoys analysis of various paths, and finds the best possible solution. His passion to help clients in difficult situations and strong negotiation and persuasion skills made him a strong and winning lawyer. Raj graduated in Commerce from the University of British Columbia and his Doctor of Law (J.D.) from the Seattle University.
-        </p>
+Rajdeep S. Gill is a dynamic lawyer known for his unwavering dedication to client
+advocacy in both court and mediation settings. With extensive experience appearing
+before the Supreme Court of British Columbia and the British Columbia Court of Appeal,
+Raj excels in high-stakes litigation and complex negotiations.
+<br/>
+Prior to obtaining his Doctor of Law (J.D.) from Seattle University, Raj graduated from
+the University of British Columbia with a focus on Commerce. Raj combines a strong
+academic foundation with a passion for learning and overcoming challenges. His keen
+strategic judgment and commitment to achieving optimal outcomes make him a
+formidable advocate who is always prepared to fight vigorously for his clients&#39; interests.      </p>
       );
     },
   },
@@ -288,17 +294,19 @@ Madhur is passionate about complex family and civil litigation that involves the
     content: () => {
       return (
         <p>
-          Shrea Grover is an Internationally Trained Lawyer, possessing a Master
-          of Laws in Constitutional and Environmental Law from India. Shrea is
-          in the legal profession since 2017. Shrea specializes in Legal
-          Research as she has gained considerable experience over 4 years while
-          working as a Legal Researcher at the High Court of Punjab and Haryana,
-          Chandigarh, India. Shrea is a hard-working, driven individual capable
-          of rising to any challenge. Shrea’s passion for legal research, and
-          her enthusiasm to get the job done, make her a dedicated and esteemed
-          member of the Legal Team at Raj Gill Law Corporation. <br /> Shrea is
-          an open and honest person who strives to be the best in all that she
-          does.
+         Shrea Grover is an accomplished international lawyer with a Master’s Degree in
+Constitutional and Environmental Law from India. With over seven years of diverse legal
+experience, Shrea has cultivated expertise in navigating complex legal landscapes. Her
+professional journey includes four years as a Legal Researcher at the High Court of
+Punjab and Haryana in Chandigarh, India, where she honed her skills in legal analysis
+and research.
+<br/>
+Shrea’s career is distinguished by a strong commitment to client advocacy and
+achieving favorable outcomes. Her proficiency in delivering positive results has been
+evident even during her articling period with Raj Gill Law Corporation, showcasing her
+dedication and capability in the legal field. Passionate about helping clients realize their
+goals, Shrea continues to leverage her international training and practical experience to
+provide exceptional legal services.
         </p>
       );
     },
@@ -311,7 +319,17 @@ Madhur is passionate about complex family and civil litigation that involves the
     ctaText: "Connect",
     ctaLink: "",
     content: () => {
-      return <p></p>;
+      return <p>Simran Gill is a skilled paralegal with over 4 years of experience in the legal field,
+      complemented by a background of over a decade in administrative positions. Simran’s
+      experience includes significant roles in ICBC Defense and Personal Injury, enriching her
+      expertise in various legal areas. Currently focused on Family Law and Civil Law, Simran
+      excels in drafting legal documents, conducting detailed legal research, managing
+      complex case files, and maintaining clear and empathetic communication with the
+      clients of Raj Gill Law Corporation.
+      <br/>
+      As a voting member of the BC Paralegal Association and a Commissioner for taking
+      Oaths in British Columbia, Simran is committed to upholding high professional
+      standards and ensuring legal accuracy.</p>;
     },
   },
   {
@@ -322,7 +340,15 @@ Madhur is passionate about complex family and civil litigation that involves the
     ctaText: "Connect",
     ctaLink: "",
     content: () => {
-      return <p></p>;
+      return <p>Ashley Dewett is a dedicated paralegal specializing in Family Law, known for her
+      enthusiasm and empathy in her work. As the firm’s primary contact for desk-order
+      divorce files, Ashley expertly manages these cases with a focus on accuracy and
+      efficient processing.
+      <br/>
+      Ashley’s expertise in this area combined with her compassionate approach, ensures
+      that each case is handled with meticulous attention to detail and professionalism.
+      Ashley is recognized for consistently delivering excellent service to clients navigating
+      the divorce process.</p>;
     },
   },
   {
