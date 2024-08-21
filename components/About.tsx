@@ -275,9 +275,7 @@ Madhur is passionate about complex family and civil litigation that involves the
           has accumulated significant legal experience, notably serving as an
           Articled Student at CGM Lawyers for nearly two years, where he gained
           hands-on experience in various aspects of legal practice. His
-          expertise spans across multiple domains, including administrative
-          assistance and compensation law, making him a valuable member of any
-          legal team. Prateeq&apos;s commitment to excellence and his
+          expertise spans across multiple domains, including criminal, corporate and family law, making him a valuable member of Raj Gill Law Corporation. Prateeq&apos;s commitment to excellence and his
           comprehensive understanding of legal processes allow him to provide
           high-quality legal services to his clients.
         </p>
