@@ -189,7 +189,7 @@ const Feature = ({
                     >
                       {active.title}
 
-                      <button  className=" ml-64  bg-neutral-900 rounded-full h-6 w-6" onClick={() => setActive(null)}><CloseIcon/></button>
+                      <button  className="ml-40  bg-neutral-900 rounded-full h-6 w-6" onClick={() => setActive(null)}><CloseIcon/></button>
                     </motion.h3>
                     
                     <motion.p
