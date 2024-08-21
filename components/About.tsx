@@ -227,7 +227,7 @@ const cards = [
     content: () => {
       return (
         <p>
-Rajdeep S. Gill is a dynamic lawyer known for his unwavering dedication to client
+Rajdeep S. Gill is a  lawyer known for his dedication to client
 advocacy in both court and mediation settings. With extensive experience appearing
 before the Supreme Court of British Columbia and the British Columbia Court of Appeal,
 Raj excels in high-stakes litigation and complex negotiations.
