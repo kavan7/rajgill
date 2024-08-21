@@ -282,7 +282,7 @@ Madhur is passionate about complex family and civil litigation that involves the
     description: "Articling Student",
     title: "Shrea Grover",
     src: "/shreyapic.png",
-    email: 'raj@rajgilllaw.com',
+    email: 'shreag@rajgilllaw.com',
     ctaText: "Connect",
     ctaLink: "",
     content: () => {
