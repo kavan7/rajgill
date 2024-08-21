@@ -386,7 +386,7 @@ Currently, Shahin is further enhancing her expertise by pursuing a Post-Baccalau
     },
   },
   {
-    description: "Legal Assistant",
+    description: "Administrative Assistant",
     title: "Keshav Goyal",
     email: 'keshav@rajgilllaw.com',
     src: "/logonav.png",
