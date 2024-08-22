@@ -67,10 +67,10 @@ const Hero = () => {
 
     if (form.current) {
       emailjs.sendForm(
-        'service_rmxji3d',
-        'template_n3alau5',
+        'service_ra4bns3',
+        'template_lht18tt',
         form.current,
-        'jPH9bGRNAnvf8eJXe'
+        'z0MwCC311h8UoFulf'
       ).then(
         (result) => {
           console.log(result.text);
