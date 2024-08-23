@@ -312,7 +312,7 @@ provide exceptional legal services.
   {
     description: "Paralegal",
     title: "Simran Gill",
-    src: "/nopic.png",
+    src: "/newnopic.png",
     email: 'simran@rajgilllaw.com',
     ctaText: "Connect",
     ctaLink: "",
@@ -333,7 +333,7 @@ provide exceptional legal services.
   {
     description: "Paralegal",
     title: "Ashley Dewett",
-    src: "/nopic.png",
+    src: "/newnopic.png",
     email: 'ashley@rajgilllaw.com',
     ctaText: "Connect",
     ctaLink: "",
@@ -352,7 +352,7 @@ provide exceptional legal services.
   {
     description: "Legal Assistant",
     title: "Shahin Hardy",
-    src: "/nopic.png",
+    src: "/newnopic.png",
     email: 'shahin@rajgilllaw.com',
     ctaText: "Connect",
     ctaLink: "https://www.linkedin.com/in/shahin-hardy-717941221/",
@@ -389,7 +389,7 @@ Currently, Shahin is further enhancing her expertise by pursuing a Post-Baccalau
     description: "Administrative Assistant",
     title: "Keshav Goyal",
     email: 'keshav@rajgilllaw.com',
-    src: "/nopic.png",
+    src: "/newnopic.png",
     ctaText: "Connect",
     ctaLink: "",
     content: () => {
