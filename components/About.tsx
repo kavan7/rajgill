@@ -391,7 +391,7 @@ Currently, Shahin is further enhancing her expertise by pursuing a Post-Baccalau
     email: 'keshav@rajgilllaw.com',
     src: "/nopic.png",
     ctaText: "Connect",
-    ctaLink: "https://www.linkedin.com/in/kavanabeyratne/",
+    ctaLink: "",
     content: () => {
       return (
         <p>
@@ -406,7 +406,7 @@ Currently, Shahin is further enhancing her expertise by pursuing a Post-Baccalau
     email: 'kavanabeyratne@gmail.com',
     src: "/kavan.png",
     ctaText: "Connect",
-    ctaLink: "",
+    ctaLink: "https://www.linkedin.com/in/kavanabeyratne/",
     content: () => {
       return (
         <p>
