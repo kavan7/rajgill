@@ -410,7 +410,7 @@ Currently, Shahin is further enhancing her expertise by pursuing a Post-Baccalau
     content: () => {
       return (
         <p>
-       Kavan is a Grade 12 Student from Toronto, Ontario. At Raj Gill Law Corporation, Kavan is driven by a deep passion for the law and an unwavering aspiration to become a lawyer. His commitment to understanding complex legal matters and dedication to applying his own experience in tech is a valuable asset to the form. Kavans enthusiasm for the legal profession is evident in his approach to deliver insightful technological solutions, all while aspiring to contribute meaningfully to the success of Raj Gill Law Corporation.
+       Kavan is a Grade 12 Student from Toronto, Ontario. At Raj Gill Law Corporation, Kavan is driven by a deep passion for the law and an unwavering aspiration to become a lawyer. His commitment to understanding complex legal matters and dedication to applying his own skills is a valuable asset to the firm. Kavans enthusiasm for the legal profession is evident in his approach to deliver insightful technological solutions, all while aspiring to contribute meaningfully to the success of Raj Gill Law Corporation.
         </p>
       );
     },
