@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { TracingBeam } from "@/components/ui/tracing-beam";
+import { Analytics } from '@vercel/analytics/react';
 import Head from "next/head";
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,7 +27,7 @@ export default function RootLayout({
         content="family lawyers, immigration lawyers, lawyers surrey bc"
       />
        </Head>
-      <body className={inter.className} style={{ backgroundImage: `url('/background2.jpg')`, opacity: 1}}> {children} </body>
+      <body className={inter.className} style={{ backgroundImage: `url('/background2.jpg')`, opacity: 1}}> {children}<Analytics /> </body>
      
     </html>
   );
