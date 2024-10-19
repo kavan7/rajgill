@@ -27,7 +27,7 @@ export default function RootLayout({
         content="family lawyers, immigration lawyers, lawyers surrey bc"
       />
        </Head>
-      <body className={inter.className} style={{ backgroundImage: `url('/background2.jpg')`, opacity: 1}}> {children}<Analytics /> </body>
+      <body className={inter.className} style={{ backgroundImage: `url('/background6.jpg')`, opacity: 3}}> {children}<Analytics /> </body>
      
     </html>
   );

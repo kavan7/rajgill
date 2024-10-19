@@ -104,7 +104,9 @@ export const FloatingNav = ({
           <span><IconMapPin/></span>
           </PopoverTrigger>
   <PopoverContent className="mt-10">
-    12885 80 Ave #205, Surrey, BC V3W 0E6
+    12885 80 Ave #205, Surrey, BC 
+    <hr/>
+    1779 Clearbrookroad #216, Abbotsford, BC
   </PopoverContent>
 </Popover>
            </button>
