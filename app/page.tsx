@@ -3,16 +3,12 @@ import Hero from "@/components/Hero";
 import Image from "next/image";
 import { IconBriefcase, IconHome, IconMan, IconMessage, IconPhone, IconUser } from "@tabler/icons-react";
 import { FloatingNav } from "@/components/ui/floating-navbar";
-import logonav from '@/public/logonav.png'
 import { MacbookScrollDemo } from "@/components/Contact";
 import { TracingBeam } from "@/components/ui/tracing-beam";
-import { AuroraBackground } from "@/components/ui/Aurora";
-import { FeaturesSectionDemo } from "@/components/ui/Features";
 import { About } from "@/components/About";
-import { FloatingDock } from "@/components/ui/floating-dock";
 import { Footer } from "@/components/Footer";
 import Touch from "@/components/Touch";
-import { Metadata } from "next";
+
 
 export default function Home() {
   const navItems = [

@@ -1,14 +1,24 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { TracingBeam } from "@/components/ui/tracing-beam";
-import { Analytics } from '@vercel/analytics/react';
-import Head from "next/head";
+import { Analytics } from "@vercel/analytics/react";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Raj Gill Law | Family Lawyers",
-  description: "Lawyers in Surrey, BC",
+  title: "Family Lawyer in Surrey & Abbotsford | Raj Gill Law",
+  description: "Raj Gill Law Corporation offers legal services in Surrey & Abbotsford. Schedule a free consultation today.",
+  openGraph: {
+    title: "Raj Gill Law Corporation - Trusted Family Lawyers",
+    description: "Raj Gill Law Corporation offers legal services in Surrey & Abbotsford. Schedule a free consultation today.",
+    images: "https://rajgilllaw.com/assets/preview-image.jpg", // Updated image URL
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Raj Gill Law Corporation - Trusted Family Lawyers",
+    description: "Raj Gill Law Corporation offers legal services in Surrey & Abbotsford. Schedule a free consultation today.",
+    images: "https://rajgilllaw.com/assets/preview-image.jpg", // Same image for Twitter
+  },
 };
 
 export default function RootLayout({
@@ -17,18 +27,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" >
-       <Head>
-        <title>
-          Raj Gill Law | Surrey, BC
-        </title>
-        <meta
-        name="keywords"
-        content="family lawyers, immigration lawyers, lawyers surrey bc"
-      />
-       </Head>
-      <body className={inter.className} style={{ backgroundImage: `url('/background6.jpg')`, opacity: 3}}> {children}<Analytics /> </body>
-     
+    <html lang="en">
+      <body className={inter.className} style={{ backgroundImage: `url('/background6.jpg')`, opacity: 1 }}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }

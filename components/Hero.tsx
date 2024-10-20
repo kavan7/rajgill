@@ -95,6 +95,7 @@ const Hero = () => {
     <section 
       className="flex flex-col bg-no-repeat"
     >
+       
       <div className="pb-[-30px] pt-36" >
         <div className="h-screen w-full dark:bg-black-100 bg-transparent absolute top-0 left-0 flex items-center justify-center">
           <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-transparent [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
@@ -106,12 +107,12 @@ const Hero = () => {
             <p className="uppercase tracking-widest text-lg text-center text-slate-200 font-medium max-w-80">
               RAJ GILL LAW CORPORATION
             </p>
-
+          <h1 className="hidden">Family lawyer in surrey or abbotsford</h1>
             <TextGenerateEffect
-              words="Surrey, British Columbia’s Most Trusted Attorneys"
+              words="Surrey & Abbotsford, British Columbia’s Most Trusted Attorneys"
               className="text-center text-[40px] md:text-5xl lg:text-6xl"
             />
-
+           
             <p className="text-center md:tracking-wider text-slate-200 font-normal mb-4 text-sm md:text-lg lg:text-2xl">
               Schedule a Free Consultation.
             </p>
