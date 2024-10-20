@@ -223,7 +223,7 @@ const Hero = () => {
                           type="radio"
                           id="surrey"
                           name="office"
-                          value=""
+                          value="Surrey"
                           checked={formData.office === "Surrey"}
                           onChange={handleOfficeChange}
                         />
@@ -234,7 +234,7 @@ const Hero = () => {
                           type="radio"
                           id="abbotsford"
                           name="office"
-                          value=""
+                          value="Abbotsford"
                           checked={formData.office === "Abbotsford"}
                           onChange={handleOfficeChange}
                         />
