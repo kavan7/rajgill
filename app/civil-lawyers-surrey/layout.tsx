@@ -6,7 +6,7 @@ import { Analytics } from "@vercel/analytics/react";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Family Lawyer in Surrey & Abbotsford | Raj Gill Law",
+  title: "Civil Lawyer in Surrey & Abbotsford | Raj Gill Law",
   description: "Raj Gill Law Corporation offers legal services in Surrey & Abbotsford. Schedule a free consultation today.",
   openGraph: {
     title: "Raj Gill Law Corporation - Trusted Family Lawyers",

@@ -17,7 +17,7 @@ import { CloseIcon } from "../About";
 export function FeaturesSectionDemo() {
   const featureList = [
     {
-      title: "Family Lawyers Surrey",
+      title: "Divorce Lawyers Surrey",
       description:
         "We are experienced family lawyers who strive to provide our clients with the best possible outcome. We use several different approaches in achieving the best result for our clients, including collaborative divorce, mediation, arbitration, and litigation when necessary.",
       icon: <IconUsersGroup />,
