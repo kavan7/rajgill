@@ -107,7 +107,7 @@ const Hero = () => {
             <p className="uppercase tracking-widest text-lg text-center text-slate-200 font-medium max-w-80">
               RAJ GILL LAW CORPORATION
             </p>
-          <h1 className="hidden">Family lawyer in surrey or abbotsford</h1>
+          <h1 className="hidden">Family lawyer in surrey abbotsford</h1>
             <TextGenerateEffect
               words="Surrey & Abbotsford, British Columbia’s Most Trusted Attorneys"
               className="text-center text-[40px] md:text-5xl lg:text-6xl"
