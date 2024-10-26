@@ -8,7 +8,15 @@ import { TracingBeam } from "@/components/ui/tracing-beam";
 import { About } from "@/components/About";
 import { Footer } from "@/components/Footer";
 import Touch from "@/components/Touch";
+import { useRouter } from "next/router";
+import { useEffect } from "react";
 
+const router = useRouter();
+
+useEffect(() => {
+  // Reload the page when arriving at the homepage
+  router.reload();
+}, [router.asPath]);
 
 export default function Home() {
   const navItems = [
