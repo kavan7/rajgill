@@ -19,12 +19,16 @@ export default function Home() {
   const pathname = usePathname();
 
   useEffect(() => {
-    // Check if we're on the homepage and if the reload hasn't been performed yet
-    if (pathname === "/" && !sessionStorage.getItem("hasReloaded")) {
-      // Set a flag in sessionStorage to prevent further reloads
-      sessionStorage.setItem("hasReloaded", "true");
-      // Reload the page
-      window.location.reload();
+    if (pathname === "/") {
+      // Check if we haven't reloaded the homepage in this session
+      if (!sessionStorage.getItem("hasReloaded")) {
+        sessionStorage.setItem("hasReloaded", "true");
+        // Reload the page to refresh the content
+        window.location.reload();
+      }
+    } else {
+      // Clear the reload flag when leaving the homepage
+      sessionStorage.removeItem("hasReloaded");
     }
   }, [pathname]);
 
