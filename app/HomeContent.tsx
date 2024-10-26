@@ -19,8 +19,11 @@ export default function Home() {
   const pathname = usePathname();
 
   useEffect(() => {
-    // Reload the page only when arriving back at the homepage
-    if (pathname === "/") {
+    // Check if we're on the homepage and if the reload hasn't been performed yet
+    if (pathname === "/" && !sessionStorage.getItem("hasReloaded")) {
+      // Set a flag in sessionStorage to prevent further reloads
+      sessionStorage.setItem("hasReloaded", "true");
+      // Reload the page
       window.location.reload();
     }
   }, [pathname]);
