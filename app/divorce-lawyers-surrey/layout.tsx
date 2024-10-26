@@ -1,22 +1,44 @@
 // app/divorce-lawyers/layout.tsx
 import React from 'react';
 import { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/react';
+
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Divorce Lawyers in Surrey and Abbotsford | Raj Gill Law Corporation',
   description: 'Experienced divorce lawyers in Surrey and Abbotsford offering compassionate and effective legal representation. Specializing in divorce, child custody, and spousal support cases.',
   robots: 'index, follow',
+  openGraph: {
+    title: 'Divorce Lawyers in Surrey and Abbotsford | Raj Gill Law Corporation',
+    description: 'Professional and compassionate legal support in divorce, child custody, and spousal support. Contact Raj Gill Law Corporation today.',
+    url: 'https://rajgilllaw.com/divorce-lawyers',
+    images: 'https://rajgilllaw.com/assets/preview-image.jpg', // Replace with specific URL if available
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Divorce Lawyers in Surrey and Abbotsford | Raj Gill Law Corporation',
+    description: 'Compassionate divorce and family law representation in Surrey and Abbotsford. Specializing in child custody, spousal support, and divorce cases.',
+    images: 'https://rajgilllaw.com/assets/preview-image.jpg', // Ensure image is relevant
+  },
 };
 
 export default function DivorceLawyersLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body>
-        <header>
+      <body className={inter.className}>
+        <header className="p-4 bg-blue-600 text-white text-center">
           <h1>Raj Gill Law Corporation - Divorce Lawyers</h1>
         </header>
-        <main>{children}</main>
-        <footer>© {new Date().getFullYear()} Raj Gill Law Corporation</footer>
+        <main role="main" className="p-6 bg-gray-100 min-h-screen">
+          {children}
+        </main>
+        <footer className="p-4 bg-gray-800 text-white text-center">
+          © {new Date().getFullYear()} Raj Gill Law Corporation
+        </footer>
+        <Analytics />
       </body>
     </html>
   );
