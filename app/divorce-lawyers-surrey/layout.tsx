@@ -1,36 +1,22 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "../globals.css";
-import { Analytics } from "@vercel/analytics/react";
-
-const inter = Inter({ subsets: ["latin"] });
+// app/divorce-lawyers/layout.tsx
+import React from 'react';
+import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Family Lawyer in Surrey & Abbotsford | Raj Gill Law",
-  description: "Raj Gill Law Corporation offers legal services in Surrey & Abbotsford. Schedule a free consultation today.",
-  openGraph: {
-    title: "Raj Gill Law Corporation - Trusted Family Lawyers",
-    description: "Raj Gill Law Corporation offers legal services in Surrey & Abbotsford. Schedule a free consultation today.",
-    images: "https://rajgilllaw.com/assets/preview-image.jpg", // Updated image URL
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Raj Gill Law Corporation - Trusted Family Lawyers",
-    description: "Raj Gill Law Corporation offers legal services in Surrey & Abbotsford. Schedule a free consultation today.",
-    images: "https://rajgilllaw.com/assets/preview-image.jpg", // Same image for Twitter
-  },
+  title: 'Divorce Lawyers in Surrey and Abbotsford | Raj Gill Law Corporation',
+  description: 'Experienced divorce lawyers in Surrey and Abbotsford offering compassionate and effective legal representation. Specializing in divorce, child custody, and spousal support cases.',
+  robots: 'index, follow',
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function DivorceLawyersLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={inter.className} style={{ backgroundImage: `url('/background2.jpg')`, opacity: 1 }}>
-        {children}
-        <Analytics />
+      <body>
+        <header>
+          <h1>Raj Gill Law Corporation - Divorce Lawyers</h1>
+        </header>
+        <main>{children}</main>
+        <footer>© {new Date().getFullYear()} Raj Gill Law Corporation</footer>
       </body>
     </html>
   );

@@ -6,26 +6,29 @@ import { Analytics } from "@vercel/analytics/react";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Immigration Lawyer in Surrey & Abbotsford | Raj Gill Law",
-  description: "Raj Gill Law Corporation offers legal services in Surrey & Abbotsford. Schedule Free Consultation Today.",
+  title: "Immigration Lawyer in Surrey & Abbotsford | Raj Gill Law Corporation",
+  description: "Experienced immigration lawyers in Surrey and Abbotsford providing legal assistance with visas, permanent residency, work permits, and family sponsorships. Schedule a free consultation today.",
   openGraph: {
-    title: "Raj Gill Law Corporation - Trusted Family Lawyers",
-    description: "Raj Gill Law Corporation offers legal services in Surrey & Abbotsford. Schedule a free consultation today.",
-    images: "https://rajgilllaw.com/assets/preview-image.jpg", // Updated image URL
+    title: "Immigration Lawyer in Surrey & Abbotsford | Raj Gill Law Corporation",
+    description: "Professional immigration law services in Surrey and Abbotsford. Expertise in visas, residency, work permits, and family sponsorship. Schedule your free consultation today.",
+    images: "https://rajgilllaw.com/assets/preview-image.jpg", // Replace with the correct URL specific to immigration law, if available
+    url: "https://rajgilllaw.com/immigration-law", // Update to the actual URL for the immigration law page
+    type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Raj Gill Law Corporation - Trusted Family Lawyers",
-    description: "Raj Gill Law Corporation offers legal services in Surrey & Abbotsford. Schedule a free consultation today.",
-    images: "https://rajgilllaw.com/assets/preview-image.jpg", // Same image for Twitter
+    title: "Immigration Lawyer in Surrey & Abbotsford | Raj Gill Law Corporation",
+    description: "Raj Gill Law Corporation offers specialized immigration law services in Surrey & Abbotsford, including visa applications, work permits, and family sponsorship. Free consultations available.",
+    images: "https://rajgilllaw.com/assets/preview-image.jpg", // Same image for Twitter, ensure it matches immigration services if possible
   },
+  robots: "index, follow",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body className={inter.className} style={{ backgroundImage: `url('/background2.jpg')`, opacity: 1 }}>
