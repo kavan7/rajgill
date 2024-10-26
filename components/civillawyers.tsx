@@ -3,7 +3,6 @@ import React from "react";
 import Image from "next/image";
 import { TracingBeam } from "./ui/tracing-beam";
 import { IconBriefcase, IconMan, IconPhone } from "@tabler/icons-react";
-import { FloatingNav } from "./ui/floating-navbar";
 import { SecondNav } from "./ui/secondnav";
 
 export function TracingBeamDemoTwo() {
@@ -21,25 +20,22 @@ export function TracingBeamDemoTwo() {
     {
       name: "Contact",
       id: "/#touch",
-      icon: (
-        <IconPhone className="h-4 w-4 text-neutral-500 dark:text-white" />
-      ),
+      icon: <IconPhone className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
   ];
+  
   return (
     <TracingBeam className="px-6">
       <div className="w-full mx-auto shadow-xl shadow-black-100 p-10 rounded-4xl antialiased pt-4 relative">
-        <SecondNav navItems={navItems}/>
+        <SecondNav navItems={navItems} />
         {dummyContent.map((item, index) => (
-          <div key={`content-${index}`} className="mb-10 w-full mt-[25px]">
-            <p className="text-xl mb-4 text-neutral-300">
-              {item.title}
-            </p>
+          <article key={`content-${index}`} className="mb-10 w-full mt-[25px]">
+            <h2 className="text-xl mb-4 text-neutral-300">{item.title}</h2>
             <div className="text-md prose text-neutral-400 prose-sm dark:prose-invert">
-              {item?.image && (
+              {item.image && (
                 <Image
                   src={item.image}
-                  alt="blog thumbnail"
+                  alt={item.altText} // Make sure to provide unique alt text for each item
                   height="200"
                   width="700"
                   className="rounded-xl mb-10 mx-auto items-center object-cover"
@@ -47,12 +43,14 @@ export function TracingBeamDemoTwo() {
               )}
               {item.description}
             </div>
-          </div>
+          </article>
         ))}
       </div>
     </TracingBeam>
   );
 }
+
+// Update `dummyContent` with unique alt text for each image
 const dummyContent = [
   {
     title: "Experienced Civil Lawyers in Surrey",
@@ -64,6 +62,7 @@ const dummyContent = [
       </>
     ),
     image: "/background.jpg",
+    altText: "Civil lawyer in Surrey providing legal advice",
   },
   {
     title: "Property Disputes and Real Estate Law in Surrey",
@@ -75,6 +74,7 @@ const dummyContent = [
       </>
     ),
     image: "/background5.jpg",
+    altText: "Real estate law and property dispute lawyer in Surrey",
   },
   {
     title: "Contract Disputes and Breach of Contract Cases",
@@ -86,6 +86,7 @@ const dummyContent = [
       </>
     ),
     image: "/background3.jpg",
+    altText: "Lawyer assisting with contract disputes in Surrey",
   },
   {
     title: "Negligence Claims and Personal Injury Civil Cases",
@@ -97,6 +98,7 @@ const dummyContent = [
       </>
     ),
     image: "/background6.jpg",
+    altText: "Surrey lawyer handling negligence claims",
   },
   {
     title: "Employment Disputes and Workplace Rights",
@@ -108,6 +110,7 @@ const dummyContent = [
       </>
     ),
     image: "/background4.jpg",
+    altText: "Employment dispute lawyer in Surrey",
   },
   {
     title: "Why Choose Us for Civil Law Matters?",
@@ -119,5 +122,6 @@ const dummyContent = [
       </>
     ),
     image: "/background2.jpg",
+    altText: "Experienced civil law firm in Surrey",
   },
 ];

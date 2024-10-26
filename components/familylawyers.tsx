@@ -3,7 +3,6 @@ import React from "react";
 import Image from "next/image";
 import { TracingBeam } from "./ui/tracing-beam";
 import { IconBriefcase, IconMan, IconPhone } from "@tabler/icons-react";
-import { FloatingNav } from "./ui/floating-navbar";
 import { SecondNav } from "./ui/secondnav";
 
 export function TracingBeamDemo() {
@@ -21,25 +20,22 @@ export function TracingBeamDemo() {
     {
       name: "Contact",
       id: "/#touch",
-      icon: (
-        <IconPhone className="h-4 w-4 text-neutral-500 dark:text-white" />
-      ),
+      icon: <IconPhone className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
   ];
+  
   return (
     <TracingBeam className="px-6">
       <div className="w-full mx-auto shadow-xl shadow-black-100 p-10 rounded-4xl antialiased pt-4 relative">
-        <SecondNav navItems={navItems}/>
+        <SecondNav navItems={navItems} />
         {dummyContent.map((item, index) => (
-          <div key={`content-${index}`} className="mb-10 w-full mt-[25px]">
-            <p className="text-xl mb-4 text-neutral-300">
-              {item.title}
-            </p>
+          <article key={`content-${index}`} className="mb-10 w-full mt-[25px]">
+            <h2 className="text-xl mb-4 text-neutral-300">{item.title}</h2>
             <div className="text-md prose text-neutral-400 prose-sm dark:prose-invert">
-              {item?.image && (
+              {item.image && (
                 <Image
                   src={item.image}
-                  alt="blog thumbnail"
+                  alt={item.altText} // Add unique alt text for each image
                   height="200"
                   width="700"
                   className="rounded-xl mb-10 mx-auto items-center object-cover"
@@ -47,13 +43,14 @@ export function TracingBeamDemo() {
               )}
               {item.description}
             </div>
-          </div>
+          </article>
         ))}
       </div>
     </TracingBeam>
   );
 }
 
+// Update `dummyContent` with unique alt text for each image
 const dummyContent = [
   {
     title: "Expert Family Lawyers in Surrey",
@@ -65,6 +62,7 @@ const dummyContent = [
       </>
     ),
     image: "/background.jpg",
+    altText: "Experienced family lawyer assisting clients in Surrey",
   },
   {
     title: "Divorce and Separation Services in Surrey",
@@ -76,6 +74,7 @@ const dummyContent = [
       </>
     ),
     image: "/background5.jpg",
+    altText: "Divorce lawyer consulting with a client in Surrey",
   },
   {
     title: "Child Custody and Support Lawyers",
@@ -87,6 +86,7 @@ const dummyContent = [
       </>
     ),
     image: "/background3.jpg",
+    altText: "Lawyer providing child custody support in Surrey",
   },
   {
     title: "Property Division and Spousal Support",
@@ -98,5 +98,6 @@ const dummyContent = [
       </>
     ),
     image: "/background6.jpg",
+    altText: "Lawyer discussing property division and spousal support with client in Surrey",
   },
 ];

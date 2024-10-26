@@ -41,7 +41,7 @@ export function FeaturesSectionDemo() {
       ],
     },
     {
-      title: "Corporate Law",
+      title: "Immigration Lawyers Surrey",
       description:
         "We handle everything from setting up your business and ensuring compliance to assisting with contracts, mergers, and more.",
       icon: <IconCurrencyDollar />,
