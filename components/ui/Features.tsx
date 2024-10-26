@@ -30,7 +30,7 @@ export function FeaturesSectionDemo() {
       ],
     },
     {
-      title: "Civil Law",
+      title: "Civil Lawyers Surrey",
       description:
         "Raj Gill Law can help you navigate the legal system with experience in property disputes, construction issues, and general litigation.",
       icon: <IconGavel />,
