@@ -1,3 +1,4 @@
+import { TracingBeamDemoTwo } from '@/components/civillawyers'
 import { TracingBeamDemo } from '@/components/familylawyers'
 import React from 'react'
 
@@ -24,7 +25,7 @@ const page = () => {
         <p className="uppercase tracking-widest text-lg text-center mt-5 text-slate-200 font-medium max-w-80">
               RAJ GILL LAW CORPORATION
             </p>
-        <TracingBeamDemo/>
+        <TracingBeamDemoTwo/>
     </div>
     </div>
     
