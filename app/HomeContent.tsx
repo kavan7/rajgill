@@ -13,16 +13,15 @@ import { About } from "@/components/About";
 import { Footer } from "@/components/Footer";
 import Touch from "@/components/Touch";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 export default function Home() {
   const pathname = usePathname();
-  const [key, setKey] = useState(0);
 
   useEffect(() => {
+    // Reload the page only when arriving back at the homepage
     if (pathname === "/") {
-      // Update key to trigger component re-render when back on the homepage
-      setKey((prevKey) => prevKey + 1);
+      window.location.reload();
     }
   }, [pathname]);
 
@@ -45,7 +44,7 @@ export default function Home() {
   ];
 
   return (
-    <main key={key} className="relative flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+    <main className="relative flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
       <div className="max-w-7xl w-full">
         <FloatingNav navItems={navItems} />
         <TracingBeam>
