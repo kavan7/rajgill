@@ -74,13 +74,13 @@ export const SecondNav = ({
       >
         
        
-         <button  onClick={() => {
-             scrollToSection('home')
-            }}
+         <a  href="/"
+            
             className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-2 py-2 rounded-full">
           <span><Image src={logo} alt="logo" width={50} height={50}/></span>
           
-        </button>
+        </a>
+      
         {navItems.map((navItem: any, idx: number) => (
           <Link
             key={`link=${idx}`}
