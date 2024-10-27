@@ -36,7 +36,7 @@ export default function RootLayout({
   <header className="p-4 bg-gray-600 text-white text-center">
     <h1>Raj Gill Law Corporation - Divorce Lawyers</h1>
   </header>
-  <main role="main" className="p-6 bg-gray-100 min-h-screen">
+  <main role="main" className="p-6  min-h-screen">
     {children}
   </main>
   <footer className="p-4 bg-gray-800 text-white text-center">
