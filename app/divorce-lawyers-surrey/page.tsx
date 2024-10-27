@@ -12,7 +12,7 @@ const DivorceLawyersPage = () => {
   return (
     <main className="relative flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
       <section className="flex flex-col bg-no-repeat py-20">
-        <div className="pb-[-30px] pt-24">
+        <div className="pb-[-30px] pt-5">
           <div className="h-screen w-full dark:bg-black-100 bg-transparent absolute top-0 left-0 flex items-center justify-center">
             <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-transparent [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
           </div>
