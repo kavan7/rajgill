@@ -17,19 +17,15 @@ export const metadata: Metadata = {
     images: 'https://rajgilllaw.com/assets/preview-image.jpg', // Replace with specific URL if available
     type: 'website',
   },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Divorce Lawyers in Surrey and Abbotsford | Raj Gill Law Corporation',
-    description: 'Compassionate divorce and family law representation in Surrey and Abbotsford. Specializing in child custody, spousal support, and divorce cases.',
-    images: 'https://rajgilllaw.com/assets/preview-image.jpg', // Ensure image is relevant
-  },
+
 };
 
 export default function DivorceLawyersLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <header className="p-4 bg-blue-600 text-white text-center">
+      <body className={inter.className} style={{ backgroundImage: `url('/background2.jpg')`, opacity: 1 }}>
+  
+        <header className="p-4 bg-gray-600 text-white text-center">
           <h1>Raj Gill Law Corporation - Divorce Lawyers</h1>
         </header>
         <main role="main" className="p-6 bg-gray-100 min-h-screen">

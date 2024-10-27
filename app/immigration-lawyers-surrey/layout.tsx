@@ -31,10 +31,19 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className} style={{ backgroundImage: `url('/background2.jpg')`, opacity: 1 }}>
-        {children}
-        <Analytics />
-      </body>
+        <body className={inter.className} style={{ backgroundImage: `url('/background2.jpg')`, opacity: 1 }}>
+  
+  <header className="p-4 bg-gray-600 text-white text-center">
+    <h1>Raj Gill Law Corporation - Immigration Lawyers</h1>
+  </header>
+  <main role="main" className="p-6 bg-gray-100 min-h-screen">
+    {children}
+  </main>
+  <footer className="p-4 bg-gray-800 text-white text-center">
+    © {new Date().getFullYear()} Raj Gill Law Corporation
+  </footer>
+  <Analytics />
+</body>
     </html>
   );
 }
