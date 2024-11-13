@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+
 import "../globals.css";
 import { Analytics } from "@vercel/analytics/react";
 
-const inter = Inter({ subsets: ["latin"] });
+
 
 export const metadata: Metadata = {
   title: "Civil Lawyer in Surrey & Abbotsford | Raj Gill Law Corporation",
@@ -31,7 +31,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-        <body className={inter.className} style={{ backgroundImage: `url('/background2.jpg')`, opacity: 1 }}>
+        <body  style={{ backgroundImage: `url('/background2.jpg')`, opacity: 1 }}>
   
   <header className="p-4 bg-gray-600 text-white text-center">
     <h1>Raj Gill Law Corporation - Divorce Lawyers</h1>
