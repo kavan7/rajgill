@@ -12,8 +12,7 @@ import { TracingBeam } from "@/components/ui/tracing-beam";
 import { About } from "@/components/About";
 import { Footer } from "@/components/Footer";
 import Touch from "@/components/Touch";
-import { usePathname } from "next/navigation";
-import { useEffect } from "react";
+
 
 export default function page() {
   

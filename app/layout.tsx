@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from '@vercel/speed-insights/next';
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Family Lawyer in Surrey & Abbotsford | Raj Gill Law",
@@ -28,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className} style={{ backgroundImage: `url('/background6.jpg')`, opacity: 1 }}>
+      <body style={{ backgroundImage: `url('/background6.jpg')`, opacity: 1 }}>
         {children}
         <Analytics />
         <SpeedInsights />
