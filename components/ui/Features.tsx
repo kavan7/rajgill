@@ -182,7 +182,7 @@ const Feature = ({
       >
         <div className="flex gap-4 flex-col h-full w-full">
           <motion.div layoutId={`image-${title}-${id}`}></motion.div>
-          <div className="flex justify-center items-center flex-col">
+          <div className="flex justify-center items-center flex-col">B
             <motion.h3
               layoutId={`title-${title}-${id}`}
               className="font-bold flex flex-row px-2 text-white dark:text-neutral-200 text-center text-2xl uppercase md:text-left"
