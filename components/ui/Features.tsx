@@ -174,7 +174,7 @@ const Feature = ({
           </div>
         ) : null}
       </AnimatePresence>
-
+      <Link href={`/${title.toLowerCase().replace(/\s+/g, "-")}`}>
       <motion.div
         layoutId={`card-${title}-${id}`}
         onClick={() => setActive({ title, description, icon, index, items })}
@@ -190,11 +190,9 @@ const Feature = ({
               <span className="mr-2">{icon}</span>
               {title}
             </motion.h3>
-            <Link href={`/${title.toLowerCase().replace(/\s+/g, "-")}`}>
-          <button className="mt-4 px-6 py-2  bg-slate-600 text-white rounded-md hover:bg-slate-200 transition-all">
-            Learn More
-          </button>
-        </Link>
+          
+        
+   
             <motion.p
               layoutId={`description-${description}-${id}`}
               className="text-neutral-100 dark:text-neutral-400 text-center md:text-left font-light"
@@ -204,6 +202,7 @@ const Feature = ({
         {/* Rectangular Button for navigation */}
       
       </motion.div>
+      </Link>
     </div>
   );
 };
