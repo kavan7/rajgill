@@ -114,7 +114,7 @@ const Feature = ({
             <motion.div
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
-              className="w-full max-w-[500px] h-[50%] md:h-fit overflow-y-auto md:max-h-[50%] flex flex-col bg-black-200/[1] p-5 rounded-none text-3xl "
+              className=""
             >
               <motion.div layoutId={`image-${active.title}-${id}`} ></motion.div>
 
