@@ -108,7 +108,7 @@ const Hero = () => {
               RAJ GILL LAW CORPORATION
             </p>
           
-            <TextGenerateEffect
+            <TextGenerateEffect 
               words="Surrey & Abbotsford, British Columbia’s Most Trusted Attorneys"
               className="text-center text-[40px] md:text-5xl lg:text-6xl"
             />

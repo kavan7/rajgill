@@ -27,7 +27,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body style={{ backgroundImage: `url('/background6.jpg')`, opacity: 1 }}>
+      
+      <body  style={{ backgroundImage: `url('/background6.png')`, opacity: 1  } }>
         {children}
         <Analytics />
         <SpeedInsights />
