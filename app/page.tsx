@@ -48,7 +48,7 @@ export default function page() {
           <About />
           <hr />
           <div id="">
-            <MacbookScrollDemo />
+      
           </div>
           <div id="" />
           <hr id="" />
