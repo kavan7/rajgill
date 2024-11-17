@@ -101,7 +101,15 @@ export const FloatingNav = ({
         <button className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-5 py-5 rounded-full">
         <Popover>
   <PopoverTrigger asChild>
-          <span className="flex flex-row"><IconMapPin className="mr-2"/>Offices</span>
+  <button
+  className="flex flex-row"
+  aria-haspopup="dialog"
+  aria-expanded="false"
+  aria-controls="radix-r1:"
+  data-state="closed"
+>
+  Offices
+<IconMapPin className="mr-2"/>Offices</button>
         
           </PopoverTrigger>
   <PopoverContent className="mt-10">

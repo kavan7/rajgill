@@ -110,7 +110,7 @@ const Hero = () => {
           
             <h1
              
-              className="text-center text-[40px] text-neutral-200 md:text-5xl lg:text-6xl mt-5 mb-5">Surrey & Abbotsford, British Columbia’s Most Trusted Attorneys</h1>
+              className="text-center text-[40px] text-[#e5e5e5] md:text-5xl lg:text-6xl mt-5 mb-5">Surrey & Abbotsford, British Columbia’s Most Trusted Attorneys</h1>
            
             <p className="text-center md:tracking-wider text-slate-200 font-normal mb-4 text-sm md:text-lg lg:text-2xl">
               Schedule a Free Consultation.
