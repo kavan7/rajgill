@@ -15,6 +15,7 @@ import {
   useTransform,
 } from "framer-motion";
 import Link from "next/link";
+import { title } from "process";
 import { useRef, useState } from "react";
 
 export const FloatingDock = ({
@@ -77,6 +78,7 @@ const FloatingDockMobile = ({
                   className="h-10 w-10 rounded-full bg-gray-50 dark:bg-neutral-900 flex items-center justify-center"
                 >
                   <div className="h-4 w-4">{item.icon}</div>
+                  
                 </Link>
               </motion.div>
             ))}
@@ -102,18 +104,22 @@ const FloatingDockDesktop = ({
 }) => {
   let mouseX = useMotionValue(Infinity);
   return (
+    <div className="flex items-center  flex-col">
+       <h1 className="text-2xl text-[#e5e5e5] mb-2 mt-5">Visit our Socials</h1>
     <motion.div
       onMouseMove={(e) => mouseX.set(e.pageX)}
       onMouseLeave={() => mouseX.set(Infinity)}
       className={cn(
-        "mx-auto hidden md:flex mb-12 mt-28 gap-4 items-end  rounded-2xl bg-transparent dark:bg-neutral-900 px-4 ",
+        "mx-auto hidden md:flex mb-12  gap-4 items-end  rounded-2xl bg-transparent dark:bg-neutral-900 ",
         className
       )}
     >
+        
       {items.map((item) => (
-        <IconContainer mouseX={mouseX} key={item.title} {...item} />
+          <IconContainer mouseX={mouseX} key={item.title} {...item} />
       ))}
     </motion.div>
+    </div>
   );
 };
 

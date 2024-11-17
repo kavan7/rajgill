@@ -57,12 +57,9 @@ export function Footer() {
   return (
  
     <div className="flex-col">
-       <TextGenerateEffect
-            words=""
-            className="text-center text-[40px] md:text-5xl lg:text-6xl"
-          />
+     
     <div className="">
-        
+ 
       <FloatingDock
        items={links}
       />
