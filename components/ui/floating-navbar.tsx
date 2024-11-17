@@ -101,7 +101,8 @@ export const FloatingNav = ({
         <button className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-5 py-5 rounded-full">
         <Popover>
   <PopoverTrigger asChild>
-          <span><IconMapPin/></span>
+          <span className="flex flex-row"><IconMapPin className="mr-2"/>Offices</span>
+        
           </PopoverTrigger>
   <PopoverContent className="mt-10">
     12885 80 Ave #205, Surrey, BC 
