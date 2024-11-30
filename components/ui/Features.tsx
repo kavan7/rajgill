@@ -3,9 +3,7 @@ import {
   IconUsersGroup,
   IconGavel,
   IconCurrencyDollar,
-  IconPlane,
-  IconPrison,
-  IconHome,
+
 } from "@tabler/icons-react";
 
 import Link from "next/link";
