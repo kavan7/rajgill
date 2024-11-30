@@ -1,5 +1,5 @@
 "use client";
-
+import React from "react";
 import Hero from "@/components/Hero";
 import {
   IconBriefcase,
@@ -7,12 +7,12 @@ import {
   IconPhone,
 } from "@tabler/icons-react";
 import { FloatingNav } from "@/components/ui/floating-navbar";
-import { MacbookScrollDemo } from "@/components/Contact";
+
 import { TracingBeam } from "@/components/ui/tracing-beam";
 import { About } from "@/components/About";
 import { Footer } from "@/components/Footer";
 import Touch from "@/components/Touch";
-import { TracingBeamDemoTwo } from "@/components/civillawyers";
+
 
 
 export default function page() {

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
-
+import React from "react";
 export const metadata: Metadata = {
   title: "Family Lawyer in Surrey & Abbotsford | Raj Gill Law",
   description: "Raj Gill Law Corporation offers legal services in Surrey & Abbotsford. Schedule a free consultation today.",

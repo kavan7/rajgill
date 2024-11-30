@@ -1,7 +1,7 @@
 import { InfiniteMovingCards } from "@/components/Testimonials";
 import React from "react";
 import { Metadata } from "next";
-import { FloatingNav } from "@/components/ui/floating-navbar";
+
 import { IconBriefcase, IconMan, IconPhone } from "@tabler/icons-react";
 import { SecondNav } from "@/components/ui/secondnav";
 

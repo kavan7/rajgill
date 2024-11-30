@@ -2,7 +2,7 @@ import { useState, useRef, ChangeEvent, FormEvent } from "react";
 import { FaCalendar, FaGavel } from "react-icons/fa6";
 import { motion } from 'framer-motion';
 import MagicButton from "./ui/MagicButton";
-import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+
 import Link from "next/link";
 import {
   Alert,

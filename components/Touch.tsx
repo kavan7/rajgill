@@ -1,9 +1,5 @@
 import React from 'react'
-import { SparklesCore } from './ui/sparkles'
-import { PinContainer } from './ui/3d-pin'
-import { IconBrandOffice, IconLocationBolt, IconMail, IconMapPin2, IconPhone } from '@tabler/icons-react'
-import { Footer } from './Footer'
-import Link from 'next/link'
+
 
 const Touch = () => {
   return (
