@@ -292,16 +292,14 @@ const Hero = () => {
       <div id="" className="mt-48 mb-36">
         <FeaturesSectionDemo/>
         <div className="flex flex-col items-center">
-          <button className="items-center" onClick={() => {
-            scrollToSection("faq")
-          }}>
+          <a href="/client-testimonials">
             <MagicButton
-              title="Learn More"
+              title="Client Reviews"
               icon={<FaGavel />}
               position="right"
               otherClasses="rounded-lg"
             />
-          </button>
+          </a>
         </div>
       </div>
     </section>
