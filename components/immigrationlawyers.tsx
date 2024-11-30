@@ -60,7 +60,7 @@ const dummyContent = [
         </p>
       </>
     ),
-    image: "/background.jpg",
+    image: "/background.png",
     altText: "Experienced immigration lawyer in Surrey offering free consultations",
   },
   {
@@ -72,7 +72,7 @@ const dummyContent = [
         </p>
       </>
     ),
-    image: "/background5.jpg",
+    image: "/background5.png",
     altText: "Lawyer in Surrey providing free consultation for immigration services",
   },
   {
@@ -84,7 +84,7 @@ const dummyContent = [
         </p>
       </>
     ),
-    image: "/background3.jpg",
+    image: "/background3.png",
     altText: "Assistance with permanent residency and citizenship applications in Surrey",
   },
   {
@@ -96,7 +96,7 @@ const dummyContent = [
         </p>
       </>
     ),
-    image: "/background6.jpg",
+    image: "/background6.png",
     altText: "Lawyer in Surrey assisting with work permits and business immigration",
   },
   {
@@ -108,7 +108,7 @@ const dummyContent = [
         </p>
       </>
     ),
-    image: "/background4.jpg",
+    image: "/background4.png",
     altText: "Surrey immigration lawyer assisting with family sponsorship and reunification",
   },
   {
@@ -120,7 +120,7 @@ const dummyContent = [
         </p>
       </>
     ),
-    image: "/background2.jpg",
+    image: "/background2.png",
     altText: "Surrey law firm providing comprehensive immigration services",
   },
 ];

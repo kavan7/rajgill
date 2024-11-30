@@ -61,7 +61,7 @@ const dummyContent = [
         </p>
       </>
     ),
-    image: "/background.jpg",
+    image: "/background.png",
     altText: "Civil lawyer in Surrey providing legal advice",
   },
   {
@@ -73,7 +73,7 @@ const dummyContent = [
         </p>
       </>
     ),
-    image: "/background5.jpg",
+    image: "/background5.png",
     altText: "Real estate law and property dispute lawyer in Surrey",
   },
   {
@@ -85,7 +85,7 @@ const dummyContent = [
         </p>
       </>
     ),
-    image: "/background3.jpg",
+    image: "/background3.png",
     altText: "Lawyer assisting with contract disputes in Surrey",
   },
   {
@@ -97,7 +97,7 @@ const dummyContent = [
         </p>
       </>
     ),
-    image: "/background6.jpg",
+    image: "/background6.png",
     altText: "Surrey lawyer handling negligence claims",
   },
   {
@@ -109,7 +109,7 @@ const dummyContent = [
         </p>
       </>
     ),
-    image: "/background4.jpg",
+    image: "/background4.png",
     altText: "Employment dispute lawyer in Surrey",
   },
   {
@@ -121,7 +121,7 @@ const dummyContent = [
         </p>
       </>
     ),
-    image: "/background2.jpg",
+    image: "/background2.png",
     altText: "Experienced civil law firm in Surrey",
   },
 ];

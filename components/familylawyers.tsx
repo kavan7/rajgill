@@ -61,7 +61,7 @@ const dummyContent = [
         </p>
       </>
     ),
-    image: "/background.jpg",
+    image: "/background.png",
     altText: "Experienced family lawyer assisting clients in Surrey",
   },
   {
@@ -73,7 +73,7 @@ const dummyContent = [
         </p>
       </>
     ),
-    image: "/background5.jpg",
+    image: "/background5.png",
     altText: "Divorce lawyer consulting with a client in Surrey",
   },
   {
@@ -85,7 +85,7 @@ const dummyContent = [
         </p>
       </>
     ),
-    image: "/background3.jpg",
+    image: "/background3.png",
     altText: "Lawyer providing child custody support in Surrey",
   },
   {
@@ -97,7 +97,7 @@ const dummyContent = [
         </p>
       </>
     ),
-    image: "/background6.jpg",
+    image: "/background6.png",
     altText: "Lawyer discussing property division and spousal support with client in Surrey",
   },
 ];
