@@ -98,7 +98,7 @@ export const FloatingNav = ({
                 aria-controls="radix-r1:"
                 data-state="closed"
               >
-                Offices
+             
                 <IconMapPin className="mr-2" />
               </button>
             </PopoverTrigger>
