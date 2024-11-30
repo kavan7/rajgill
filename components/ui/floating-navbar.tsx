@@ -109,7 +109,7 @@ export const FloatingNav = ({
   data-state="closed"
 >
   Offices
-<IconMapPin className="mr-2"/>Offices</button>
+<IconMapPin className="mr-2"/></button>
         
           </PopoverTrigger>
   <PopoverContent className="mt-10">

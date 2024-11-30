@@ -12,6 +12,7 @@ import { TracingBeam } from "@/components/ui/tracing-beam";
 import { About } from "@/components/About";
 import { Footer } from "@/components/Footer";
 import Touch from "@/components/Touch";
+import { TracingBeamDemoTwo } from "@/components/civillawyers";
 
 
 export default function page() {
@@ -38,7 +39,7 @@ export default function page() {
   return (
     <main className="relative flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
       <div className="max-w-7xl w-full">
-        <FloatingNav navItems={navItems} />
+       <FloatingNav navItems={navItems}/>
         <TracingBeam>
           <div id="home">
             <div className="flex flex-col">
