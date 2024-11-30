@@ -8,7 +8,7 @@ import {
 
 } from "@tabler/icons-react";
 import Image from "next/image";
-import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+
 
 export function Footer() {
   const links = [

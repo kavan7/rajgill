@@ -1,3 +1,4 @@
+import { IconMail, IconMapPin2, IconPhone } from '@tabler/icons-react'
 import React from 'react'
 
 
