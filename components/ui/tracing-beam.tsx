@@ -4,9 +4,8 @@ import {
   motion,
   useTransform,
   useScroll,
-  useVelocity,
   useSpring,
-} from "framer-motion";
+} from "framer-motion"; // Removed useVelocity
 import { cn } from "@/lib/utils";
 
 export const TracingBeam = ({
@@ -47,10 +46,7 @@ export const TracingBeam = ({
   );
 
   return (
-    <motion.div
-      ref={ref}
-      className={cn("relative ", className)}
-    >
+    <motion.div ref={ref} className={cn("relative ", className)}>
       <div className="absolute -left-4 md:-left-10 top-40">
         <motion.div
           transition={{
