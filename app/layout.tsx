@@ -40,12 +40,15 @@ export default function RootLayout({
         />
       </head>
       <body
-        style={{
-          backgroundImage: `url('/background6.webp')`,
-          backgroundColor: "#f5f5f5", // Fallback color
-          opacity: 1,
-        }}
-      >
+  style={{
+    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/bg40.png')`,
+    backgroundColor: "#fff", // Fallback color
+    backgroundSize: "cover", // Ensure the background image covers the whole area
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center",
+    opacity: 1,
+  }}
+>
         {children}
         <Analytics />
       </body>
