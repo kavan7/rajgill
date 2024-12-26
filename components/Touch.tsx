@@ -6,7 +6,7 @@ const Touch = () => {
   return (
     <main className='flex flex-col md:flex-row lg:flex-col'>
     <div  id='touch' className="h-[40rem] w-full bg-transparent flex xs:flex-col flex-col items-center justify-center overflow-hidden rounded-md">
-    <h1 className="md:text-2xl text-7xl lg:text-8xl font-bold  ml-5 text-center text-neutral-500 relative z-20">
+    <h1 className="md:text-2xl text-7xl lg:text-8xl font-bold  ml-5 text-center text-neutral-100 relative z-20">
       Our Contacts
     </h1>
     
