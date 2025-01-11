@@ -149,7 +149,7 @@ export function About() {
               <div className="flex gap-4 flex-col h-full w-full">
                 <motion.div layoutId={`image-${card.title}-${id}`}>
                   <Image
-                    width={400}
+                    width={350}
                     height={300}
                     src={card.src}
                     alt={card.title}
