@@ -77,7 +77,7 @@ export function About() {
               >
                 <motion.div layoutId={`image-${active.title}-${id}`}>
                   <Image
-                    priority
+                    
                     width={1000}
                     height={1000}
                     src={active.src}
@@ -149,8 +149,8 @@ export function About() {
               <div className="flex gap-4 flex-col h-full w-full">
                 <motion.div layoutId={`image-${card.title}-${id}`}>
                   <Image
-                    width={1000}
-                    height={1000}
+                    width={400}
+                    height={300}
                     src={card.src}
                     alt={card.title}
                     className="h-60 w-full rounded-2xl object-cover object-top"

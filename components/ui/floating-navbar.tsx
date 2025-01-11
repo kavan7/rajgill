@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import logo from "@/app/favicon.ico";
+import logo from "@/app/resizedlogo.png";
 import {
   motion,
   AnimatePresence,
