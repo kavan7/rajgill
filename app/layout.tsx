@@ -35,7 +35,7 @@ export default function RootLayout({
         {/* Basic SEO Meta Tags */}
         <meta
           name="description"
-          content="Expert legal services in Surrey & Abbotsford, specializing in family law, estate planning, and more. Schedule a free consultation today with Raj Gill Law Corporation."
+          content="Expert legal services in Surrey & Abbotsford, specializing in family law, estate planning, and more. We are the best immigration lawyers in surrey. Schedule a free consultation today with Raj Gill Law Corporation."
         />
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -59,11 +59,11 @@ export default function RootLayout({
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Raj Gill Law Corporation - Trusted Family Lawyers"
+          content="Affordable legal services in Surrey & Abbotsford, specializing in divorce, immigration law - Best immigration lawyer in surrey. Schedule a free consultation today with Raj Gill Law Corporation"
         />
         <meta
           property="og:description"
-          content="Expert legal services in Surrey & Abbotsford, specializing in family law, estate planning, and more. Schedule a free consultation today with Raj Gill Law Corporation."
+          content="Affordable legal services in Surrey & Abbotsford, specializing in divorce, immigration law - Best immigration lawyer in surrey. Schedule a free consultation today with Raj Gill Law Corporation."
         />
         <meta
           property="og:image"
@@ -93,7 +93,7 @@ export default function RootLayout({
             "@type": "LegalService",
             name: "Raj Gill Law Corporation",
             description:
-              "Expert legal services in Surrey & Abbotsford, specializing in family law, estate planning, and more. Schedule a free consultation today.",
+              "Affordable legal services in Surrey & Abbotsford, specializing in divorce, immigration, real estate, and more. Schedule a free consultation today.",
             url: "https://rajgilllaw.com",
             logo: "https://rajgilllaw.com/assets/logo.png",
             areaServed: ["Surrey", "Abbotsford"],
