@@ -6,7 +6,7 @@ import React from "react";
 export const metadata: Metadata = {
   title: "Family Lawyer in Surrey & Abbotsford | Raj Gill Law Corporation",
   description:
-    "Expert legal services in Surrey & Abbotsford, specializing in family law, estate planning, and more. Schedule a free consultation today with Raj Gill Law Corporation.",
+    "EExpert legal services in Surrey & Abbotsford, specializing in family law, estate planning, and more. We are the best immigration lawyers in surrey. Schedule a free consultation today with Raj Gill Law Corporation",
   openGraph: {
     type: "website",
     title: "Raj Gill Law Corporation - Trusted Family Lawyers",
