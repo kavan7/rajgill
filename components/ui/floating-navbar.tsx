@@ -10,7 +10,7 @@ import {
 } from "framer-motion";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-import { IconMapPin } from "@tabler/icons-react";
+import { IconMapPin, IconNote } from "@tabler/icons-react";
 import Image from "next/image";
 import { Popover, PopoverContent, PopoverTrigger } from "./popover";
 
@@ -88,6 +88,10 @@ export const FloatingNav = ({
             <span className="hidden sm:block text-sm">{navItem.name}</span>
           </Link>
         ))}
+        <Link href={`/blog`}>
+        <span className="block sm:hidden"><IconNote/></span>
+        <span className="hidden sm:block text-sm">Blog</span>
+        </Link>
         <button className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-5 py-5 rounded-full">
           <Popover>
             <PopoverTrigger asChild>
