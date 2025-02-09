@@ -114,7 +114,7 @@ export default function RootLayout({
           })}
         </script>
       </head>
-      <body
+      <body style={{backgroundImage: ('/background2.png')}}
 
       >
         {children}
