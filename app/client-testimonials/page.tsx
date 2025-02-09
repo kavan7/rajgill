@@ -96,7 +96,7 @@ const navItems = [
 
 const ClientTestimonials = () => {
   return (
-    <main className="flex bg-hero-pattern flex-col items-center justify-center py-20 ">
+    <main className="flex  flex-col items-center justify-center py-20 ">
        <SecondNav navItems={navItems}/>
       <h1 className="font-bold text-center text-[40px] md:text-5xl lg:text-6xl text-neutral-300">
       What our clients have to say.

@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body >
-        <header className="mt-[150px] ont-bold text-center underline underline-offset-2text-[40px] md:text-5xl lg:text-6xl text-neutral-300">
+        <header className="mt-[150px] ont-bold bg-hero-pattern text-center underline underline-offset-2text-[40px] md:text-5xl lg:text-6xl text-neutral-300">
           <h1>Raj Gill Law | Reviews</h1>
         </header>
         <main role="main" className="p-6 min-h-screen">
