@@ -114,8 +114,14 @@ export default function RootLayout({
           })}
         </script>
       </head>
-      <body style={{backgroundImage: ('/background2.png')}}
-
+      <body
+        style={{
+          backgroundImage: `url('/background2.png')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundColor: "#000000", // Fallback color for when the image doesn't load
+        }}
       >
         {children}
         {/* Vercel Analytics */}
