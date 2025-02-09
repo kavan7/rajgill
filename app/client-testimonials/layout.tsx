@@ -29,7 +29,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body  className="bg-hero-pattern" >
+      <body  className="" style={{backgroundImage : `url(/background2.png)`}} >
         <header className="mt-[150px] ont-bold  text-center underline underline-offset-2text-[40px] md:text-5xl lg:text-6xl text-neutral-300">
           <h1>Raj Gill Law | Reviews</h1>
         </header>

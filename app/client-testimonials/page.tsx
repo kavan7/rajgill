@@ -72,6 +72,12 @@ const testimonials = [
     name: "Kamaljit Singh",
     title: "8 months ago",
   },
+  {
+    quote: "Our family had a consultation with Raj Gill, and he was absolutely amazing to work with. He was incredibly compassionate, kind, and caring, taking the time to listen and understand our situation. Despite it being a last-minute request, he accommodated us, even on a weekend, which we truly appreciated.This was a family law matter, and speaking with him gave us so much clarity and reassurance. He explained everything thoroughly and made sure we felt supported throughout the conversation. On top of his professionalism and empathy, his rates were also very reasonable, which was a huge relief. Overall, it was just a really great experience, and we are so grateful for his time and guidance. I highly recommend Raj Gill to anyone looking for a knowledgeable and compassionate lawyer.",
+    name: "Kam",
+    title: "5 days ago",
+  },
+
 ];
 
 
@@ -104,7 +110,7 @@ const ClientTestimonials = () => {
     <p className="uppercase tracking-widest text-lg text-center mt-5 text-slate-200 font-medium max-w-80">
       RAJ GILL LAW CORPORATION
     </p>
-      <InfiniteMovingCards items={testimonials} speed="normal" direction="left" />
+      <InfiniteMovingCards items={testimonials} speed="slow" direction="left" />
     </main>
   );
 };

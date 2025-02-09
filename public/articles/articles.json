@@ -22,6 +22,18 @@
       "title": "Hi, we are Raj Gill Law!",
       "image": "/background2.png",
       "date": "2024-11-30"
+    },
+    {
+      "slug": "immigration-law-news",
+      "title": "Excellent Immigration Services",
+      "image": "/immigration.png",
+      "date": "2025-02-09"
+    },
+    {
+      "slug": "client-success",
+      "title": "Client Success Story",
+      "image": "/client.png",
+      "date": "2025-01-04"
     }
   
    
