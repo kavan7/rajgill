@@ -39,7 +39,7 @@ export function FeaturesSectionDemo() {
       ],
     },
     {
-      title: "Surrey Immigration Lawyers ",
+      title: "Surrey Immigration Lawyers",
       description:
         "We handle everything from setting up your business and ensuring compliance to assisting with contracts, mergers, and more.",
       icon: <IconCurrencyDollar />,
