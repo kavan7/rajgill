@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 const DivorceLawyersPage = () => {
   return (
-    <main className="relative flex justify-center bg-hero-pattern items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+    <main className="relative flex justify-center  items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
       <section className="flex flex-col bg-no-repeat py-20">
         <div className="pb-[-30px] pt-5">
           <div className="h-screen w-full dark:bg-black-100 bg-transparent absolute top-0 left-0 flex items-center justify-center">

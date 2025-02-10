@@ -110,7 +110,7 @@ const Hero = () => {
           
             <h1
              
-              className="text-center text-[40px] text-[#e5e5e5] md:text-5xl lg:text-6xl mt-5 mb-5">Surrey & Abbotsford, British Columbia’s Most Trusted Attorneys</h1>
+              className="text-center text-[40px] text-[#e5e5e5] md:text-5xl lg:text-6xl mt-5 mb-5">Surrey & Abbotsford, British Columbia's Most Trusted Attorneys</h1>
            
             <p className="text-center md:tracking-wider text-slate-200 font-normal mb-4 text-sm md:text-lg lg:text-2xl">
               Schedule a Free Consultation.
@@ -265,30 +265,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div id="services" className="flex justify-center items-center md:mt-[70px] mt-[20px] lg:mt-[70px]">
-        <motion.div
-          animate={{
-            y: [-10, -30, -10]
-          }}
-          transition={{
-            duration: 1.5,
-            repeat: Infinity,
-            repeatType: "loop"
-          }}>
-             
-          <Link
-            href={''}
-            className="flex items-center gap-2 shadow-card"
-            onClick={() => {
-              scrollToSection("services");
-            }}>
-            <svg data-accordion-icon className="w-16 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-              <path stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5 5 1 1 5"/>
-            </svg>
-          </Link>
-        </motion.div>
-      </div>
-
+  
       <div id="" className="mt-48 mb-36">
         <FeaturesSectionDemo/>
         <div className="flex flex-col items-center">
