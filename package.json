@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "cross-env ANALYZE=true next build",
     "start": "next start",
     "lint": "next lint",
     "sitemap": "next-sitemap",
@@ -48,6 +48,7 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "babel-plugin-minify-dead-code-elimination": "^0.5.2",
+    "cross-env": "^7.0.3",
     "eslint": "^8",
     "eslint-config-next": "14.2.5",
     "eslint-plugin-react": "^7.37.2",
