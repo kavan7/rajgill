@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 const ImmigrationLawyersPage = () => {
   return (
-    <main className="relative flex bg-hero-pattern justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+    <main className="relative flex  justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
       {/* Immigration Lawyers Section */}
       <section className="flex flex-col bg-no-repeat py-20">
         <div className="pb-[-30px] pt-24">
