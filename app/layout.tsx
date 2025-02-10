@@ -116,11 +116,11 @@ export default function RootLayout({
       </head>
       <body
         style={{
-          backgroundImage: `url('/bg40.png')`,
+          backgroundImage: `url('/background2.png')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
-          backgroundColor: "#ffffff", // Fallback color for when the image doesn't load
+          backgroundColor: "#000000", // Fallback color for when the image doesn't load
         }}
       >
         {children}

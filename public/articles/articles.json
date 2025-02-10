@@ -1,4 +1,16 @@
 [
+  {
+    "slug": "immigration-law-news",
+    "title": "Excellent Immigration Services",
+    "image": "/immigration.jpg",
+    "date": "2025-02-09"
+  },
+  {
+    "slug": "client-success",
+    "title": "Client Success Story",
+    "image": "/client.jpg",
+    "date": "2025-01-04"
+  },
     {
       "slug": "family-law-news",
       "title": "Keeping Up With Key Family Law Updates",
@@ -23,6 +35,7 @@
       "image": "/background2.png",
       "date": "2024-11-30"
     }
+
   
    
 
