@@ -15,7 +15,7 @@ import { CloseIcon } from "../About";
 export function FeaturesSectionDemo() {
   const featureList = [
     {
-      title: "Divorce Lawyers Surrey",
+      title: "Surrey Divorce Lawyers",
       description:
         "We are experienced family lawyers who strive to provide our clients with the best possible outcome. We use several different approaches in achieving the best result for our clients, including collaborative divorce, mediation, arbitration, and litigation when necessary.",
       icon: <IconUsersGroup />,
@@ -28,7 +28,7 @@ export function FeaturesSectionDemo() {
       ],
     },
     {
-      title: "Civil Lawyers Surrey",
+      title: "Surrey Civil Lawyers",
       description:
         "Raj Gill Law can help you navigate the legal system with experience in property disputes, construction issues, and general litigation.",
       icon: <IconGavel />,
@@ -39,7 +39,7 @@ export function FeaturesSectionDemo() {
       ],
     },
     {
-      title: "Immigration Lawyers Surrey",
+      title: "Surrey Immigration Lawyers ",
       description:
         "We handle everything from setting up your business and ensuring compliance to assisting with contracts, mergers, and more.",
       icon: <IconCurrencyDollar />,
