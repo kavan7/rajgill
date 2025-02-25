@@ -4,9 +4,9 @@ import { Analytics } from "@vercel/analytics/react";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Family Lawyer in Surrey & Abbotsford | Raj Gill Law Corporation",
+  title: "Family & Divorce Lawyers in Surrey | Abbotsford",
   description:
-    "EExpert legal services in Surrey & Abbotsford, specializing in family law, estate planning, and more. We are the best immigration lawyers in surrey. Schedule a free consultation today with Raj Gill Law Corporation",
+    "Contact Raj Gill Law Family Lawyers & Divorce Lawyers in Surrey for all of your family law needs today. Book a free consultation now.",
   openGraph: {
     type: "website",
     title: "Raj Gill Law Corporation - Trusted Family Lawyers",
@@ -32,87 +32,23 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Basic SEO Meta Tags */}
-        <meta
-          name="description"
-          content="Expert legal services in Surrey & Abbotsford, specializing in family law, estate planning, and more. We are the best immigration lawyers in surrey. Schedule a free consultation today with Raj Gill Law Corporation."
-        />
-        <meta name="robots" content="index, follow" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href="https://rajgilllaw.com" />
-
-        {/* Favicon */}
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-
-        {/* Preload Critical Fonts */}
-        <link
-          rel="preload"
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
-          as="style"
-        />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-686827248"
         />
 
-        {/* Open Graph Meta Tags */}
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:title"
-          content="Affordable legal services in Surrey & Abbotsford, specializing in divorce, immigration law - Best immigration lawyer in surrey. Schedule a free consultation today with Raj Gill Law Corporation"
+        {/* 2) Initialize gtag with an inline script */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-686827248');
+            `,
+          }}
         />
-        <meta
-          property="og:description"
-          content="Affordable legal services in Surrey & Abbotsford, specializing in divorce, immigration law - Best immigration lawyer in surrey. Schedule a free consultation today with Raj Gill Law Corporation."
-        />
-        <meta
-          property="og:image"
-          content="https://rajgilllaw.com/assets/preview-image.jpg"
-        />
-        <meta property="og:url" content="https://rajgilllaw.com" />
-
-        {/* Twitter Meta Tags */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Raj Gill Law Corporation - Trusted Family Lawyers"
-        />
-        <meta
-          name="twitter:description"
-          content="Expert legal services in Surrey & Abbotsford, specializing in family law, estate planning, and more. Schedule a free consultation today with Raj Gill Law Corporation."
-        />
-        <meta
-          name="twitter:image"
-          content="https://rajgilllaw.com/assets/preview-image.jpg"
-        />
-
-        {/* Structured Data */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LegalService",
-            name: "Raj Gill Law Corporation",
-            description:
-              "Affordable legal services in Surrey & Abbotsford, specializing in divorce, immigration, real estate, and more. Schedule a free consultation today.",
-            url: "https://rajgilllaw.com",
-            logo: "https://rajgilllaw.com/assets/logo.png",
-            areaServed: ["Surrey", "Abbotsford"],
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "123 Example Street",
-              addressLocality: "Surrey",
-              addressRegion: "BC",
-              postalCode: "V3T",
-              addressCountry: "Canada",
-            },
-            telephone: "+1-604-123-4567",
-            sameAs: [
-              "https://facebook.com/RajGillLaw",
-              "https://twitter.com/RajGillLaw",
-              "https://linkedin.com/company/rajgilllaw",
-            ],
-          })}
-        </script>
+       
       </head>
       <body
         style={{
