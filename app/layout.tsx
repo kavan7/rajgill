@@ -31,12 +31,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         {/* Google Analytics Script (Loads gtag.js) */}
         <Script
-          async
           src="https://www.googletagmanager.com/gtag/js?id=AW-686827248"
           strategy="afterInteractive"
         />
         
-        {/* Initialize Google Analytics */}
+        {/* Google Ads Configuration */}
         <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
