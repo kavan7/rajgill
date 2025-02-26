@@ -18,23 +18,7 @@ export default function Page() {
     { slug: string; title: string; description: string; image: string }[]
   >([]);
 
-  const navItems = [
-    {
-      name: "Services",
-      id: "services",
-      icon: <IconBriefcase className="h-4 w-4 text-neutral-500 dark:text-white" />,
-    },
-    {
-      name: "Our Team",
-      id: "about",
-      icon: <IconMan className="h-4 w-4 text-neutral-500 dark:text-white" />,
-    },
-    {
-      name: "Contact",
-      id: "touch",
-      icon: <IconPhone className="h-4 w-4 text-neutral-500 dark:text-white" />,
-    },
-  ];
+  
 
   useEffect(() => {
     async function fetchArticles() {
@@ -58,7 +42,7 @@ export default function Page() {
       <div className="max-w-7xl mt-44 w-full">
         <FloatingNav navItems={navItems} />
         <h1 className="text-4xl md:text-6xl mb-10 font-extrabold text-center leading-tight text-white drop-shadow-lg">
-          <span className="hidden">raj gill law blog</span>
+        
           <TextGenerateEffect words="Insights & Updates" />
         </h1>
         <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]">
