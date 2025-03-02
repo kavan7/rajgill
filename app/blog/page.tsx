@@ -18,7 +18,14 @@ export default function Page() {
     { slug: string; title: string; description: string; image: string }[]
   >([]);
 
+  const navItems = [
+    {
+      name: "",
+      id: "services",
+      icon: <></>,
+    }
   
+  ];
 
   useEffect(() => {
     async function fetchArticles() {

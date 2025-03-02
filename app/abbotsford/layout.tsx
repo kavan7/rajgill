@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "../globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import React from "react";
 import { GoogleAnalytics } from '@next/third-parties/google'
@@ -35,7 +35,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         style={{
           backgroundImage: `url('/background2.png')`,
           backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundPosition: "fill",
           backgroundRepeat: "no-repeat",
           backgroundColor: "#000000", // Fallback color if image doesn't load
         }}
@@ -45,7 +45,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* Vercel Analytics */}
         <Analytics />
       </body>
-      <GoogleAnalytics gaId="AW-686827248" />
+      <GoogleAnalytics gaId="AW-16895292879" />
     </html>
   );
 }
