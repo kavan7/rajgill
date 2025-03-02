@@ -3,6 +3,7 @@
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import { TracingBeam } from "@/components/ui/tracing-beam";
 import { IconBriefcase, IconMan, IconPhone } from "@tabler/icons-react";
+import Image from "next/image";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 
@@ -95,7 +96,7 @@ export default function BlogPost() {
       <TracingBeam>
         <div className="max-w-4xl mx-auto bg-white rounded-2xl dark:bg-gray-800 shadow-lg opacity-90 overflow-hidden animate-fade-in">
       
-          <img
+          <Image
             src={article.image}
             alt={article.title}
             className="w-full h-80 sm:h-96 rounded-2xl object-cover"

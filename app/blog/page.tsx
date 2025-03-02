@@ -2,9 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import {
-  IconBriefcase,
-  IconMan,
-  IconPhone,
+ 
   IconClipboardCopy,
 } from "@tabler/icons-react";
 import { FloatingNav } from "@/components/ui/floating-navbar";
