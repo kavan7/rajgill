@@ -33,7 +33,7 @@ interface FormData {
   office: string;  // New field for office location
 }
 
-const Hero = () => {
+const   Hero = () => {
 
 
   const [formData, setFormData] = useState<FormData>({
@@ -262,7 +262,7 @@ const Hero = () => {
         </div>
       </div>
 
-  
+      
       <div id="" className="mt-48 mb-36">
         <FeaturesSectionDemo/>
         <div className="flex flex-col items-center">
