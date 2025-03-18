@@ -3,6 +3,7 @@ import {
   IconUsersGroup,
   IconGavel,
   IconCurrencyDollar,
+  IconUser,
 
 } from "@tabler/icons-react";
 
@@ -43,6 +44,17 @@ export function FeaturesSectionDemo() {
       description:
         "We handle everything from setting up your business and ensuring compliance to assisting with contracts, mergers, and more.",
       icon: <IconCurrencyDollar />,
+      items: [
+        "Business Registration",
+        "Corporate Governance",
+        "Contract Drafting and Review",
+      ],
+    },
+    {
+      title: "Abbotsford Divorce Lawyers",
+      description:
+        "We handle everything from setting up your business and ensuring compliance to assisting with contracts, mergers, and more.",
+      icon: <IconUsersGroup />,
       items: [
         "Business Registration",
         "Corporate Governance",
