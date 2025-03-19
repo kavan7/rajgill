@@ -218,17 +218,6 @@ const   Hero = () => {
                       <div>
                         <input
                           type="radio"
-                          id="surrey"
-                          name="office"
-                          value="Surrey"
-                          checked={formData.office === "Surrey"}
-                          onChange={handleOfficeChange}
-                        />
-                        <label htmlFor="surrey" className="ml-2">Surrey</label>
-                      </div>
-                      <div>
-                        <input
-                          type="radio"
                           id="abbotsford"
                           name="office"
                           value="Abbotsford"
@@ -236,6 +225,17 @@ const   Hero = () => {
                           onChange={handleOfficeChange}
                         />
                         <label htmlFor="abbotsford" className="ml-2">Abbotsford</label>
+                      </div>
+                      <div>
+                        <input
+                          type="radio"
+                          id="surrey"
+                          name="office"
+                          value="Surrey"
+                          checked={formData.office === "Surrey"}
+                          onChange={handleOfficeChange}
+                        />
+                        <label htmlFor="surrey" className="ml-2">Surrey</label>
                       </div>
                     </div>
                   </div>
