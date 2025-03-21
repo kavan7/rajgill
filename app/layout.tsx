@@ -29,6 +29,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <head>
         {/* Google Analytics Script (Loads gtag.js) */}
+      
+        <GoogleTagManager gtmId="GTM-W28GRVRP" />
 
       </head>
       <body
@@ -40,6 +42,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           backgroundColor: "#000000", // Fallback color if image doesn't load
         }}
       >
+      
         {children}
         
         {/* Vercel Analytics */}
