@@ -80,7 +80,7 @@ const criminalLawContent = [
     description: (
       <>
         <p>
-          If you're facing charges of assault, domestic violence, or other violent offenses, our legal team is here to help. We take a strategic approach to challenge the evidence and represent you confidently in court. Every case deserves a fair defense—trust us to stand by you.
+          If you&apos;re facing charges of assault, domestic violence, or other violent offenses, our legal team is here to help. We take a strategic approach to challenge the evidence and represent you confidently in court. Every case deserves a fair defense—trust us to stand by you.
         </p>
       </>
     ),
@@ -104,7 +104,7 @@ const criminalLawContent = [
     description: (
       <>
         <p>
-          British Columbia’s drug laws are complex and penalties can be severe. Whether you're charged with possession, trafficking, or production, our firm has the experience to guide you. We examine every angle to challenge the prosecution’s case and pursue alternative sentencing or dismissals where possible.
+          British Columbia’s drug laws are complex and penalties can be severe. Whether you&apos;re charged with possession, trafficking, or production, our firm has the experience to guide you. We examine every angle to challenge the prosecution’s case and pursue alternative sentencing or dismissals where possible.
         </p>
       </>
     ),
