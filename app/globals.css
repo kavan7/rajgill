@@ -19,3 +19,12 @@
 
 
 }
+
+body {
+  background-image: url('/background2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #000000;
+  min-height: 100vh;
+}

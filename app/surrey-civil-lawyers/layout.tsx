@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: "Civil Lawyer in Surrey & Abbotsford | Raj Gill Law Corporation",
     description: "Expert civil law services in Surrey and Abbotsford, covering property disputes, contract law, negligence claims, and employment issues. Schedule your free consultation now.",
     images: "https://rajgilllaw.com/assets/preview-image.jpg", // Replace with actual image URL for civil law
-    url: "https://rajgilllaw.com/civil-law", // Add URL if available
+    url: "https://rajgilllaw.com/surrey-civil-lawyers", // Add URL if available
     type: "website",
   },
   twitter: {
@@ -34,7 +34,7 @@ export default function RootLayout({
         <body style={{backgroundImage: `url(/background2.png)`}} >
   
   <header className="p-4 bg-gray-600 text-white text-center">
-    <h1>Raj Gill Law Corporation - Divorce Lawyers</h1>
+    <h1>Raj Gill Law Corporation - Civil Lawyers</h1>
   </header>
   <main role="main" className="p-6  min-h-screen">
     {children}

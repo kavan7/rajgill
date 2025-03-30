@@ -2,7 +2,8 @@ import { cn } from "@/lib/utils";
 import {
   IconUsersGroup,
   IconGavel,
-  IconCurrencyDollar,
+  IconPlane,
+  IconPrison,
 
 
 } from "@tabler/icons-react";
@@ -18,47 +19,46 @@ export function FeaturesSectionDemo() {
     {
       title: "Surrey Divorce Lawyers",
       description:
-        "We are experienced family lawyers who strive to provide our clients with the best possible outcome. We use several different approaches in achieving the best result for our clients, including collaborative divorce, mediation, arbitration, and litigation when necessary.",
+        "",
       icon: <IconUsersGroup />,
       items: [
-        "Divorce",
-        "Sole Custody",
-        "Child Support",
-        "Asset Division",
-        "Spousal Support",
+    
       ],
     },
     {
       title: "Surrey Civil Lawyers",
       description:
-        "Raj Gill Law can help you navigate the legal system with experience in property disputes, construction issues, and general litigation.",
+        "",
       icon: <IconGavel />,
       items: [
-        "General Civil Litigation",
-        "Property Disputes",
-        "Construction Disputes",
+ 
       ],
     },
     {
       title: "Surrey Immigration Lawyers",
       description:
-        "We handle everything from setting up your business and ensuring compliance to assisting with contracts, mergers, and more.",
-      icon: <IconCurrencyDollar />,
+        "",
+      icon: <IconPlane />,
       items: [
-        "Business Registration",
-        "Corporate Governance",
-        "Contract Drafting and Review",
+
+      ],
+    },
+    {
+      title: "Surrey Criminal Lawyers",
+      description:
+        "",
+      icon: <IconPrison />,
+      items: [
+
       ],
     },
     {
       title: "Abbotsford Divorce Lawyers",
       description:
-        "We handle everything from setting up your business and ensuring compliance to assisting with contracts, mergers, and more.",
+        "",
       icon: <IconUsersGroup />,
       items: [
-        "Business Registration",
-        "Corporate Governance",
-        "Contract Drafting and Review",
+
       ],
     },
   ];

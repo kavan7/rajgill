@@ -34,13 +34,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
       </head>
       <body
-        style={{
-          backgroundImage: `url('/background2.png')`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          backgroundColor: "#000000", // Fallback color if image doesn't load
-        }}
+  
       >
       
         {children}

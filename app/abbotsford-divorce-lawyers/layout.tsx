@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Divorce Lawyers in Surrey and Abbotsford | Raj Gill Law Corporation',
     description: 'Professional and compassionate legal support in divorce, child custody, and spousal support. Contact Raj Gill Law Corporation today.',
-    url: 'https://rajgilllaw.com/divorce-lawyers',
+    url: 'https://rajgilllaw.com/abbotsford-divorce-lawyers',
     images: 'https://rajgilllaw.com/assets/preview-image.jpg', // Replace with specific URL if available
     type: 'website',
   },
