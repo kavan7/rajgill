@@ -23,7 +23,7 @@ export function TracingBeamDemoFive() {
       icon: <IconPhone className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
   ];
-  
+
   return (
     <TracingBeam className="px-6">
       <div className="w-full mx-auto shadow-xl shadow-black-100 p-10 rounded-4xl antialiased pt-4 relative">
@@ -35,7 +35,7 @@ export function TracingBeamDemoFive() {
               {item.image && (
                 <Image
                   src={item.image}
-                  alt={item.altText} // Add unique alt text for each image
+                  alt={item.altText}
                   height="200"
                   width="700"
                   className="rounded-xl mb-10 mx-auto items-center object-cover"
@@ -50,7 +50,6 @@ export function TracingBeamDemoFive() {
   );
 }
 
-// Update `dummyContent` with unique alt text for each image
 const dummyContent = [
   {
     title: "Expert Family Lawyers in Abbotsford",
@@ -58,6 +57,9 @@ const dummyContent = [
       <>
         <p>
           If you’re looking for experienced family lawyers in Abbotsford, our team provides compassionate, effective legal representation across all family law matters. We specialize in divorce, child custody, property division, spousal support, and domestic agreements to help families resolve their disputes efficiently and respectfully.
+        </p>
+        <p>
+          From high-conflict custody battles to amicable separation agreements, our Abbotsford team is equipped to guide you with clarity and care. We also help clients with matters such as adoption, protection orders, and grandparents’ rights, offering a full spectrum of legal solutions rooted in empathy and strategy.
         </p>
       </>
     ),
@@ -71,17 +73,23 @@ const dummyContent = [
         <p>
           Navigating a divorce in Abbotsford can be challenging, but our skilled divorce lawyers make the process smoother. From mediation to court representation, we help our clients pursue fair resolutions. We understand the emotional and financial toll of separation and work to safeguard your interests throughout each step of the divorce process.
         </p>
+        <p>
+          Whether it’s a straightforward uncontested divorce or a more complex contested matter, we’re here to provide clarity on legal timelines, division of assets, spousal support, and parenting arrangements. Our firm is committed to helping Abbotsford families move forward confidently.
+        </p>
       </>
     ),
     image: "/background5.png",
     altText: "Divorce lawyer consulting with a client in Abbotsford",
   },
   {
-    title: "Child Custody and Support Lawyers",
+    title: "Child Custody and Support Lawyers in Abbotsford",
     description: (
       <>
         <p>
-          Child custody and support issues can be emotionally charged, but our experienced child custody lawyers in Abbotsford are dedicated to protecting your family’s well-being. We work on both custody arrangements and child support calculations, prioritizing the needs of your children while ensuring fair agreements that comply with legal standards.
+          Child custody and support matters require sensitivity, expertise, and a deep understanding of British Columbia’s family law system. Our Abbotsford-based legal team focuses on ensuring that custody and support arrangements prioritize the best interests of your children.
+        </p>
+        <p>
+          We provide legal advice and representation for sole and joint custody cases, access rights, and variations to existing court orders. Whether you’re establishing support for the first time or requesting changes due to life circumstances, our lawyers are committed to achieving outcomes that work for your family.
         </p>
       </>
     ),
@@ -93,7 +101,10 @@ const dummyContent = [
     description: (
       <>
         <p>
-          Our family law team in Abbotsford handles complex property division and spousal support cases, ensuring that our clients receive fair settlements based on British Columbia’s Family Law Act. Whether you’re dealing with shared assets, debt division, or spousal support, we provide tailored guidance to achieve equitable solutions for your future.
+          At Raj Gill Law Corporation, we assist Abbotsford clients in navigating property division and spousal support issues with confidence. We help clearly define matrimonial property, address complex asset portfolios, and ensure proper disclosure to reach fair agreements under the Family Law Act.
+        </p>
+        <p>
+          Whether you're concerned about pensions, investments, real estate, or business interests, our team will protect your financial rights and ensure your voice is heard. We also handle spousal support claims and defenses, offering pragmatic advice on entitlement, duration, and amount.
         </p>
       </>
     ),
