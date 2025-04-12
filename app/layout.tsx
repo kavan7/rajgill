@@ -3,6 +3,7 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import React from "react";
 import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
+
 export const metadata: Metadata = {
   title: "Family & Divorce Lawyers in Surrey | Abbotsford",
   description:
@@ -31,10 +32,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* Google Analytics Script (Loads gtag.js) */}
       
         <GoogleTagManager gtmId="GTM-W28GRVRP" />
-
+        <link
+  rel="preload"
+  as="image"
+  href="/background2.webp"
+  type="image/png"
+/>
       </head>
       <body
-  
       >
       
         {children}
