@@ -104,7 +104,7 @@ const dummyContent = [
           At Raj Gill Law Corporation, we assist Abbotsford clients in navigating property division and spousal support issues with confidence. We help clearly define matrimonial property, address complex asset portfolios, and ensure proper disclosure to reach fair agreements under the Family Law Act.
         </p>
         <p>
-          Whether you're concerned about pensions, investments, real estate, or business interests, our team will protect your financial rights and ensure your voice is heard. We also handle spousal support claims and defenses, offering pragmatic advice on entitlement, duration, and amount.
+          Whether you&apos;re concerned about pensions, investments, real estate, or business interests, our team will protect your financial rights and ensure your voice is heard. We also handle spousal support claims and defenses, offering pragmatic advice on entitlement, duration, and amount.
         </p>
       </>
     ),

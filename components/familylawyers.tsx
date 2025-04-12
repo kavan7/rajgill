@@ -59,7 +59,7 @@ const dummyContent = [
           If you’re looking for experienced family lawyers in Surrey, our team provides compassionate, effective legal representation across all family law matters. We specialize in divorce, child custody, property division, spousal support, and domestic agreements to help families resolve their disputes efficiently and respectfully.
         </p>
         <p>
-          Whether you're facing a contested divorce, a separation agreement, or post-divorce modifications, we have the skills to support you through the process. We also assist with adoption, guardianship, and domestic violence protection orders, always prioritizing the well-being of your family.
+          Whether you&apos;re facing a contested divorce, a separation agreement, or post-divorce modifications, we have the skills to support you through the process. We also assist with adoption, guardianship, and domestic violence protection orders, always prioritizing the well-being of your family.
         </p>
       </>
     ),

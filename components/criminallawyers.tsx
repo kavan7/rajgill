@@ -86,7 +86,7 @@ const criminalLawContent = [
     description: (
       <>
         <p>
-          If you're facing charges of assault, domestic violence, or other violent offenses, our legal team is here to help. We take a strategic approach to challenge the evidence and represent you confidently in court. Every case deserves a fair defense—trust us to stand by you.
+          If you&apos;re facing charges of assault, domestic violence, or other violent offenses, our legal team is here to help. We take a strategic approach to challenge the evidence and represent you confidently in court. Every case deserves a fair defense—trust us to stand by you.
         </p>
         <p>
           We handle simple and aggravated assault, uttering threats, weapons charges, and more. From self-defense claims to factual disputes, we carefully evaluate all facts to pursue the best legal result.
@@ -116,7 +116,7 @@ const criminalLawContent = [
     description: (
       <>
         <p>
-          British Columbia’s drug laws are complex and penalties can be severe. Whether you're charged with possession, trafficking, or production, our firm has the experience to guide you. We examine every angle to challenge the prosecution’s case and pursue alternative sentencing or dismissals where possible.
+          British Columbia’s drug laws are complex and penalties can be severe. Whether you&apos;re charged with possession, trafficking, or production, our firm has the experience to guide you. We examine every angle to challenge the prosecution’s case and pursue alternative sentencing or dismissals where possible.
         </p>
         <p>
           We routinely assist with CDSA charges, including controlled substance possession, intent to distribute, and marijuana-related offenses post-legalization. We are meticulous in defending against unlawful search and seizure or Charter breaches.
