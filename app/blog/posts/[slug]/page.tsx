@@ -100,6 +100,8 @@ export default function BlogPost() {
             src={article.image}
             alt={article.title}
             className="w-full h-80 sm:h-96 rounded-2xl object-cover"
+            width={1000}
+            height={1000}
           />
           <div className="p-8">
             <h1 className="text-3xl font-bold mb-4">{article.title}</h1>

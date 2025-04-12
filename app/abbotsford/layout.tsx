@@ -31,15 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* Google Analytics Script (Loads gtag.js) */}
 
       </head>
-      <body
-        style={{
-          backgroundImage: `url('/background2.png')`,
-          backgroundSize: "cover",
-          backgroundPosition: "fill",
-          backgroundRepeat: "no-repeat",
-          backgroundColor: "#000000", // Fallback color if image doesn't load
-        }}
-      >
+      <body style={{backgroundImage: `url(/background2-3.webp)`}} >
         {children}
         
         {/* Vercel Analytics */}

@@ -32,7 +32,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body style={{ backgroundImage: `url(/background2.png)` }}>
+          <body style={{backgroundImage: `url(/background2-3.webp)`}} >
         <header className="p-4 bg-gray-600 text-white text-center">
           <h1>Raj Gill Law Corporation - Criminal Defence Lawyers</h1>
         </header>

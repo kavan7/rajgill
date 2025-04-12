@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "../globals.css";
+import '../globals.css'
 import { Analytics } from "@vercel/analytics/react";
 import React from "react";
 
@@ -114,15 +114,7 @@ export default function RootLayout({
           })}
         </script>
       </head>
-      <body
-        style={{
-          backgroundImage: `url('/background2.png')`,
-          backgroundSize: "fill",
-          backgroundPosition: "",
-          backgroundRepeat: "no-repeat",
-          backgroundColor: "#ffffff", // Fallback color for when the image doesn't load
-        }}
-      >
+      <body style={{backgroundImage: `url(/background2-3.webp)`}} >
         {children}
         {/* Vercel Analytics */}
         <Analytics />
