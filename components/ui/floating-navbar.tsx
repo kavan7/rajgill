@@ -63,7 +63,7 @@ export const FloatingNav = ({
           className
         )}
       >
-        <a href="rajgilllaw.com">
+        <a href="/">
         <button
          
           className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-2 py-2 rounded-full"
