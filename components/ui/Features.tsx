@@ -216,7 +216,7 @@ const Feature = ({
       
       </motion.div>
       </Link>
-      <hr/>
+    <div className="md:hidden block"><hr/></div>  
     </div>
   );
 };

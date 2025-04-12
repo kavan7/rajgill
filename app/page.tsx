@@ -12,6 +12,7 @@ import { TracingBeam } from "@/components/ui/tracing-beam";
 import { About } from "@/components/About";
 import { Footer } from "@/components/Footer";
 import Touch from "@/components/Touch";
+import Image from "next/image";
 
 
 
@@ -41,6 +42,14 @@ export default function page() {
     <main className="relative  flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
       <div className="max-w-7xl w-full">
        <FloatingNav navItems={navItems}/>
+       <Image
+        src="/background2-3.webp"
+        alt="Background"
+        layout="fill"
+        objectFit="cover"
+        priority
+  
+      />
         <TracingBeam>
           <div id="home">
             <div className="flex flex-col">
