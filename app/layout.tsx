@@ -3,7 +3,7 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import React from "react";
 import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
-
+import Script from "next/script";
 export const metadata: Metadata = {
   title: "Family & Divorce Lawyers in Surrey | Abbotsford",
   description:
@@ -37,6 +37,32 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   as="image"
   href="/background2.webp"
   type="image/png"
+/>
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+      "name": "Raj Gill Law Corporation",
+      "image": "https://rajgilllaw.com/assets/preview-image.jpg",
+      "url": "https://rajgilllaw.com",
+      "telephone": "+1-604-555-1234",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Main St",
+        "addressLocality": "Surrey",
+        "addressRegion": "BC",
+        "postalCode": "V3R 1V6",
+        "addressCountry": "CA"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "87"
+      }
+    }),
+  }}
 />
       </head>
       <body
