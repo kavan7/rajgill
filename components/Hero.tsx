@@ -93,7 +93,7 @@ const   Hero = () => {
       className="flex flex-col bg-no-repeat"
     >
        
-      <div className="pb-[-30px] pt-36" >
+      <div className="pb-[-30px] pt-60" >
         <div className="h-screen w-full dark:bg-black-100 bg-transparent absolute top-0 left-0 flex items-center justify-center">
           <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-transparent [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
         </div>
@@ -107,9 +107,9 @@ const   Hero = () => {
           
             <h1
              
-              className="text-center text-[40px] text-[#e5e5e5] md:text-5xl lg:text-6xl mt-5 mb-5">Surrey & Abbotsford, British Columbia&rsquo;s Most Trusted Attorneys</h1>
+              className="text-center  text-white md:text-5xl text-3xl mt-5 mb-5">Surrey & Abbotsford, British Columbia&rsquo;s Most Trusted Attorneys</h1>
            
-            <p className="text-center md:tracking-wider text-slate-200 font-normal mb-4 text-sm md:text-lg lg:text-2xl">
+            <p className="text-center md:tracking-wider text-slate-200 font-normal mb-4 md:text-lg lg:text-2xl">
               Schedule a Free Consultation.
             </p>
 
@@ -150,7 +150,7 @@ const   Hero = () => {
                     title="SCHEDULE"
                     icon={<FaCalendar />}
                     position="right"
-                    otherClasses="rounded-lg text-neutral-300"
+                    otherClasses="rounded text-neutral-300 bg-zinc-950"
                   />
                 </button>
               </DialogTrigger>
@@ -250,14 +250,7 @@ const   Hero = () => {
               </DialogContent>
             </Dialog>
 
-            <Alert className="mt-5">
-                <IconMail className="h-4 w-4" />
-                <AlertTitle>New Office in Abbotsford!</AlertTitle>
-                <IconMap/>  
-                <AlertDescription className="flex flex-row">
-                  1779 Clearbrook Road #216, Abbotsford, BC
-                </AlertDescription>
-              </Alert>
+        
           </div>
         </div>
       </div>
