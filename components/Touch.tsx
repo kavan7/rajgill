@@ -3,6 +3,11 @@ import React from 'react'
 
 
 const Touch = () => {
+  const handleCall = () => {
+    if (typeof window !== 'undefined') {
+      window.gtag_report_conversion("tel:+16045551234");
+    }
+  };
   return (
     <main className='flex flex-col md:flex-row lg:flex-col'>
     <div  id='touch' className="h-[40rem] w-full bg-transparent flex xs:flex-col flex-col items-center justify-center overflow-hidden rounded-md">
@@ -29,7 +34,7 @@ const Touch = () => {
     <div className='flex flex-col'>
     <h1 className='text-center flex flex-row text-white font-light text-2xl'><IconMail className='mt-2 mr-2'/> info@rajgilllaw.com</h1>
     
-    <h1 className='text-center  flex flex-row text-white font-light  text-3xl'><IconPhone className='mt-2 mr-2'/>604-593-6470</h1>
+    <h1 className='text-center flex flex-row text-white mt-4 font-light  text-2xl'><button onClick={handleCall} className='flex flex-row '><IconPhone className='mt-1 mr-2 '/>604-593-6470</button></h1>
     </div>
     <div className='flex flex-col'>
       <hr className='opacity-0.2 mt-5 mb-5'/>

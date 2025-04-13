@@ -3,6 +3,7 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import React from "react";
 import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Family & Divorce Lawyers in Surrey | Abbotsford",
@@ -64,6 +65,23 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     }),
   }}
 />
+
+<Script id="gtag-conversion-snippet" strategy="afterInteractive">
+  {`
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-16895292879/ssfPCKvujrgaEM_rpvg-',
+          'event_callback': callback
+      });
+      return false;
+    }
+  `}
+</Script>
       </head>
       <body
       >
