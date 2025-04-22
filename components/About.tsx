@@ -138,7 +138,7 @@ export function About() {
             </div>
           ) : null}
         </AnimatePresence>
-        <ul className="max-w-2xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 items-start gap-4">
+        <ul className="max-w-2xl mx-auto w-full grid grid-cols-2 md:grid-cols-2 items-start gap-4">
           {cards.map((card) => (
             <motion.div
               layoutId={`card-${card.title}-${id}`}
@@ -281,6 +281,20 @@ Madhur is passionate about complex family and civil litigation that involves the
   },
   {
     description: "Articling Student",
+    title: "Vaishali Singh",
+    email: 'vaishali@rajgilllaw.com',
+    src: "/newnopic.png",
+    ctaText: "Connect",
+    ctaLink: "",
+    content: () => {
+      return (
+        <p>
+        </p>
+      );
+    },
+  },
+  {
+    description: "Articling Student",
     title: "Shrea Grover",
     src: "/shreyapic.png",
     email: 'shreag@rajgilllaw.com',
@@ -383,6 +397,20 @@ Currently, Shahin is further enhancing her expertise by pursuing a Post-Baccalau
     },
   },
   {
+    description: "Legal Assistant",
+    title: "Gurpreet Dhillon",
+    email: 'gurpret@rajgilllaw.com',
+    src: "/gurpreetpic.png",
+    ctaText: "Connect",
+    ctaLink: "",
+    content: () => {
+      return (
+        <p>
+        </p>
+      );
+    },
+  },
+  {
     description: "Administrative Assistant",
     title: "Keshav Goyal",
     email: 'keshav@rajgilllaw.com',
@@ -397,6 +425,7 @@ Currently, Shahin is further enhancing her expertise by pursuing a Post-Baccalau
       );
     },
   },
+
   {
     description: "Intern",
     title: "Kavan Abeyratne",
@@ -412,4 +441,5 @@ Currently, Shahin is further enhancing her expertise by pursuing a Post-Baccalau
       );
     },
   },
+
 ];
