@@ -77,6 +77,36 @@ const testimonials = [
     name: "Kam",
     title: "5 days ago",
   },
+    {
+    quote: "Excellent service Ashley and raj gill handle my divorce case and made it easy for me.thanks raj gill law corporation.I highly recommend for family case",
+    name: "Aman Gill",
+    title: "2 weeks ago",
+  },
+    {
+    quote: "A Very good Law firm in metro Vancouver.They understand my all problems and querries and they fought and handled the cases like they are contesting it their own….So impressed with Raj Gill law 👍🏻And Mr. Prateeq Ghai. A very fine lawyer in this firm he handled my case file regarding family law and i dont think so i did any hard work in my case he handled all the work and support me in my bad phase and took all my worries personally. Hats off guys… you are the best. Keep rising 🥂",
+    name: "Abhishek kapoor",
+    title: "A week ago",
+  },
+    {
+    quote: "I had a great experience with Raj Gill Law. I met Mr. Raj regarding my divorce who is very knowledgeable and professional lawyer. I am highly impressed with their service and support. My case went smoothly and is done within six months. Big thanks to Raj and Ashley for the great help. I highly recommend Raj Gill Law to anyone in need of legal assistance.",
+    name: "Gagandeep Samra",
+    title: "3 weeks ago",
+  },
+    {
+    quote: "Good service, these guy’s well. Know how to do their job. Thanks",
+    name: "Prabhjot Singh",
+    title: "3 weeks ago",
+  },
+    {
+    quote: "Shrea was really helpful throughout the process.",
+    name: "Simranjit Kaur",
+    title: "Yesterday",
+  },
+    {
+    quote: "Worked with Raj Gill on some legal stuff and he was solid. Straight up, no BS, explained things in a way that actually made sense. Super chill but knows what he's doing. Whole process was smooth and way less stressful than I expected. Would def go back if I ever need a lawyer again..",
+    name: "Javer Acasta",
+    title: "3 weeks ago",
+  },
 
 ];
 

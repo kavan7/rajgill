@@ -40,4 +40,9 @@
      
         <priority>0.80</priority>
     </url>
+       <url>
+        <loc>https://rajgilllaw.com/abbotsford</loc>
+     
+        <priority>0.80</priority>
+    </url>
 </urlset>
