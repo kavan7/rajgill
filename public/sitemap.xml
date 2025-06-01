@@ -40,7 +40,11 @@
      
         <priority>0.80</priority>
     </url>
+<<<<<<< HEAD
        <url>
+=======
+         <url>
+>>>>>>> cf81da0 (dwasd)
         <loc>https://rajgilllaw.com/abbotsford</loc>
      
         <priority>0.80</priority>

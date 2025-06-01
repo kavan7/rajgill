@@ -31,7 +31,7 @@ export default function RootLayout({
     <html lang="en">
       <body  className="" style={{backgroundImage : `url(/background2.png)`}} >
         <header className="mt-[150px] ont-bold  text-center underline underline-offset-2text-[40px] md:text-5xl lg:text-6xl text-neutral-300">
-          <h1>Raj Gill Law | Reviews</h1>
+       
         </header>
         <main role="main" className="p-6 min-h-screen">
           <section className=" p-4 shadow-lg rounded-full ">

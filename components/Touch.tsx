@@ -5,7 +5,7 @@ import React from 'react'
 const Touch = () => {
   const handleCall = () => {
     if (typeof window !== 'undefined') {
-      window.gtag_report_conversion("tel:+16045551234");
+      window.gtag_report_conversion("tel:+16045936470");
     }
   };
   return (
