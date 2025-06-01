@@ -78,6 +78,7 @@ const testimonials = [
     title: "5 days ago",
   },
 <<<<<<< HEAD
+<<<<<<< HEAD
     {
     quote: "Excellent service Ashley and raj gill handle my divorce case and made it easy for me.thanks raj gill law corporation.I highly recommend for family case",
     name: "Aman Gill",
@@ -108,6 +109,8 @@ const testimonials = [
     name: "Javer Acasta",
     title: "3 weeks ago",
 =======
+=======
+>>>>>>> cf81da0 (dwasd)
   {
     quote: "Our family had a consultation with Raj Gill, and he was absolutely amazing to work with. He was incredibly compassionate, kind, and caring, taking the time to listen and understand our situation. Despite it being a last-minute request, he accommodated us, even on a weekend, which we truly appreciated.This was a family law matter, and speaking with him gave us so much clarity and reassurance. He explained everything thoroughly and made sure we felt supported throughout the conversation. On top of his professionalism and empathy, his rates were also very reasonable, which was a huge relief. Overall, it was just a really great experience, and we are so grateful for his time and guidance. I highly recommend Raj Gill to anyone looking for a knowledgeable and compassionate lawyer.",
     name: "Kam",
@@ -118,6 +121,9 @@ const testimonials = [
     quote: "Our family had a consultation with Raj Gill, and he was absolutely amazing to work with. He was incredibly compassionate, kind, and caring, taking the time to listen and understand our situation. Despite it being a last-minute request, he accommodated us, even on a weekend, which we truly appreciated.This was a family law matter, and speaking with him gave us so much clarity and reassurance. He explained everything thoroughly and made sure we felt supported throughout the conversation. On top of his professionalism and empathy, his rates were also very reasonable, which was a huge relief. Overall, it was just a really great experience, and we are so grateful for his time and guidance. I highly recommend Raj Gill to anyone looking for a knowledgeable and compassionate lawyer.",
     name: "Kam",
     title: "5 days ago",
+<<<<<<< HEAD
+>>>>>>> cf81da0 (dwasd)
+=======
 >>>>>>> cf81da0 (dwasd)
   },
 
