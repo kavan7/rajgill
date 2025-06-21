@@ -1,12 +1,7 @@
 "use client";
 import React from "react";
 import Hero from "@/components/Hero";
-import {
-  IconBriefcase,
-  IconMan,
-  IconPhone,
-} from "@tabler/icons-react";
-import { FloatingNav } from "@/components/ui/floating-navbar";
+
 
 import { TracingBeam } from "@/components/ui/tracing-beam";
 import { About } from "@/components/About";
