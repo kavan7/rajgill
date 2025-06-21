@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Box, Lock, Search, Settings, Sparkles } from "lucide-react";
+import {ContactRound, Building, Plane, Columns4, Trees} from "lucide-react";
 import { GlowingEffect } from "@/components/ui/glowing-effect";
 import Link from "next/link";
 
@@ -10,7 +10,7 @@ export function FeaturesSectionDemo() {
    
       <GridItem
         area="md:[grid-area:1/1/2/7] xl:[grid-area:1/1/2/5]"
-        icon={<Box className="h-4 w-4 text-neutral-400" />}
+        icon={<ContactRound className="h-4 w-4 text-neutral-400" />}
         title="Divorce Lawyers in Surrey"
         description="How to Resolve a Contested Divorce in BC"
         link="surrey-divorce-lawyers"
@@ -19,7 +19,7 @@ export function FeaturesSectionDemo() {
   
       <GridItem
         area="md:[grid-area:1/7/2/13] xl:[grid-area:2/1/3/5]"
-        icon={<Settings className="h-4 w-4 text-neutral-400" />}
+        icon={<Building className="h-4 w-4 text-neutral-400" />}
         title="Civil Law in Surrey"
         description="From Estate Litigration, Contract litigation, we do everyhing Civil Law related. "
          link="surrey-civil-lawyers"
@@ -28,7 +28,7 @@ export function FeaturesSectionDemo() {
 
       <GridItem
         area="md:[grid-area:2/1/3/7] xl:[grid-area:1/5/3/8]"
-        icon={<Lock className="h-4 w-4 text-neutral-400" />}
+        icon={<Plane className="h-4 w-4 text-neutral-400" />}
         title="Immigration Law in Surrey"
         description="Permanent residency and family sponsorship. "
          link="surrey-immigration-lawyers"
@@ -36,7 +36,7 @@ export function FeaturesSectionDemo() {
 
       <GridItem
         area="md:[grid-area:2/7/3/13] xl:[grid-area:1/8/2/13]"
-        icon={<Sparkles className="h-4 w-4 text-neutral-400" />}
+        icon={<Columns4 className="h-4 w-4 text-neutral-400" />}
         title="Criminal Lawyers in Surery"
         description="Skilled Criminal Defence Lawyers in Surrey"
          link="surrey-criminal-lawyers"
@@ -44,7 +44,7 @@ export function FeaturesSectionDemo() {
 
       <GridItem
         area="md:[grid-area:3/1/4/13] xl:[grid-area:2/8/3/13]"
-        icon={<Search className="h-4 w-4 text-neutral-400" />}
+        icon={<Trees className="h-4 w-4 text-neutral-400" />}
         title="Abbotsford"
         description="All of our services available in Abbotsford."
          link="abbotsford-divorce-lawyers"
