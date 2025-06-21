@@ -18,29 +18,12 @@ import Touch from "@/components/Touch";
 export default function page() {
   
 
-  const navItems = [
-    {
-      name: "Services",
-      id: "services",
-      icon: <IconBriefcase className="h-4 w-4 text-neutral-500 dark:text-white" />,
-    },
-    {
-      name: "Our Team",
-      id: "about",
-      icon: <IconMan className="h-4 w-4 text-neutral-500 dark:text-white" />,
-    },
-    {
-      name: "Contact",
-      id: "touch",
-      icon: <IconPhone className="h-4 w-4 text-neutral-500 dark:text-white" />,
-    },
- 
-  ];
+
 
   return (
     <main className="relative  flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
       <div className="max-w-7xl w-full">
-       <FloatingNav navItems={navItems}/>
+   
       
         <TracingBeam>
           <div id="home">

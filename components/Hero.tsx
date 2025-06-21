@@ -24,8 +24,9 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { FeaturesSectionDemo } from "./ui/Features";
-import { IconMail, IconX } from "@tabler/icons-react";
+import { IconBriefcase, IconMail, IconMan, IconPhone, IconX } from "@tabler/icons-react";
 import Link from "next/link";
+import { FloatingNav } from "./ui/floating-navbar";
 
 interface FormData {
   name: string;
@@ -89,11 +90,30 @@ const   Hero = () => {
       );
     }
   };
+    const navItems = [
+      {
+        name: "Services",
+        id: "services",
+        icon: <IconBriefcase className="h-4 w-4 text-neutral-500 dark:text-white" />,
+      },
+      {
+        name: "Our Team",
+        id: "about",
+        icon: <IconMan className="h-4 w-4 text-neutral-500 dark:text-white" />,
+      },
+      {
+        name: "Contact",
+        id: "touch",
+        icon: <IconPhone className="h-4 w-4 text-neutral-500 dark:text-white" />,
+      },
+   
+    ];
 
   return (
     <section 
       className="flex flex-col bg-no-repeat"
     >
+      <FloatingNav navItems={navItems}/>
        
       <div className="pb-[-30px] pt-60" >
         <div className="h-screen w-full dark:bg-black-100 bg-transparent absolute top-0 left-0 flex items-center justify-center">

@@ -63,7 +63,7 @@ export const FloatingNav = ({
           className
         )}
       >
-        <a href="/">
+        <a href="/" >
         <button
          
           className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-2 py-2 rounded-full"
@@ -74,12 +74,12 @@ export const FloatingNav = ({
           </span>
         </button>
         </a>
-        {navItems.map((navItem, idx) => (
+        {navItems.map((navItem, id) => (
           <Link
-            key={`link=${idx}`}
-            href={""}
+            key={`link=${navItem.id}`}
+            href={`#${navItem.id}`}
             onClick={() => {
-              scrollToSection(navItem.id);
+            
             }}
             className={cn(
               "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
