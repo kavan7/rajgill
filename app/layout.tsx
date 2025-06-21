@@ -78,8 +78,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   `}
 </Script>
       </head>
-      <body className="parallelogram-clip"
-      >
+    <body style={{ backgroundImage: "url('/backgroundbest4.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
       
         {children}
         
