@@ -2,8 +2,9 @@ import { useState, useRef, ChangeEvent, FormEvent } from "react";
 import { FaCalendar, FaGavel } from "react-icons/fa6";
 
 import MagicButton from "./ui/MagicButton";
-
-
+import {motion} from "framer-motion"
+//@ts-ignore
+import { LoopPingPong } from "three";
 import {
   Alert,
   AlertDescription,
@@ -24,6 +25,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { FeaturesSectionDemo } from "./ui/Features";
 import { IconMail, IconX } from "@tabler/icons-react";
+import Link from "next/link";
 
 interface FormData {
   name: string;
@@ -101,13 +103,13 @@ const   Hero = () => {
         <div className="flex justify-center relative my-20 z-10">
           <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
             
-            <p className="uppercase tracking-widest text-lg text-center text-slate-200 font-medium max-w-80">
-              RAJ GILL LAW CORPORATION
+            <p className=" tracking-normal text-3xl text-center text-slate-200 font-medium max-w-83">
+        Surrey & Abbotsford, British Columbia&rsquo;s Most Trusted Attorneys
             </p>
           
             <h1
              
-              className="text-center  text-white md:text-5xl text-3xl mt-5 mb-5">Surrey & Abbotsford, British Columbia&rsquo;s Most Trusted Attorneys</h1>
+              className="text-center tracking-wide text-white md:text-6xl text-2xl mt-9 mb-9">RAJ GILL LAW</h1>
            
             <p className="text-center md:tracking-wider text-slate-200 font-normal mb-4 md:text-lg lg:text-2xl">
               Schedule a Free Consultation.
@@ -251,12 +253,72 @@ const   Hero = () => {
             </Dialog>
 
         
+      <motion.div
+    animate={{
+      y: [-40, -50, -40],
+    }}
+    transition={{
+      duration: 1.5,
+      repeat: Infinity,
+      //@ts-ignore
+      repeatType: LoopPingPong,
+    }}
+    className="mt-[150px]"
+  >
+    <Link
+      href="#services"
+      className="flex items-center gap-2"
+  
+    >
+      {/* Remove the hidden class */}
+      <svg
+        data-accordion-icon
+        className="sm:block w-16 rotate-180 shrink-0"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 10 6"
+      >
+        <path
+          stroke="white"
+          strokeLinecap="square"
+          strokeLinejoin="bevel"
+          strokeWidth="2"
+          d="M9 5 5 1 1 5"
+        />
+      </svg>
+    </Link>
+    <Link
+      href="#services"
+      className="flex items-center gap-2"
+   scroll
+    >
+      <svg
+        data-accordion-icon
+        className=" w-16 rotate-180 shrink-53"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 10 6"
+      >
+        <path
+          stroke="white"
+          strokeLinecap="square"
+          strokeLinejoin="bevel"
+          strokeWidth="2"
+          d="M9 5 5 1 1 5"
+        />
+      </svg>
+    </Link>
+  </motion.div>
           </div>
         </div>
       </div>
+    
 
-      
-      <div id="" className="mt-48 mb-36">
+      <div  className="mt-48 mb-36" id="services">
+        
+         <h1 className="tracking-widest text-6xl text-center text-slate-200 font-medium mt-12 mb-12 max-w-83" >Our Services</h1>
         <FeaturesSectionDemo/>
         <div className="flex flex-col items-center">
           <a href="/client-testimonials">

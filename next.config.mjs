@@ -31,7 +31,7 @@ const nextConfig = {
 
 // Apply the bundle analyzer configuration
 const withBundleAnalyzerConfig = withBundleAnalyzer({
-  enabled: process.env.ANALYZE === 'true', // Enable analyzer only if ANALYZE env variable is set to true
+  enabled: process.env.clsANALYZE === 'true', // Enable analyzer only if ANALYZE env variable is set to true
 });
 
 // Export the configuration

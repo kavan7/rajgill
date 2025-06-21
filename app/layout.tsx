@@ -33,12 +33,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* Google Analytics Script (Loads gtag.js) */}
       
         <GoogleTagManager gtmId="GTM-W28GRVRP" />
-        <link
-  rel="preload"
-  as="image"
-  href="/background2.webp"
-  type="image/png"
-/>
+      
 <script
   type="application/ld+json"
   dangerouslySetInnerHTML={{
@@ -48,7 +43,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       "name": "Raj Gill Law Corporation",
       "image": "https://rajgilllaw.com/assets/preview-image.jpg",
       "url": "https://rajgilllaw.com",
-      "telephone": "+1-604-555-1234",
+      "telephone": "+1-604-593-6470",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "123 Main St",
@@ -83,14 +78,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   `}
 </Script>
       </head>
-      <body
+      <body className="parallelogram-clip"
       >
       
         {children}
         
         {/* Vercel Analytics */}
         <Analytics />
-      </body>
+      </body >
       <GoogleAnalytics gaId="AW-686827248" />
       <GoogleAnalytics gaId="AW-16895292879" />
     </html>
