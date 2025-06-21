@@ -38,7 +38,7 @@ export const FloatingNav = ({
       }
     }
   });
-
+//@ts-nocheck
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     element?.scrollIntoView({ behavior: "smooth" });
