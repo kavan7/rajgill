@@ -147,7 +147,7 @@ const   Hero = () => {
 
             <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
               <DialogTrigger asChild>
-                <button onClick={() => setIsDialogOpen(true)} className="bg-white">
+                <button onClick={() => setIsDialogOpen(true)} className="bg-none">
                   <MagicButton
                     title="SCHEDULE"
                     icon={<FaCalendar />}

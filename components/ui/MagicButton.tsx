@@ -27,7 +27,7 @@ const MagicButton = ({
       onClick={handleClick}
     >
       <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] " />
- <span className="absolute inset-[-1000%] animate-[spin_7s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#525252_0%,#000_50%,#525252_100%)]" />
+ <span className="absolute inset-[-1000%] animate-[spin_7s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#transparent_0%,#000_50%,transparent_100%)]" />
  
 
       {/* remove px-3 py-1, add px-5 gap-2 */}
