@@ -147,12 +147,12 @@ const   Hero = () => {
 
             <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
               <DialogTrigger asChild>
-                <button onClick={() => setIsDialogOpen(true)}>
+                <button onClick={() => setIsDialogOpen(true)} className="bg-white">
                   <MagicButton
                     title="SCHEDULE"
                     icon={<FaCalendar />}
                     position="right"
-                    otherClasses="rounded text-neutral-300 bg-zinc-950"
+                    otherClasses="rounded-lg  text-neutral-300 "
                   />
                 </button>
               </DialogTrigger>
