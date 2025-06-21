@@ -46,7 +46,7 @@ export function FeaturesSectionDemo() {
         area="md:[grid-area:3/1/4/13] xl:[grid-area:2/8/3/13]"
         icon={<Search className="h-4 w-4 text-neutral-400" />}
         title="Abbotsford"
-        description="All of our services available in surrey."
+        description="All of our services available in Abbotsford."
          link="abbotsford-divorce-lawyers"
       />
        
