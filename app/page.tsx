@@ -12,7 +12,6 @@ import { TracingBeam } from "@/components/ui/tracing-beam";
 import { About } from "@/components/About";
 import { Footer } from "@/components/Footer";
 import Touch from "@/components/Touch";
-import Image from "next/image";
 
 
 
