@@ -13,30 +13,30 @@ import FloatingChatWidget from "@/components/FloatingChatWidget";
 
 
 
-export default function page() {
-  //@ts-nocheck
+export default function Page() {
+
  const [isOpen] = useState(false);
 
 
   return (
     <main className="relative  flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
-      <div className="max-w-7xl w-full">
+      <div className="max-w-7xl w-full ">
    
        
         <TracingBeam>
              {isOpen && <ChatBox />}
     <FloatingChatWidget />
-          <div id="home">
+          <div id="home" className="">
             <div className="flex flex-col">
               <Hero />
             </div>
           </div>
           <About />
           <hr />
-          <div id="">
-      
-          </div>
-          <div id="" />
+        <div>
+
+        </div>
+     
           <hr id="" />
           <Touch />
           <hr />
