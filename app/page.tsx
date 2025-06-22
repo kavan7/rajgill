@@ -8,14 +8,14 @@ import { About } from "@/components/About";
 import { Footer } from "@/components/Footer";
 import Touch from "@/components/Touch";
 import ChatBox from "@/components/ChatBox";
-import StickyChatIcon from "@/components/ui/StickyChatIcon";
+
 import FloatingChatWidget from "@/components/FloatingChatWidget";
 
 
 
 export default function page() {
-  
- const [isOpen, setIsOpen] = useState(false);
+  //@ts-ignore
+ const [isOpen] = useState(false);
 
 
   return (
