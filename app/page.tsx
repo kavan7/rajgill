@@ -14,7 +14,7 @@ import FloatingChatWidget from "@/components/FloatingChatWidget";
 
 
 export default function page() {
-  //@ts-ignore
+  //@ts-nocheck
  const [isOpen] = useState(false);
 
 
