@@ -9,6 +9,7 @@ import { Footer } from "@/components/Footer";
 import Touch from "@/components/Touch";
 import ChatBox from "@/components/ChatBox";
 
+import FloatingChatWidget from "@/components/FloatingChatWidget";
 
 
 
@@ -24,7 +25,7 @@ export default function Page() {
        
         <TracingBeam>
              {isOpen && <ChatBox />}
-   
+    <FloatingChatWidget />
           <div id="home" className="">
             <div className="flex flex-col">
               <Hero />
