@@ -9,7 +9,6 @@ import { Footer } from "@/components/Footer";
 import Touch from "@/components/Touch";
 import ChatBox from "@/components/ChatBox";
 
-import FloatingChatWidget from "@/components/FloatingChatWidget";
 
 
 
