@@ -26,7 +26,7 @@ export default function Page() {
        
         <TracingBeam>
              {isOpen && <ChatBox />}
-        <FloatingChatWidget/>
+            <FloatingChatWidget/>
           <div id="home" className="">
             <div className="flex flex-col">
               <Hero />
