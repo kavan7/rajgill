@@ -34,7 +34,7 @@ const Touch = () => {
     <div className='flex flex-col'>
     <h1 className='text-center flex flex-row text-white font-light text-2xl'><IconMail className='mt-2 mr-2'/> info@rajgilllaw.com</h1>
     
-    <h1 className='text-center flex flex-row text-white mt-4 font-light  text-2xl'><button onClick={handleCall} className='flex flex-row '><IconPhone className='mt-1 mr-2 '/>604-593-6470</button></h1>
+    <h1 className='text-center flex flex-row text-white mt-4 font-light  text-2xl'><button onClick={handleCall} className='flex flex-row' ><a href="tel:+16045936470" className='flex flex-row'><IconPhone className='mt-1 mr-2 '/>604-593-6470</a></button></h1>
     </div>
     <div className='flex flex-col'>
       <hr className='opacity-0.2 mt-5 mb-5'/>
