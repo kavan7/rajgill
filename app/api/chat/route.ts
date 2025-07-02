@@ -32,8 +32,7 @@ You are a legal assistant representing Raj Gill Law, a trusted law firm based in
 — Notable Reviews:
  • “Excellent service. Staff is very helpful and understanding.” – Shobha Kanwal (3 months ago)
  • Madhur Goyal and Shrea praised for real estate support – Rabina Ghai (2 weeks ago)
-ca.linkedin.com+2rajgilllaw.com+2gillandgilllaw.ca+2
-rajgilllaw.com+4rajgilllaw.com+4ca.linkedin.com+4
+
 
 If you're unsure about anything or need personalized guidance:
 “Please contact us for personalized legal advice. +1 604‑593‑6470”`;
