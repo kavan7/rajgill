@@ -10,25 +10,22 @@ export const metadata: Metadata = {
 
 const ImmigrationLawyersPage = () => {
   return (
-    <main className="relative flex  justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
-      {/* Immigration Lawyers Section */}
-      <section className="flex flex-col bg-no-repeat py-20">
-        <div className="pb-[-30px] pt-24">
-          <div className="h-screen w-full dark:bg-black-100 bg-transparent absolute top-0 left-0 flex items-center justify-center">
-            <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-transparent [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
-          </div>
+    <main className="relative flex flex-col min-h-screen bg-gradient-to-br from-[#0f172a4f] via-[#1e293b3e] to-[#33415538] text-white overflow-auto">
+      <section className="py-24 relative z-10 px-4 sm:px-10">
+        {/* Radial Mask Background */}
+        <div className="absolute inset-0 pointer-events-none z-0 [mask-image:radial-gradient(ellipse_at_center,white,transparent)] bg-black/10" />
 
-          <div className="flex justify-center relative z-10">
-            <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-              <h1 className="font-bold text-center text-[40px] md:text-5xl lg:text-6xl text-neutral-300">
-                Immigration Lawyers in Surrey and Abbotsford
-              </h1>
-              <p className="uppercase tracking-widest text-lg text-center mt-5 text-slate-200 font-medium max-w-80">
-                RAJ GILL LAW CORPORATION
-              </p>
-              <TracingBeamDemoThree />
-            </div>
-          </div>
+        <div className="relative z-10 max-w-5xl mx-auto text-center">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-100">
+            Immigration Lawyers in Surrey and Abbotsford
+          </h1>
+          <p className="uppercase tracking-widest text-lg mt-5 text-slate-300 font-medium">
+            RAJ GILL LAW CORPORATION
+          </p>
+        </div>
+
+        <div className="mt-16">
+          <TracingBeamDemoThree />
         </div>
       </section>
     </main>

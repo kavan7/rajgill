@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import Image from "next/image";
 import { TracingBeam } from "./ui/tracing-beam";
@@ -25,21 +26,23 @@ export function TracingBeamDemoThree() {
   ];
 
   return (
-    <TracingBeam className="px-6">
-      <div className="w-full mx-auto shadow-xl shadow-black-100 p-10 rounded-4xl antialiased pt-4 relative">
-        <SecondNav navItems={navItems} />
+    <TracingBeam className="px-4 sm:px-8">
+      <SecondNav navItems={navItems} />
+      <div className="w-full mx-auto shadow-xl shadow-black-100 p-6 sm:p-10 rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10">
         {dummyContent.map((item, index) => (
-          <article key={`content-${index}`} className="mb-10 w-full mt-[25px]">
-            <h2 className="text-xl mb-4 text-neutral-300">{item.title}</h2>
-            <div className="text-md prose text-neutral-400 prose-sm dark:prose-invert">
+          <article key={`content-${index}`} className="mb-12">
+            <h2 className="text-2xl font-semibold text-neutral-100 mb-4">{item.title}</h2>
+            <div className="prose prose-sm sm:prose-base dark:prose-invert text-neutral-300 max-w-none">
               {item.image && (
-                <Image
-                  src={item.image}
-                  alt={item.altText}
-                  height="200"
-                  width="700"
-                  className="rounded-xl mb-10 mx-auto items-center object-cover"
-                />
+                <div className="mb-6 flex justify-center">
+                  <Image
+                    src={item.image}
+                    alt={item.altText}
+                    height={250}
+                    width={700}
+                    className="rounded-xl object-cover shadow-md"
+                  />
+                </div>
               )}
               {item.description}
             </div>
