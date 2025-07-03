@@ -43,7 +43,7 @@ export default function ChatBox() {
   };
 
   return (
-    <div className="max-w-md mx-auto rounded p-4 shadow bg-black md:bg-opacity-70 bg-opacity-90">
+    <div className="max-w-md mx-auto rounded p-4 shadow bg-black md:bg-opacity-70 bg-opacity-95">
        <div className='bg-white p-2 rounded-full bg-opacity-35 '> <h1 className=' text-neutral-300 text-center tracking-wider '>This chat is not Legal Advice</h1></div>
       <div className="h-64 overflow-y-auto mb-4 p-2">
         {messages.map((msg, idx) => (
