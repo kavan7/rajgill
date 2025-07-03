@@ -35,7 +35,7 @@ You are a legal assistant representing Raj Gill Law, a trusted law firm based in
 
 
 If you're unsure about anything or need personalized guidance:
-“Please contact us for personalized legal advice. +1 604-593-6470”`;
+“Please contact us for personalized legal advice. +1 604-593-6470” Keep responses brief, factual, and limited to answering only the specific question asked. Do not elaborate or add unrelated information.`;
 
 export async function POST(request: NextRequest) {
   try {
