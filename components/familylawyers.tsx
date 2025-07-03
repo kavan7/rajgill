@@ -82,13 +82,13 @@ const dummyContent = [
     description: (
       <>
         <p>
-          If you're looking for experienced family lawyers in Surrey, our team provides
+          If you&apos;re looking for experienced family lawyers in Surrey, our team provides
           compassionate, effective legal representation across all family law matters. We specialize
           in divorce, child custody, property division, spousal support, and domestic agreements to
           help families resolve their disputes efficiently and respectfully.
         </p>
         <p>
-          Whether you're facing a contested divorce, a separation agreement, or post-divorce
+          Whether you&apos;re facing a contested divorce, a separation agreement, or post-divorce
           modifications, we have the skills to support you through the process.
         </p>
       </>
@@ -120,7 +120,7 @@ const dummyContent = [
       <>
         <p>
           Child custody and support issues can be emotionally charged, but our experienced child
-          custody lawyers in Surrey are dedicated to protecting your family's well-being. We work on
+          custody lawyers in Surrey are dedicated to protecting your family&apos;s well-being. We work on
           both custody arrangements and child support calculations.
         </p>
         <p>
@@ -138,7 +138,7 @@ const dummyContent = [
       <>
         <p>
           Our family law team in Surrey handles complex property division and spousal support cases,
-          ensuring fair and equitable outcomes under BC's Family Law Act.
+          ensuring fair and equitable outcomes under BC&apos;s Family Law Act.
         </p>
         <p>
           Whether dealing with assets, debts, or ongoing financial support, we tailor a legal
