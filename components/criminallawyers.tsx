@@ -1,9 +1,9 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
-import { TracingBeam } from "./ui/tracing-beam";
-import { IconBriefcase, IconMan, IconPhone } from "@tabler/icons-react";
+import { IconBriefcase, IconMan, IconPhone, IconChevronDown } from "@tabler/icons-react";
 import { SecondNav } from "./ui/secondnav";
+import { TracingBeam } from "./ui/tracing-beam";
 
 export function TracingBeamDemoFour() {
   const navItems = [
@@ -24,27 +24,102 @@ export function TracingBeamDemoFour() {
     },
   ];
 
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const toggleCard = (index: number) => {
+    setOpenIndex((prev) => (prev === index ? null : index));
+  };
+
+  const [openFAQ, setOpenFAQ] = useState<number | null>(null);
+  const toggleFAQ = (index: number) => {
+    setOpenFAQ((prev) => (prev === index ? null : index));
+  };
+
   return (
-    <TracingBeam className="px-6">
-      <div className="w-full mx-auto shadow-xl shadow-black-100 p-10 rounded-4xl antialiased pt-4 relative">
-        <SecondNav navItems={navItems} />
-        {criminalLawContent.map((item, index) => (
-          <article key={`content-${index}`} className="mb-10 w-full mt-[25px]">
-            <h2 className="text-xl mb-4 text-neutral-300">{item.title}</h2>
-            <div className="text-md prose text-neutral-400 prose-sm dark:prose-invert">
-              {item.image && (
-                <Image
-                  src={item.image}
-                  alt={item.altText}
-                  height="200"
-                  width="700"
-                  className="rounded-xl mb-10 mx-auto items-center object-cover"
+    <TracingBeam className="px-4 sm:px-8 lg:px-16">
+      <SecondNav navItems={navItems} />
+      <div className="w-full mx-auto p-6 sm:p-10 rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 shadow-xl shadow-black/30 space-y-6">
+        {criminalLawContent.map((item, index) => {
+          const isOpen = openIndex === index;
+          return (
+            <div
+              key={`card-${index}`}
+              className="border border-white/10 bg-white/10 rounded-2xl overflow-hidden shadow-md backdrop-blur-sm transition-all"
+            >
+              <button
+                onClick={() => toggleCard(index)}
+                className="flex items-center justify-between w-full px-6 py-4 text-left hover:bg-white/10 transition"
+              >
+                <h2 className="text-lg sm:text-xl font-semibold text-white">{item.title}</h2>
+                <IconChevronDown
+                  className={`w-5 h-5 text-white transition-transform ${
+                    isOpen ? "rotate-180" : ""
+                  }`}
                 />
+              </button>
+              {isOpen && (
+                <div className="px-6 pb-6 pt-0 text-neutral-300 prose prose-sm sm:prose-base dark:prose-invert max-w-none">
+                  {item.image && (
+                    <div className="my-4 flex justify-center">
+                      <Image
+                        src={item.image}
+                        alt={item.altText}
+                        width={800}
+                        height={400}
+                        className="rounded-xl shadow-md object-cover"
+                      />
+                    </div>
+                  )}
+                  {item.description}
+                </div>
               )}
-              {item.description}
             </div>
-          </article>
-        ))}
+          );
+        })}
+
+        {/* CTA */}
+        <div className="mt-10 rounded-2xl bg-blue-600 text-white p-6 sm:p-10 text-center shadow-lg">
+          <h2 className="text-2xl md:text-3xl font-bold">Book a Free Consultation</h2>
+          <p className="mt-3 text-blue-100 text-sm sm:text-base">
+            Unsure about your legal rights or next steps? Our defence lawyers are here to guide you — confidentially and for free.
+          </p>
+          <a
+            href="/#touch"
+            className="mt-6 inline-block bg-white text-blue-700 font-semibold px-6 py-3 rounded-xl hover:bg-gray-100 transition"
+          >
+            Schedule Now
+          </a>
+        </div>
+
+        {/* FAQ */}
+        <div className="mt-14 space-y-6">
+          <h3 className="text-white text-2xl font-bold text-center">Frequently Asked Questions</h3>
+          {faqList.map((faq, index) => {
+            const isOpen = openFAQ === index;
+            return (
+              <div
+                key={`faq-${index}`}
+                className="border border-white/10 bg-white/10 rounded-xl backdrop-blur-sm"
+              >
+                <button
+                  onClick={() => toggleFAQ(index)}
+                  className="w-full text-left px-6 py-4 flex items-center justify-between hover:bg-white/10 transition"
+                >
+                  <span className="text-white font-medium text-sm sm:text-base">
+                    {faq.question}
+                  </span>
+                  <IconChevronDown
+                    className={`w-5 h-5 text-white transition-transform ${
+                      isOpen ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
+                {isOpen && (
+                  <div className="px-6 pb-5 text-sm text-neutral-300">{faq.answer}</div>
+                )}
+              </div>
+            );
+          })}
+        </div>
       </div>
     </TracingBeam>
   );
@@ -56,10 +131,10 @@ const criminalLawContent = [
     description: (
       <>
         <p>
-          Facing criminal charges can be life-altering. At Raj Gill Law Corporation, our experienced criminal defence lawyers in Surrey provide unwavering support and legal expertise. We defend clients against charges including DUI, assault, theft, and drug offenses. Our mission is to protect your rights and secure the best possible outcome.
+          Facing criminal charges can be life-altering. Our experienced defence lawyers provide support and strategy against DUI, assault, theft, drug offenses, and more.
         </p>
         <p>
-          With in-depth courtroom experience and strategic negotiation skills, we analyze each element of your case to build a tailored defense plan. Whether it’s your first charge or a repeat accusation, we are here to help you move forward with confidence.
+          Whether it’s your first charge or not, we offer proactive, personalized defence strategies that protect your future.
         </p>
       </>
     ),
@@ -71,10 +146,10 @@ const criminalLawContent = [
     description: (
       <>
         <p>
-          DUI charges carry serious consequences, including license suspension, fines, and even jail time. Our Surrey criminal lawyers assess every detail—from roadside procedures to breathalyzer accuracy—to build a strong defence. Let us help you protect your driving privileges and your future.
+          DUI charges carry serious consequences. We challenge roadside procedures, breathalyzer data, and ensure your rights weren’t violated.
         </p>
         <p>
-          We explore all legal options including Charter violations, lack of probable cause, or errors in police conduct. A strong DUI defense starts with a legal team that understands both the law and the science behind your case.
+          From first-time offenders to complex Charter arguments, we tailor your defence for the best result.
         </p>
       </>
     ),
@@ -86,10 +161,10 @@ const criminalLawContent = [
     description: (
       <>
         <p>
-          If you&apos;re facing charges of assault, domestic violence, or other violent offenses, our legal team is here to help. We take a strategic approach to challenge the evidence and represent you confidently in court. Every case deserves a fair defense—trust us to stand by you.
+          If you’re facing assault, domestic violence, or weapons charges, we build strong courtroom strategies and challenge weak or contradictory evidence.
         </p>
         <p>
-          We handle simple and aggravated assault, uttering threats, weapons charges, and more. From self-defense claims to factual disputes, we carefully evaluate all facts to pursue the best legal result.
+          Whether claiming self-defense or disputing facts, we’ll make sure your voice is heard.
         </p>
       </>
     ),
@@ -101,10 +176,10 @@ const criminalLawContent = [
     description: (
       <>
         <p>
-          Charges like theft, fraud, or mischief can significantly impact your criminal record and employment prospects. Our lawyers work diligently to resolve these matters with minimal penalties. We’re committed to defending your reputation and helping you move forward.
+          From shoplifting to embezzlement, we minimize penalties and pursue alternatives like diversion or peace bonds whenever possible.
         </p>
         <p>
-          We represent clients in shoplifting, embezzlement, identity fraud, vandalism, and other property-related offenses. Early legal intervention can lead to diversion programs, peace bonds, or even full acquittals.
+          Early legal advice can protect your record and help avoid harsh consequences.
         </p>
       </>
     ),
@@ -116,10 +191,10 @@ const criminalLawContent = [
     description: (
       <>
         <p>
-          British Columbia’s drug laws are complex and penalties can be severe. Whether you&apos;re charged with possession, trafficking, or production, our firm has the experience to guide you. We examine every angle to challenge the prosecution’s case and pursue alternative sentencing or dismissals where possible.
+          Charged with possession, trafficking, or cultivation? We examine all facts and Charter violations to reduce or dismiss charges.
         </p>
         <p>
-          We routinely assist with CDSA charges, including controlled substance possession, intent to distribute, and marijuana-related offenses post-legalization. We are meticulous in defending against unlawful search and seizure or Charter breaches.
+          We’re experienced in CDSA matters and cannabis-related offenses post-legalization.
         </p>
       </>
     ),
@@ -131,14 +206,37 @@ const criminalLawContent = [
     description: (
       <>
         <p>
-          At Raj Gill Law Corporation, we combine decades of criminal law experience with a client-first approach. We know what’s at stake. Our firm is committed to clear communication, tireless advocacy, and protecting your rights every step of the way.
+          With decades of criminal law experience, our firm is known for tireless advocacy, clear communication, and winning results.
         </p>
         <p>
-          We take pride in our responsive, results-oriented representation and our track record of success in Surrey criminal courts. From the moment you retain us, we begin working on your defense with urgency and care.
+          We act fast — because your future is too important to wait.
         </p>
       </>
     ),
     image: "/background2.png",
     altText: "Experienced criminal law firm in Surrey",
+  },
+];
+
+const faqList = [
+  {
+    question: "Do I need a lawyer if it’s my first criminal charge?",
+    answer:
+      "Yes. Even first-time charges can lead to a criminal record or jail time. A lawyer ensures your rights are protected and helps minimize consequences.",
+  },
+  {
+    question: "What should I do if I’ve been arrested?",
+    answer:
+      "Remain silent and ask for a lawyer immediately. Don’t answer questions without legal advice. You have the right to remain silent and consult counsel.",
+  },
+  {
+    question: "Can a DUI charge be dropped?",
+    answer:
+      "It depends on the evidence and police conduct. We explore issues like improper stops, flawed testing, and Charter violations to dismiss or reduce charges.",
+  },
+  {
+    question: "What is a peace bond?",
+    answer:
+      "A peace bond is a court order to stay away from a person or location. It’s often used as an alternative to a criminal conviction for certain minor offenses.",
   },
 ];

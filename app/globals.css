@@ -10,14 +10,25 @@
 
 
 
-
 body {
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
   background-image: url('/backgroundbest4.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #000000;
-  min-height: 100vh;
-  flex: auto;
- 
+  opacity: 1; /* 50% opacity */
+  z-index: -1;
 }

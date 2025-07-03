@@ -1,33 +1,35 @@
-import { TracingBeamDemo } from '@/components/familylawyers';
 import React from 'react';
 import { Metadata } from 'next';
+import { TracingBeamDemo } from '@/components/familylawyers';
 
 export const metadata: Metadata = {
   title: 'Divorce Lawyers in Surrey and Abbotsford | Raj Gill Law Corporation',
-  description: 'Experienced divorce lawyers in Surrey and Abbotsford offering compassionate and effective legal representation. Specializing in divorce, child custody, and spousal support cases.',
+  description:
+    'Experienced divorce lawyers in Surrey and Abbotsford offering compassionate and effective legal representation. Specializing in divorce, child custody, and spousal support cases.',
   robots: 'index, follow',
 };
 
 const DivorceLawyersPage = () => {
   return (
-    <main className="relative flex justify-center  items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
-      <section className="flex flex-col bg-no-repeat py-20">
-        <div className="pb-[-30px] pt-5">
-          <div className="h-screen w-full dark:bg-black-100 bg-transparent absolute top-0 left-0 flex items-center justify-center">
-            <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-transparent [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
-          </div>
+    <main className="relative flex items-center justify-center flex-col min-h-screen px-4 sm:px-8 bg-gradient-to-br from-[#0f172a4f] via-[#1e293b3e] to-[#33415538] text-white overflow-hidden">
+      {/* Decorative Mask Layer */}
+      <div className="absolute inset-0 z-0 [mask-image:radial-gradient(circle_at_center,white,transparent)] bg-black/10 pointer-events-none" />
 
-          <div className="flex justify-center relative z-10">
-            <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-              <h1 className="font-bold text-center text-[40px] md:text-5xl lg:text-6xl text-neutral-300">
-                Divorce Lawyers in Surrey and Abbotsford
-              </h1>
-              <p className="uppercase tracking-widest text-lg text-center mt-5 text-slate-200 font-medium max-w-80">
-                RAJ GILL LAW CORPORATION
-              </p>
-              <TracingBeamDemo />
-            </div>
-          </div>
+      {/* Content Container */}
+      <section className="relative z-10 flex flex-col items-center text-center max-w-4xl py-24 px-4 md:px-0">
+        <h1 className="text-4xl sm:text-5xl mt-12 md:text-6xl font-extrabold tracking-tight text-white">
+          Compassionate Divorce Lawyers in <span className="text-blue-400">Surrey</span> &{' '}
+          <span className="text-blue-400">Abbotsford</span>
+        </h1>
+
+        <p className="mt-6 text-lg sm:text-xl max-w-2xl text-slate-200 leading-relaxed">
+          At Raj Gill Law Corporation, we understand the emotional and legal complexities of
+          divorce. Our team supports clients through separation, child custody disputes, and
+          spousal support issues with clarity, care, and proven legal strategy.
+        </p>
+
+        <div className="mt-12 w-full">
+          <TracingBeamDemo />
         </div>
       </section>
     </main>

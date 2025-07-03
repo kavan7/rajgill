@@ -1,9 +1,9 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
-import { TracingBeam } from "./ui/tracing-beam";
-import { IconBriefcase, IconMan, IconPhone } from "@tabler/icons-react";
+import { IconBriefcase, IconMan, IconPhone, IconChevronDown } from "@tabler/icons-react";
 import { SecondNav } from "./ui/secondnav";
+import { TracingBeam } from "./ui/tracing-beam";
 
 export function TracingBeamDemoTwo() {
   const navItems = [
@@ -24,27 +24,54 @@ export function TracingBeamDemoTwo() {
     },
   ];
 
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  const toggleCard = (index: number) => {
+    setOpenIndex((prev) => (prev === index ? null : index));
+  };
+
   return (
-    <TracingBeam className="px-6">
-      <div className="w-full mx-auto shadow-xl shadow-black-100 p-10 rounded-4xl antialiased pt-4 relative">
-        <SecondNav navItems={navItems} />
-        {dummyContent.map((item, index) => (
-          <article key={`content-${index}`} className="mb-10 w-full mt-[25px]">
-            <h2 className="text-xl mb-4 text-neutral-300">{item.title}</h2>
-            <div className="text-md prose text-neutral-400 prose-sm dark:prose-invert">
-              {item.image && (
-                <Image
-                  src={item.image}
-                  alt={item.altText}
-                  height="200"
-                  width="700"
-                  className="rounded-xl mb-10 mx-auto items-center object-cover"
+    <TracingBeam className="px-4 sm:px-8 lg:px-16">
+      <SecondNav navItems={navItems} />
+      <div className="w-full mx-auto p-6 sm:p-10 rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 shadow-xl shadow-black/30 space-y-6">
+        {dummyContent.map((item, index) => {
+          const isOpen = openIndex === index;
+          return (
+            <div
+              key={`card-${index}`}
+              className="border border-white/10 bg-white/10 rounded-2xl overflow-hidden shadow-md backdrop-blur-sm transition-all"
+            >
+              <button
+                onClick={() => toggleCard(index)}
+                className="flex items-center justify-between w-full px-6 py-4 text-left hover:bg-white/10 transition"
+              >
+                <h2 className="text-lg sm:text-xl font-semibold text-white">{item.title}</h2>
+                <IconChevronDown
+                  className={`w-5 h-5 text-white transition-transform ${
+                    isOpen ? "rotate-180" : ""
+                  }`}
                 />
+              </button>
+
+              {isOpen && (
+                <div className="px-6 pb-6 pt-0 text-neutral-300 prose prose-sm sm:prose-base dark:prose-invert max-w-none">
+                  {item.image && (
+                    <div className="my-4 flex justify-center">
+                      <Image
+                        src={item.image}
+                        alt={item.altText}
+                        width={800}
+                        height={400}
+                        className="rounded-xl shadow-md object-cover"
+                      />
+                    </div>
+                  )}
+                  {item.description}
+                </div>
               )}
-              {item.description}
             </div>
-          </article>
-        ))}
+          );
+        })}
       </div>
     </TracingBeam>
   );
@@ -56,10 +83,15 @@ const dummyContent = [
     description: (
       <>
         <p>
-          If you need a seasoned civil lawyer in Surrey, our team brings expertise, dedication, and thorough legal knowledge to address a wide range of civil matters. We provide top-tier legal representation in property disputes, contract law, negligence claims, and employment issues. Our civil lawyers work tirelessly to achieve favorable outcomes, protecting your rights and interests every step of the way.
+          If you need a seasoned civil lawyer in Surrey, our team brings expertise, dedication, and
+          thorough legal knowledge to address a wide range of civil matters. We provide top-tier
+          legal representation in property disputes, contract law, negligence claims, and
+          employment issues.
         </p>
         <p>
-          We understand how personal and financially impactful civil disputes can be. That’s why we approach each case with a tailored strategy aimed at efficiency and resolution—whether through litigation, mediation, or negotiation.
+          We understand how personal and financially impactful civil disputes can be. That’s why we
+          approach each case with a tailored strategy aimed at efficiency and resolution—whether
+          through litigation, mediation, or negotiation.
         </p>
       </>
     ),
@@ -71,10 +103,13 @@ const dummyContent = [
     description: (
       <>
         <p>
-          Navigating property disputes can be complex and time-consuming. Our experienced real estate and civil lawyers in Surrey specialize in resolving conflicts around property boundaries, land ownership, tenancy agreements, and more. We take the time to understand your situation fully, aiming to resolve issues efficiently while safeguarding your property rights under British Columbia’s legal framework.
+          Navigating property disputes can be complex and time-consuming. Our experienced real
+          estate and civil lawyers in Surrey specialize in resolving conflicts around property
+          boundaries, land ownership, tenancy agreements, and more.
         </p>
         <p>
-          From residential lease conflicts to commercial property disagreements, our firm delivers timely, practical legal solutions that protect your investment and peace of mind.
+          From residential lease conflicts to commercial property disagreements, our firm delivers
+          timely, practical legal solutions that protect your investment and peace of mind.
         </p>
       </>
     ),
@@ -86,10 +121,13 @@ const dummyContent = [
     description: (
       <>
         <p>
-          When a contract is breached, swift and knowledgeable legal assistance is crucial. Our civil law team in Surrey handles all forms of contract disputes, from interpreting contract terms to enforcing breach of contract claims. We help clients pursue remedies such as compensation, contract renegotiation, or specific performance, ensuring your contractual rights are upheld.
+          When a contract is breached, swift and knowledgeable legal assistance is crucial. Our
+          civil law team in Surrey handles all forms of contract disputes, from interpreting
+          contract terms to enforcing breach of contract claims.
         </p>
         <p>
-          We also advise on contract drafting and preventative legal measures to help businesses and individuals avoid disputes in the first place.
+          We also advise on contract drafting and preventative legal measures to help businesses
+          and individuals avoid disputes in the first place.
         </p>
       </>
     ),
@@ -101,10 +139,13 @@ const dummyContent = [
     description: (
       <>
         <p>
-          Negligence claims require an in-depth understanding of tort law and a strategic approach to achieve fair compensation. Our skilled civil lawyers in Surrey have a proven record of success in personal injury cases, whether due to accidents, medical malpractice, or workplace incidents. We prioritize your recovery and financial security, helping you navigate the claims process with confidence.
+          Negligence claims require an in-depth understanding of tort law and a strategic approach
+          to achieve fair compensation. Our skilled civil lawyers in Surrey have a proven record of
+          success in personal injury cases.
         </p>
         <p>
-          We take on both plaintiff and defense roles in civil negligence disputes and aim to achieve fair settlements without unnecessary litigation when possible.
+          We take on both plaintiff and defense roles in civil negligence disputes and aim to
+          achieve fair settlements without unnecessary litigation when possible.
         </p>
       </>
     ),
@@ -116,10 +157,12 @@ const dummyContent = [
     description: (
       <>
         <p>
-          Our employment law experts in Surrey are adept at handling complex workplace disputes, including wrongful termination, harassment, and wage claims. We provide strong representation for both employees and employers, addressing workplace concerns through negotiation, mediation, or litigation. Count on us to defend your rights and seek resolutions aligned with British Columbia’s employment laws.
+          Our employment law experts in Surrey are adept at handling complex workplace disputes,
+          including wrongful termination, harassment, and wage claims.
         </p>
         <p>
-          From employment contracts to human rights complaints and regulatory compliance, we help clients protect their workplace rights with precision and care.
+          From employment contracts to human rights complaints and regulatory compliance, we help
+          clients protect their workplace rights with precision and care.
         </p>
       </>
     ),
@@ -131,10 +174,13 @@ const dummyContent = [
     description: (
       <>
         <p>
-          At our Surrey law firm, we combine practical experience with a commitment to client-focused service. Our civil lawyers offer strategic guidance tailored to your needs, ensuring that every decision is well-informed and every action is in your best interest. Whether you’re facing a lawsuit, seeking to protect your business interests, or require sound legal advice, we’re here to provide robust, effective solutions.
+          At our Surrey law firm, we combine practical experience with a commitment to
+          client-focused service. Our civil lawyers offer strategic guidance tailored to your
+          needs, ensuring every action is in your best interest.
         </p>
         <p>
-          We take pride in providing responsive service, transparent communication, and a results-oriented mindset that delivers peace of mind during complex civil disputes.
+          We take pride in responsive service, transparent communication, and a results-oriented
+          mindset that delivers peace of mind during complex civil disputes.
         </p>
       </>
     ),

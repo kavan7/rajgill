@@ -1,9 +1,9 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
-import { TracingBeam } from "./ui/tracing-beam";
-import { IconBriefcase, IconMan, IconPhone } from "@tabler/icons-react";
+import { IconBriefcase, IconMan, IconPhone, IconChevronDown } from "@tabler/icons-react";
 import { SecondNav } from "./ui/secondnav";
+import { TracingBeam } from "./ui/tracing-beam";
 
 export function TracingBeamDemo() {
   const navItems = [
@@ -24,27 +24,53 @@ export function TracingBeamDemo() {
     },
   ];
 
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const toggleCard = (index: number) => {
+    setOpenIndex((prev) => (prev === index ? null : index));
+  };
+
   return (
-    <TracingBeam className="px-6">
-      <div className="w-full mx-auto shadow-xl shadow-black-100 p-10 rounded-4xl antialiased pt-4 relative">
-        <SecondNav navItems={navItems} />
-        {dummyContent.map((item, index) => (
-          <article key={`content-${index}`} className="mb-10 w-full mt-[25px]">
-            <h2 className="text-xl mb-4 text-neutral-300">{item.title}</h2>
-            <div className="text-md prose text-neutral-400 prose-sm dark:prose-invert">
-              {item.image && (
-                <Image
-                  src={item.image}
-                  alt={item.altText}
-                  height="200"
-                  width="700"
-                  className="rounded-xl mb-10 mx-auto items-center object-cover"
+    <TracingBeam className="px-4 sm:px-8 lg:px-16">
+      <SecondNav navItems={navItems} />
+      <div className="w-full mx-auto p-6 sm:p-10 rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 shadow-xl shadow-black/30 space-y-6">
+        {dummyContent.map((item, index) => {
+          const isOpen = openIndex === index;
+          return (
+            <div
+              key={`card-${index}`}
+              className="border border-white/10 bg-white/10 rounded-2xl overflow-hidden shadow-md backdrop-blur-sm transition-all"
+            >
+              <button
+                onClick={() => toggleCard(index)}
+                className="flex items-center justify-between w-full px-6 py-4 text-left hover:bg-white/10 transition"
+              >
+                <h2 className="text-lg sm:text-xl font-semibold text-white">{item.title}</h2>
+                <IconChevronDown
+                  className={`w-5 h-5 text-white transition-transform ${
+                    isOpen ? "rotate-180" : ""
+                  }`}
                 />
+              </button>
+
+              {isOpen && (
+                <div className="px-6 pb-6 pt-0 text-neutral-300 prose prose-sm sm:prose-base dark:prose-invert max-w-none">
+                  {item.image && (
+                    <div className="my-4 flex justify-center">
+                      <Image
+                        src={item.image}
+                        alt={item.altText}
+                        width={800}
+                        height={400}
+                        className="rounded-xl shadow-md object-cover"
+                      />
+                    </div>
+                  )}
+                  {item.description}
+                </div>
               )}
-              {item.description}
             </div>
-          </article>
-        ))}
+          );
+        })}
       </div>
     </TracingBeam>
   );
@@ -56,10 +82,14 @@ const dummyContent = [
     description: (
       <>
         <p>
-          If you’re looking for experienced family lawyers in Surrey, our team provides compassionate, effective legal representation across all family law matters. We specialize in divorce, child custody, property division, spousal support, and domestic agreements to help families resolve their disputes efficiently and respectfully.
+          If you’re looking for experienced family lawyers in Surrey, our team provides
+          compassionate, effective legal representation across all family law matters. We specialize
+          in divorce, child custody, property division, spousal support, and domestic agreements to
+          help families resolve their disputes efficiently and respectfully.
         </p>
         <p>
-          Whether you&apos;re facing a contested divorce, a separation agreement, or post-divorce modifications, we have the skills to support you through the process. We also assist with adoption, guardianship, and domestic violence protection orders, always prioritizing the well-being of your family.
+          Whether you’re facing a contested divorce, a separation agreement, or post-divorce
+          modifications, we have the skills to support you through the process.
         </p>
       </>
     ),
@@ -71,10 +101,13 @@ const dummyContent = [
     description: (
       <>
         <p>
-          Navigating a divorce in Surrey can be challenging, but our skilled divorce lawyers make the process smoother. From mediation to court representation, we help our clients pursue fair resolutions. We understand the emotional and financial toll of separation and work to safeguard your interests throughout each step of the divorce process.
+          Navigating a divorce in Surrey can be challenging, but our skilled divorce lawyers make
+          the process smoother. From mediation to court representation, we help our clients pursue
+          fair resolutions.
         </p>
         <p>
-          We guide clients through both uncontested and contested divorce proceedings and provide legal clarity on parenting plans, spousal maintenance, and shared property responsibilities. Our Surrey-based team combines legal precision with empathy to help you transition into the next chapter with confidence.
+          We guide clients through both uncontested and contested divorce proceedings and provide
+          legal clarity on parenting plans, spousal maintenance, and shared property responsibilities.
         </p>
       </>
     ),
@@ -86,10 +119,13 @@ const dummyContent = [
     description: (
       <>
         <p>
-          Child custody and support issues can be emotionally charged, but our experienced child custody lawyers in Surrey are dedicated to protecting your family’s well-being. We work on both custody arrangements and child support calculations, prioritizing the needs of your children while ensuring fair agreements that comply with legal standards.
+          Child custody and support issues can be emotionally charged, but our experienced child
+          custody lawyers in Surrey are dedicated to protecting your family’s well-being. We work on
+          both custody arrangements and child support calculations.
         </p>
         <p>
-          We assist with sole and joint custody, access rights, and modifications to existing custody orders. Our legal approach ensures both parents understand their rights and obligations, helping create a stable environment that supports your child’s development.
+          We assist with sole and joint custody, access rights, and modifications to existing custody
+          orders. Our goal is to create a stable, healthy arrangement for your child.
         </p>
       </>
     ),
@@ -101,10 +137,12 @@ const dummyContent = [
     description: (
       <>
         <p>
-          Our family law team in Surrey handles complex property division and spousal support cases, ensuring that our clients receive fair settlements based on British Columbia’s Family Law Act. Whether you’re dealing with shared assets, debt division, or spousal support, we provide tailored guidance to achieve equitable solutions for your future.
+          Our family law team in Surrey handles complex property division and spousal support cases,
+          ensuring fair and equitable outcomes under BC's Family Law Act.
         </p>
         <p>
-          We work to protect your financial interests by clearly identifying matrimonial property, exempt assets, and fair support entitlements. Our goal is to provide legal solutions that minimize conflict while maximizing fairness and clarity for both parties.
+          Whether dealing with assets, debts, or ongoing financial support, we tailor a legal
+          strategy that aligns with your goals and protects your financial future.
         </p>
       </>
     ),

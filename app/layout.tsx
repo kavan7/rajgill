@@ -78,7 +78,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   `}
 </Script>
       </head>
-    <body style={{ backgroundImage: "url('/backgroundbest4.jpg?v=2')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
+    <body style={{ backgroundSize: 'cover', backgroundPosition: 'center', }}>
       
         {children}
         

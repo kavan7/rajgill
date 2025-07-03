@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Metadata } from 'next';
 import { TracingBeamDemoFour } from '@/components/criminallawyers';
@@ -12,28 +11,22 @@ export const metadata: Metadata = {
 
 const CriminalLawyersPage = () => {
   return (
-    <main className="relative flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
-      {/* Criminal Lawyers Section */}
-      <section className="flex flex-col bg-no-repeat py-20">
-        <div className="pb-[-30px] pt-24">
-          <div className="h-screen w-full dark:bg-black-100 bg-transparent absolute top-0 left-0 flex items-center justify-center">
-            <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-transparent [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
-          </div>
+    <div className="relative flex flex-col min-h-screen bg-gradient-to-br from-[#0f172a4f] via-[#1e293b3e] to-[#33415538]  text-white">
+      <main className="flex-grow flex justify-center items-center px-5 sm:px-10 py-20">
+        <section className="relative w-full max-w-6xl z-10 text-center space-y-6">
+          <h1 className="text-[36px] md:text-5xl lg:text-6xl font-bold leading-tight text-neutral-200">
+            Criminal Lawyers in Surrey and Abbotsford
+          </h1>
+          <p className="uppercase tracking-widest text-lg mt-3 text-slate-300 font-medium">
+            RAJ GILL LAW CORPORATION
+          </p>
+          <TracingBeamDemoFour />
+        </section>
+      </main>
 
-          <div className="flex justify-center relative z-10">
-            <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-              <h1 className="font-bold text-center text-[40px] md:text-5xl lg:text-6xl text-neutral-300">
-                Criminal Lawyers in Surrey and Abbotsford
-              </h1>
-              <p className="uppercase tracking-widest text-lg text-center mt-5 text-slate-200 font-medium max-w-80">
-                RAJ GILL LAW CORPORATION
-              </p>
-              <TracingBeamDemoFour />
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+      {/* Footer */}
+     
+    </div>
   );
 };
 
