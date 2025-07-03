@@ -33,13 +33,13 @@ export function TracingBeamDemoTwo() {
   return (
     <TracingBeam className="px-4 sm:px-8 lg:px-16">
       <SecondNav navItems={navItems} />
-      <div className="w-full mx-auto p-6 sm:p-10 rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 shadow-xl shadow-black/30 space-y-6">
+      <div className="w-full h-full mx-auto p-6 sm:p-10 rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 shadow-xl shadow-black/30 space-y-6">
         {dummyContent.map((item, index) => {
           const isOpen = openIndex === index;
-          return (
+          return (  
             <div
               key={`card-${index}`}
-              className="border border-white/10 bg-white/10 rounded-2xl overflow-hidden shadow-md backdrop-blur-sm transition-all"
+              className="border border-white/10  overflow-auto bg-white/10 rounded-2xl shadow-md backdrop-blur-sm transition-all"
             >
               <button
                 onClick={() => toggleCard(index)}

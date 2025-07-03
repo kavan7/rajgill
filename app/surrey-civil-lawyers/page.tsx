@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 const CivilLawyersPage = () => {
   return (
-    <main className="relative flex items-center justify-center flex-col min-h-screen px-4 sm:px-8 bg-gradient-to-br from-[#0f172a4f] via-[#1e293b3e] to-[#33415538]  text-white overflow-hidden ">
+    <main className="relative flex items-center justify-center flex-col min-h-screen px-4 sm:px-8 bg-gradient-to-br from-[#0f172a4f] via-[#1e293b3e] to-[#33415538]  text-white ">
       {/* Decorative Mask Layer */}
       <div className="absolute inset-0 z-0 [mask-image:radial-gradient(circle_at_center,white,transparent)] bg-black/10 pointer-events-none" />
 
