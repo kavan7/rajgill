@@ -115,7 +115,7 @@ const   Hero = () => {
     >
       <FloatingNav navItems={navItems}/>
        
-      <div className="pb-[-30px] pt-60" >
+      <div className="pb-[-30px] pt-44" >
         <div className="h-screen w-full dark:bg-black-100 bg-transparent absolute top-0 left-0 flex items-center justify-center">
         
         </div>
@@ -123,13 +123,13 @@ const   Hero = () => {
         <div className="flex justify-center relative my-20 z-10">
           <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
             
-            <p className=" tracking-normal text-3xl text-center text-slate-200 font-medium max-w-83">
-        Surrey & Abbotsford, British Columbia&rsquo;s Most Trusted Attorneys
+            <p className=" tracking-wider uppercase text-2xl text-center text-slate-200 font-medium max-w-83">
+        Raj Gill Law Corporation
             </p>
           
             <h1
              
-              className="text-center tracking-wide text-white md:text-6xl text-2xl mt-9 mb-9">RAJ GILL LAW</h1>
+              className="text-center -tracking-wide text-white md:text-5xl text-2xl mt-9 mb-9">Surrey & Abbotsford, British Columbia&rsquo;s Most Trusted Attorneys</h1>
            
             <p className="text-center md:tracking-wider text-slate-200 font-normal mb-4 md:text-lg lg:text-2xl">
               Schedule a Free Consultation.
@@ -167,13 +167,9 @@ const   Hero = () => {
 
             <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
               <DialogTrigger asChild>
-                <button onClick={() => setIsDialogOpen(true)} className="bg-none">
-                  <MagicButton
-                    title="SCHEDULE"
-                    icon={<FaCalendar />}
-                    position="right"
-                    otherClasses="rounded-lg  text-neutral-300 "
-                  />
+                <button onClick={() => setIsDialogOpen(true)} className="bg-slate-900 relative inline-flex h-12 w-full md:w-60 md:mt-10 overflow-hidden rounded-sm  p-[1px] focus:outline-none "><span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg
+             bg-none px-7 text-sm font-medium text-neutral-200 backdrop-blur-3xl gap-2">SCHEDULE<FaCalendar /></span>
+                 
                 </button>
               </DialogTrigger>
               <DialogContent className="sm:max-w-[425px] rounded-2xl">

@@ -30,8 +30,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <head>
-        {/* Google Analytics Script (Loads gtag.js) */}
-      
+
+
         <GoogleTagManager gtmId="GTM-W28GRVRP" />
       
 <script
@@ -77,6 +77,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     }
   `}
 </Script>
+
+
+
       </head>
     <body style={{ backgroundSize: 'cover', backgroundPosition: 'center', }}>
       
