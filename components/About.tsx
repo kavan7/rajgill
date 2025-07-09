@@ -283,7 +283,7 @@ Madhur is passionate about complex family and civil litigation that involves the
     description: "Articling Student",
     title: "Vaishali Singh",
     email: 'vaishali@rajgilllaw.com',
-    src: "/newnopic.png",
+    src: "/vaipicnew.png",
     ctaText: "Connect",
     ctaLink: "",
     content: () => {
