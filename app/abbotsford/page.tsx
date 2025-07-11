@@ -1,5 +1,6 @@
 "use client";
 import Hero from "@/components/Hero";
+import Touch from "@/components/Touch";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import { TracingBeam } from "@/components/ui/tracing-beam";
 import React from "react";
@@ -22,6 +23,7 @@ export default function page() {
         <FloatingNav navItems={navItems}/>
       <TracingBeam>
       <Hero/>
+      <Touch/>
       </TracingBeam>
           <div id="home">
             
