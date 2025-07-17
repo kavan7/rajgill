@@ -335,7 +335,7 @@ provide exceptional legal services.
     ctaText: "Connect",
     ctaLink: "",
     content: () => {
-      return <p>Simran Gill is a skilled paralegal with over 5 years of experience in the legal field,
+      return <p>Simran Samra is a skilled paralegal with over 5 years of experience in the legal field,
       complemented by a background of over a decade in administrative positions. Simran’s
       experience includes significant roles in ICBC Defense and Personal Injury, enriching her
       expertise in various legal areas. Currently focused on Family Law and Civil Law, Simran
