@@ -64,11 +64,11 @@ export const InfiniteMovingCards = ({
   const getSpeed = () => {
     if (containerRef.current) {
       if (speed === "fast") {
-        containerRef.current.style.setProperty("--animation-duration", "120s");
+        containerRef.current.style.setProperty("--animation-duration", "350s");
       } else if (speed === "normal") {
-        containerRef.current.style.setProperty("--animation-duration", "120s");
+        containerRef.current.style.setProperty("--animation-duration", "350s");
       } else {
-        containerRef.current.style.setProperty("--animation-duration", "120s");
+        containerRef.current.style.setProperty("--animation-duration", "350s");
       }
     }
   };
@@ -91,7 +91,7 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item) => (
           <li
-            className="w-[350px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 py-6 md:w-[450px]"
+            className="w-[350px] h-[20%] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 py-6 md:w-[450px]"
             style={{
               background:
                 "linear-gradient(300deg, var(--black-200), var(--transparent)",

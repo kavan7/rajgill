@@ -332,20 +332,11 @@ const   Hero = () => {
       </div>
     
 
-      <div  className="mt-48 mb-36" id="services">
-        
+      <div  className="" id="services">
+         <hr className="mb-20" />
          <h1 className="tracking-widest text-6xl text-center text-slate-200 font-medium mt-12 mb-12 max-w-83" >Our Services</h1>
         <FeaturesSectionDemo/>
-        <div className="flex flex-col items-center">
-          <a href="/client-testimonials">
-            <MagicButton
-              title="Client Reviews"
-              icon={<FaGavel />}
-              position="right"
-              otherClasses="rounded-lg"
-            />
-          </a>
-        </div>
+        <div className="md:mb-32"/>
       </div>
     </section>
   );

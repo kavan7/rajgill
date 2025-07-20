@@ -1,4 +1,10 @@
 [
+    {
+    "slug": "trusted-abbotsford-lawyers",
+    "title": "Your Trusted Family Lawyers in Abbotsford",
+    "image": "/background.png",
+    "date": "2025-07-15"
+  },
   {
     "slug": "choosing-raj-gill-law",
     "title": "Why Choosing Raj Gill Law Can Make All the Difference",
@@ -34,13 +40,8 @@
       "title": "We are here for you in Abbotsford!",
       "image": "/abbotsford.jpg",
       "date": "2024-12-15"
-    },
-    {
-      "slug": "surrey-abbotsford-legal",
-      "title": "Hi, we are Raj Gill Law!",
-      "image": "/background2-4.webp",
-      "date": "2024-11-30"
     }
+  
 
   
    
