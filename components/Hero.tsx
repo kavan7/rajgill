@@ -1,7 +1,6 @@
 import { useState, useRef, ChangeEvent, FormEvent } from "react";
-import { FaCalendar, FaGavel } from "react-icons/fa6";
+import { FaCalendar } from "react-icons/fa6";
 
-import MagicButton from "./ui/MagicButton";
 import {motion} from "framer-motion"
 //@ts-ignore
 import { LoopPingPong } from "three";
