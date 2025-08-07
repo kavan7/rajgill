@@ -11,8 +11,6 @@
 }
 
 
-
-
 body {
   position: relative;
   min-height: 100vh;
@@ -21,17 +19,19 @@ body {
   overflow: auto;
 }
 
+/* Optimized full-screen background image */
 body::before {
   content: "";
   position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-image: url('/backgroundbest4.webp');
+  inset: 0; /* shorthand for top/left/right/bottom = 0 */
+  z-index: -1;
+  background-image: url("/optimized.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 1; 
-  z-index: -1;
+  opacity: 1;
+  will-change: transform;
+  pointer-events: none;
 }
+
+/* Optional: disable background image on mobile to save bandwidth */

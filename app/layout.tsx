@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/react";
 import React from "react";
 import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
 import Script from "next/script";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Family & Divorce Lawyers in Surrey | Abbotsford",
@@ -82,7 +83,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
       </head>
     <body style={{ backgroundSize: 'cover', backgroundPosition: 'center', }}>
-      
+ 
         {children}
         
         {/* Vercel Analytics */}

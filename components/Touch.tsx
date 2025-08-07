@@ -11,7 +11,7 @@ const Touch = () => {
   return (
     <main className='flex flex-col md:flex-row lg:flex-col'>
     <div  id='touch' className="h-[40rem] w-full bg-transparent flex xs:flex-col flex-col items-center justify-center overflow-hidden rounded-md">
-    <h1 className="md:text-2xl text-7xl lg:text-8xl font-bold  ml-5 text-center text-neutral-100 relative z-20">
+    <h1 className="md:text-2xl text-5xl mb-3 lg:text-8xl font-bold  ml-5 text-center text-neutral-100 relative z-20">
       Our Contacts
     </h1>
     
@@ -28,7 +28,7 @@ const Touch = () => {
       
 
       {/* Radial Gradient to prevent sharp edges */}
-      <div className="absolute inset-0 w-full h-full bg-transparent"></div>
+      <div className="absolute inset-0 w-full bg-transparent"></div>
       
     </div>
     <div className='flex flex-col'>
@@ -40,16 +40,14 @@ const Touch = () => {
       <hr className='opacity-0.2 mt-5 mb-5'/>
       <a href="https://maps.app.goo.gl/8VfGNuFm88xrwuPX8" target='_blank'>
      
-    <h1 className='text-center flex flex-row text-white font-light mt- 5 text-3xl'><IconMapPin2 className='mt-2 mr-2'/> 12885 80 Ave #205, Surrey, BC</h1> </a> 
+    <h1 className='text-center flex flex-row text-white font-light mt- 5 text-xl'><IconMapPin2 className='mt-2 mr-2'/> 12885 80 Ave #205, Surrey, BC</h1> </a> 
     <a href="https://maps.app.goo.gl/YxYMufi68Y4oxmUN8" target='_blank'>
  
-    <h1 className='text-center flex flex-row text-white font-light mt- 5 text-3xl'><IconMapPin2 className='mt-2 mr-2'/> 1779 Clearbrookroad #216, Abbotsford, BC </h1>
+    <h1 className='text-center flex flex-row text-white font-light mt-5 text-xl'><IconMapPin2 className='mt-2 mr-2'/> 1779 Clearbrookroad #216, Abbotsford, BC </h1>
   </a>
       </div>
   </div>
-  <div className=" md:w-full lg:w-full   bg-transparent align-middle flex md:flex-row lg:flex-row flex-col  ">
-
-   </div>
+  
  
   </main>
   )
