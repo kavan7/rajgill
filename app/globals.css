@@ -1,15 +1,12 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
+/* Make EVERYTHING Garamond */
 * {
-
-  
-    font-weight: bold;
+  font-family: "Garamond", "EB Garamond", "Apple Garamond", Georgia, "Times New Roman", serif !important;
+  font-weight: bold; /* keep/remove as you like */
 }
-
 
 body {
   position: relative;
@@ -18,12 +15,10 @@ body {
   z-index: 0;
   overflow: auto;
 }
-
-/* Optimized full-screen background image */
 body::before {
   content: "";
   position: fixed;
-  inset: 0; /* shorthand for top/left/right/bottom = 0 */
+  inset: 0;
   z-index: -1;
   background-image: url("/optimized.webp");
   background-size: cover;
@@ -33,5 +28,4 @@ body::before {
   will-change: transform;
   pointer-events: none;
 }
-
-/* Optional: disable background image on mobile to save bandwidth */
+/* Optional: @media (max-width: 640px) { body::before { display: none; } } */

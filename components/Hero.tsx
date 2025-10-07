@@ -22,7 +22,7 @@ import {
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { FeaturesSectionDemo } from "./ui/Features";
+import FeaturesSectionDemo  from "./ui/Features";
 import { IconBriefcase, IconMail, IconMan, IconPhone, IconX } from "@tabler/icons-react";
 import Link from "next/link";
 import { FloatingNav } from "./ui/floating-navbar";

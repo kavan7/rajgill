@@ -36,7 +36,7 @@ export function About() {
       <div id="about">
         <hr />
         <TextGenerateEffect
-          words="Meet our team"
+          words="Meet Our Team"
           className="text-center text-[40px] md:text-5xl lg:text-6xl"
         />
         <AnimatePresence>
