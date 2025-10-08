@@ -1,4 +1,4 @@
-
+"use client";
 
 import React from "react";
 import Link from "next/link";
@@ -7,8 +7,6 @@ import { IconClipboardCopy, IconAlertCircle } from "@tabler/icons-react";
 import { cn } from "@/lib/utils";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import { TextGenerateEffect } from "@/components/ui/TextGenerateEffect";
-
-
 
 type ArticleMeta = {
   slug: string;
@@ -60,8 +58,8 @@ export default function Page() {
         {!articles && !error && (
           <BentoGrid className="md:auto-rows-[20rem]">
             {Array.from({ length: 6 }).map((_, i) => (
-              <SkeletonCard key={i} />)
-            )}
+              <SkeletonCard key={i} />
+            ))}
           </BentoGrid>
         )}
 
@@ -99,8 +97,15 @@ export default function Page() {
   );
 }
 
+/* ---------- components kept local to the page (not exported) ---------- */
 
-export function BentoGrid({ className, children }: { className?: string; children?: React.ReactNode }) {
+function BentoGrid({
+  className,
+  children,
+}: {
+  className?: string;
+  children?: React.ReactNode;
+}) {
   return (
     <div className={cn("mx-auto grid max-w-7xl grid-cols-1 gap-5 md:auto-rows-[18rem] md:grid-cols-3", className)}>
       {children}
@@ -108,7 +113,7 @@ export function BentoGrid({ className, children }: { className?: string; childre
   );
 }
 
-export function BentoGridItem({
+function BentoGridItem({
   className,
   title,
   description,
@@ -143,7 +148,7 @@ export function BentoGridItem({
         <h3 className="mb-2 mt-2 font-serif text-lg font-semibold text-neutral-100 md:text-xl line-clamp-2">
           {title}
         </h3>
-        {Boolean(author || formatted) && (
+        {(author || formatted) && (
           <div className="mb-2 flex flex-wrap items-center gap-2 text-xs text-neutral-400">
             {author && <span className="font-medium text-neutral-300">{author}</span>}
             {author && formatted && <span aria-hidden>•</span>}
@@ -179,7 +184,6 @@ function CardImage({ src, alt }: { src?: string; alt: string }) {
   const has = Boolean(src);
   return (
     <div className="relative overflow-hidden rounded-xl">
-      {/* Keep a steady 16:9 aspect ratio */}
       <div className="relative h-40 w-full md:h-44">
         {has ? (
           <Image
@@ -196,7 +200,6 @@ function CardImage({ src, alt }: { src?: string; alt: string }) {
           </div>
         )}
       </div>
-
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 transition-opacity group-hover/bento:opacity-100" />
     </div>
   );
@@ -219,8 +222,6 @@ function SkeletonCard() {
   );
 }
 
-
-
 function formatDate(input?: string) {
   if (!input) return "";
   const d = new Date(input);
@@ -230,6 +231,5 @@ function formatDate(input?: string) {
 
 function calcReadTime(text: string) {
   const words = text.trim().split(/\s+/).filter(Boolean).length;
-  const minutes = Math.max(1, Math.round(words / 225));
-  return minutes;
+  return Math.max(1, Math.round(words / 225));
 }
