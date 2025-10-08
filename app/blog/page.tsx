@@ -70,7 +70,7 @@ export default function Page() {
             <div className="flex items-start gap-2">
               <IconAlertCircle className="mt-0.5 h-5 w-5" />
               <div>
-                <h2 className="font-semibold">We couldn't load the blog right now.</h2>
+                <h2 className="font-semibold">We couldn&apos;t load the blog right now.</h2>
                 <p className="text-sm opacity-90">{error}</p>
               </div>
             </div>
