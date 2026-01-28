@@ -327,27 +327,7 @@ provide exceptional legal services.
       );
     },
   },
-  {
-    description: "Paralegal",
-    title: "Simran Samra",
-    src: "/newnopic.png",
-    email: 'simran@rajgilllaw.com',
-    ctaText: "Connect",
-    ctaLink: "",
-    content: () => {
-      return <p>Simran Samra is a skilled paralegal with over 5 years of experience in the legal field,
-      complemented by a background of over a decade in administrative positions. Simran’s
-      experience includes significant roles in ICBC Defense and Personal Injury, enriching her
-      expertise in various legal areas. Currently focused on Family Law and Civil Law, Simran
-      excels in drafting legal documents, conducting detailed legal research, managing
-      complex case files, and maintaining clear and empathetic communication with the
-      clients of Raj Gill Law Corporation.
-      <br/>
-      As a voting member of the BC Paralegal Association and a Commissioner for taking
-      Oaths in British Columbia, Simran is committed to upholding high professional
-      standards and ensuring legal accuracy.</p>;
-    },
-  },
+
   {
     description: "Paralegal",
     title: "Ashley Dewett",
@@ -366,20 +346,6 @@ provide exceptional legal services.
       Ashley is recognized for consistently delivering excellent service to clients navigating
       the divorce process.</p>;
     },
-  },
-  {
-    description: "Legal Assistant",
-    title: "Shahin Hardy",
-    src: "/newnopic.png",
-    email: 'shahin@rajgilllaw.com',
-    ctaText: "Connect",
-    ctaLink: "https://www.linkedin.com/in/shahin-hardy-717941221/",
-    content: () => {
-      return <p>
-        Shahin Hardy is a dedicated legal assistant with a strong background in legal support and disaster management. A graduate with a Bachelor of Laws (LL.B.) from Panjab University, Chandigarh, India, Shahin brings a solid understanding of legal principles and practices to her role at Raj Gill Law Corporation. She has honed her skills in supporting lawyers through meticulous case management, legal research, and document preparation.
-<br/>
-Currently, Shahin is further enhancing her expertise by pursuing a Post-Baccalaureate Diploma in Disaster Management from the Justice Institute of British Columbia. Her unique combination of legal acumen and disaster management knowledge equips her to address complex challenges in legal and emergency contexts with confidence and precision.
-      </p>   },
   },
   {
     description: "Legal Assistant",
