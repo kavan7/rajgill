@@ -5,7 +5,7 @@
 /* Make EVERYTHING Garamond */
 * {
   font-family: "Garamond", "EB Garamond", "Apple Garamond", Georgia, "Times New Roman", serif !important;
-  font-weight: bold; /* keep/remove as you like */
+  font-weight: bold;
 }
 
 body {
@@ -15,12 +15,18 @@ body {
   z-index: 0;
   overflow: auto;
 }
+
 body::before {
   content: "";
   position: fixed;
   inset: 0;
   z-index: -1;
-  background-image: url("/optimized.webp");
+  
+  /* The linear-gradient acts as the dark overlay on top of the image */
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), 
+    url("/background.jpg");
+    
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -28,4 +34,3 @@ body::before {
   will-change: transform;
   pointer-events: none;
 }
-/* Optional: @media (max-width: 640px) { body::before { display: none; } } */

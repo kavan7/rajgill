@@ -104,7 +104,7 @@ export function About() {
                         {active.description}
                       </motion.p>
                     </div>
-
+                  
                     <motion.a
                       layout
                       initial={{ opacity: 0 }}
