@@ -281,6 +281,27 @@ Madhur is passionate about complex family and civil litigation that involves the
   },
   {
     description: "Articling Student",
+    title: "Avneet Rai",
+    email: 'avneet@rajgilllaw.com',
+    src: "/avpic4.jpg",
+    ctaText: "Connect",
+    ctaLink: "",
+    content: () => {
+      return (
+        <p>
+         Avneet is an articled student with a background in Health Education (Honours) from University of Victoria, where she completed her undergraduate studies. She earned her Juris Doctor (J.D.) from Bond University and is currently in the process of becoming a licensed lawyer with the British Columbia Bar Association.
+
+Avneet brings a strong international, cultural, and client-focused approach to her work. She has experience as an in-house legal counsel intern with Sugar Research Australia, as well as experience assisting with pro bono family, civil, and estate matters at the Gold Coast Community Legal Centre.
+
+She is hardworking, determined, and committed to helping clients navigate legal matters through creative thinking and a practical approach focused on achieving the best possible outcomes.
+	
+        
+        </p>
+      );
+    },
+  },
+    {
+    description: "Articling Student",
     title: "Vaishali Singh",
     email: 'vai@rajgilllaw.com',
     src: "/vaipic3.png",
