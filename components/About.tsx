@@ -282,7 +282,7 @@ Madhur is passionate about complex family and civil litigation that involves the
   {
     description: "Articling Student",
     title: "Avneet Rai",
-    email: 'avneet@rajgilllaw.com',
+    email: 'arai@rajgilllaw.com',
     src: "/avpic4.jpg",
     ctaText: "Connect",
     ctaLink: "",
