@@ -279,6 +279,27 @@ Madhur is passionate about complex family and civil litigation that involves the
       );
     },
   },
+   {
+    description: "Associate Lawyer",
+    title: "Vaishali Singh",
+    email: 'vai@rajgilllaw.com',
+    src: "/vaipic3.png",
+    ctaText: "Connect",
+    ctaLink: "",
+    content: () => {
+      return (
+        <p>
+          Vaishali is an articling student with a prior background as a practicing lawyer in India. Now in the process of becoming a licensed lawyer in Canada, her areas of interest include family law and civil litigation, where she brings a strong analytical foundation and a client-focused approach.
+
+Vaishali is recognized for her professionalism, determination, and commitment to continuous growth. She remains current with legal developments and is dedicated to delivering high-quality work in a fast-paced legal environment.
+
+Outside of her legal practice, Vaishali enjoys working with acrylic paints and pencil sketches, and has a strong interest in science fiction and psychological thrillers.
+	
+        
+        </p>
+      );
+    },
+  },
   {
     description: "Articling Student",
     title: "Avneet Rai",
@@ -300,27 +321,7 @@ She is hardworking, determined, and committed to helping clients navigate legal 
       );
     },
   },
-    {
-    description: "Articling Student",
-    title: "Vaishali Singh",
-    email: 'vai@rajgilllaw.com',
-    src: "/vaipic3.png",
-    ctaText: "Connect",
-    ctaLink: "",
-    content: () => {
-      return (
-        <p>
-          Vaishali is an articling student with a prior background as a practicing lawyer in India. Now in the process of becoming a licensed lawyer in Canada, her areas of interest include family law and civil litigation, where she brings a strong analytical foundation and a client-focused approach.
-
-Vaishali is recognized for her professionalism, determination, and commitment to continuous growth. She remains current with legal developments and is dedicated to delivering high-quality work in a fast-paced legal environment.
-
-Outside of her legal practice, Vaishali enjoys working with acrylic paints and pencil sketches, and has a strong interest in science fiction and psychological thrillers.
-	
-        
-        </p>
-      );
-    },
-  },
+   
   {
     description: "Articling Student",
     title: "Shrea Grover",
