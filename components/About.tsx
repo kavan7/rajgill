@@ -281,7 +281,7 @@ Madhur is passionate about complex family and civil litigation that involves the
   },
    {
     description: "Associate Lawyer",
-    title: "Vaishali Singh",
+    title: "Vaishali Singh Setia",
     email: 'vai@rajgilllaw.com',
     src: "/vaipic3.png",
     ctaText: "Connect",
@@ -289,11 +289,15 @@ Madhur is passionate about complex family and civil litigation that involves the
     content: () => {
       return (
         <p>
-          Vaishali is an articling student with a prior background as a practicing lawyer in India. Now in the process of becoming a licensed lawyer in Canada, her areas of interest include family law and civil litigation, where she brings a strong analytical foundation and a client-focused approach.
+         Vaishali Singh Setia is a lawyer at Raj Gill Law Corporation. Prior to being called to the bar in British Columbia in 2026, Vaishali practiced law in India, where she developed a strong foundation in legal advocacy, research, and client representation.
 
-Vaishali is recognized for her professionalism, determination, and commitment to continuous growth. She remains current with legal developments and is dedicated to delivering high-quality work in a fast-paced legal environment.
+Vaishali completed her articles with Raj Gill Law Corporation and successfully completed the Professional Legal Training Course (PLTC) in 2025. During her articling term, she gained experience assisting clients through a variety of legal matters and developed a practical, client-focused approach to legal problem-solving.
 
-Outside of her legal practice, Vaishali enjoys working with acrylic paints and pencil sketches, and has a strong interest in science fiction and psychological thrillers.
+Her practice focuses on family law and civil litigation. Vaishali is committed to providing thoughtful legal advice, strong advocacy, and practical solutions tailored to each client's unique circumstances. Known for her professionalism, attention to detail, and dedication to client service, she approaches every matter with diligence, integrity, and a commitment to achieving effective outcomes.
+
+Vaishali remains committed to continuous professional development and staying current with legal developments to better serve her clients.
+
+Outside of her practice, Vaishali enjoys acrylic painting, pencil sketching, and exploring science fiction and psychological thrillers.
 	
         
         </p>
