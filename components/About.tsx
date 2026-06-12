@@ -291,9 +291,9 @@ Madhur is passionate about complex family and civil litigation that involves the
         <p>
          Vaishali Singh Setia is a lawyer at Raj Gill Law Corporation. Prior to being called to the bar in British Columbia in 2026, Vaishali practiced law in India, where she developed a strong foundation in legal advocacy, research, and client representation.
 
-Vaishali completed her articles with Raj Gill Law Corporation and successfully completed the Professional Legal Training Course (PLTC) in 2025. During her articling term, she gained experience assisting clients through a variety of legal matters and developed a practical, client-focused approach to legal problem-solving.
+Vaishali completed her articles with Raj Gill Law Corporation and successfully completed the Professional Legal Training Course PLTC in 2025. During her articling term, she gained experience assisting clients through a variety of legal matters and developed a practical, client-focused approach to legal problem-solving.
 
-Her practice focuses on family law and civil litigation. Vaishali is committed to providing thoughtful legal advice, strong advocacy, and practical solutions tailored to each client's unique circumstances. Known for her professionalism, attention to detail, and dedication to client service, she approaches every matter with diligence, integrity, and a commitment to achieving effective outcomes.
+Her practice focuses on family law and civil litigation. Vaishali is committed to providing thoughtful legal advice, strong advocacy, and practical solutions tailored to each client&apos;s unique circumstances. Known for her professionalism, attention to detail, and dedication to client service, she approaches every matter with diligence, integrity, and a commitment to achieving effective outcomes.
 
 Vaishali remains committed to continuous professional development and staying current with legal developments to better serve her clients.
 
